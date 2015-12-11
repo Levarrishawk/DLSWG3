@@ -924,8 +924,8 @@ void PlayerManagerImplementation::sendPlayerToCloner(CreatureObject* player, uin
 
 	if (preDesignatedFacility == NULL || preDesignatedFacility != cloningBuilding) {
 		player->addWounds(CreatureAttribute::HEALTH, 100, true, false);
-		player->addWounds(CreatureAttribute::ACTION, 100, true, false);
-		player->addWounds(CreatureAttribute::MIND, 100, true, false);
+		player->addWounds(CreatureAttribute::ACTION, 0, true, false);
+		player->addWounds(CreatureAttribute::MIND, 0, true, false);
 		player->addShockWounds(100, true);
 	}
 
@@ -967,7 +967,7 @@ void PlayerManagerImplementation::sendPlayerToCloner(CreatureObject* player, uin
 	player->notifyObservers(ObserverEventType::PLAYERCLONED, player, 0);
 
 
-	// Jedi experience loss.
+	// Jedi experience loss.    Needs further iteration.
 	if(ghost->getJediState() >= 2) {
 		int jediXpCap = ghost->getXpCap("jedi_general");
 		int xpLoss = (int)(jediXpCap * -0.05);
@@ -1207,6 +1207,8 @@ void PlayerManagerImplementation::disseminateExperience(TangibleObject* destruct
 
 
 
+
+//Encumberance Need to remove later.
 bool PlayerManagerImplementation::checkEncumbrancies(CreatureObject* player, ArmorObject* armor) {
 	int strength = player->getHAM(CreatureAttribute::STRENGTH);
 	int constitution = player->getHAM(CreatureAttribute::CONSTITUTION);

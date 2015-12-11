@@ -334,6 +334,8 @@ void PlayerCreationManager::loadLuaStartingItems(Lua* lua) {
 	}
 }
 
+// Set limits on number of characters per server.
+
 bool PlayerCreationManager::createCharacter(MessageCallback* data) {
 	TemplateManager* templateManager = TemplateManager::instance();
 
@@ -534,8 +536,10 @@ bool PlayerCreationManager::createCharacter(MessageCallback* data) {
 					if (lastCreatedCharacter.containsKey(accID)) {
 						Time lastCreatedTime = lastCreatedCharacter.get(accID);
 
-						if (lastCreatedTime.miliDifference() < 86400000) {
-							ErrorMessage* errMsg = new ErrorMessage("Create Error", "You are only permitted to create one character every 24 hours. Repeat attempts prior to 24 hours elapsing will reset the timer.", 0x0);
+			//change creation timer to 1 millisecond.
+
+						if (lastCreatedTime.miliDifference() < 1) {
+							ErrorMessage* errMsg = new ErrorMessage("Create Error", "You are only permitted to create one character every millisecond. Repeat attempts at being faster than humanly possible will not be tolerated.", 0x0);
 							client->sendMessage(errMsg);
 
 							playerCreature->destroyPlayerCreatureFromDatabase(true);
@@ -637,9 +641,11 @@ bool PlayerCreationManager::createCharacter(MessageCallback* data) {
 
 	JediManager::instance()->onPlayerCreated(playerCreature);
 
+	//adjust creation sui message box.
+
 	ManagedReference<SuiMessageBox*> box = new SuiMessageBox(playerCreature, SuiWindowType::NONE);
-	box->setPromptTitle("PLEASE NOTE");
-	box->setPromptText("You are limited to creating one character every 24 hours. Attempting to create another character or deleting your character before the 24 hour timer expires will reset the timer.");
+	box->setPromptTitle("Welcome to DarklightSWG");
+	box->setPromptText("There are no restrictions on how often you may create characters. We hope you enjoy our unique take on Star Wars Galaxies.");
 
 	ghost->addSuiBox(box);
 	playerCreature->sendMessage(box->generateMessage());
