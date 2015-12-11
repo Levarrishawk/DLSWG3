@@ -968,7 +968,7 @@ void PlayerManagerImplementation::sendPlayerToCloner(CreatureObject* player, uin
 
 
 	// Jedi experience loss.    Needs further iteration.
-	if(ghost->getJediState() >= 2) {
+	/*if(ghost->getJediState() >= 2) {
 		int jediXpCap = ghost->getXpCap("jedi_general");
 		int xpLoss = (int)(jediXpCap * -0.05);
 		int curExp = ghost->getExperience("jedi_general");
@@ -983,7 +983,7 @@ void PlayerManagerImplementation::sendPlayerToCloner(CreatureObject* player, uin
 		message.setDI(xpLoss * -1);
 		message.setTO("exp_n", "jedi_general");
 		player->sendSystemMessage(message);
-	}
+	}*/
 }
 
 void PlayerManagerImplementation::ejectPlayerFromBuilding(CreatureObject* player) {
@@ -1153,14 +1153,16 @@ void PlayerManagerImplementation::disseminateExperience(TangibleObject* destruct
 					xpAmount *= gcwBonus;
 
 				//Jedi experience doesn't count towards combat experience supposedly.
+
+				/*
 				if (xpType != "jedi_general")
 					combatXp += xpAmount;
-
+				*/
 				//Award individual expType
 				awardExperience(attacker, xpType, xpAmount);
 			}
 
-			combatXp /= 10.f;
+			combatXp = 1.f;
 
 			awardExperience(attacker, "combat_general", combatXp);
 
