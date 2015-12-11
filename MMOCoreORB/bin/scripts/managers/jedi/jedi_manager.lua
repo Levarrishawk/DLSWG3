@@ -11,7 +11,7 @@ if _TEST then
 	ITEMTHEATERDATAPAD = 2
 end
 
-jediProgressionType = VILLAGEJEDIPROGRESSION
+jediProgressionType = HOLOGRINDJEDIPROGRESSION
 
 jediManagerName = "JediManager"
 
@@ -22,7 +22,7 @@ function printf(...) io.write(string.format(unpack({...}))) end
 JediManager = ScreenPlay:new {
 	screenplayName = jediManagerName,
 	jediManagerName = jediManagerName,
-	jediProgressionType = NOJEDIPROGRESSION,
+	jediProgressionType = HOLOGRINDJEDIPROGRESSION,
 }
 
 -- Default handling of the start event.

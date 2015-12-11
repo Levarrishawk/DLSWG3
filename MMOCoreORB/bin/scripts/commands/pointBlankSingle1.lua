@@ -45,13 +45,15 @@ PointBlankSingle1Command = {
 	name = "pointblanksingle1",
 
 	damageMultiplier = 2,
-	speedMultiplier = 1.5,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 1.25,
-	mindCostMultiplier = 0.5,
-	accuracyBonus = 15,
+  speedMultiplier = 0.45,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 2.25,
+  mindCostMultiplier = 0,
+  accuracyBonus = 15,
 
-	animationCRC = hashCode("fire_3_single_medium"),
+  animationCRC = hashCode("fire_3_single_medium"),
+  
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	combatSpam = "pointblankshot",
 	

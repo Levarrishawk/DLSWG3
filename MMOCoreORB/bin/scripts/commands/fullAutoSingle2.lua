@@ -44,11 +44,11 @@
 FullAutoSingle2Command = {
         name = "fullautosingle2",
 
-	damageMultiplier = 3.5,
-	speedMultiplier = 1.5,
-	healthCostMultiplier = 2.0,
-	actionCostMultiplier = 2.5,
-	mindCostMultiplier = 0.5,
+	damageMultiplier = 3,
+  speedMultiplier = 2.15,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3.5,
+  mindCostMultiplier = 0,
 	accuracyBonus = 25,
 
 	animationCRC = hashCode("fire_7_single_medium_face"),
@@ -62,8 +62,8 @@ FullAutoSingle2Command = {
 		{ "dizzy_defense", "resistance_states" }, 
 		{ "jedi_state_defense" }, 
 		30, 
-		0, 
-		30 
+		70, 
+		4 
 	  ),
 	  StateEffect( 
 		BLIND_EFFECT, 

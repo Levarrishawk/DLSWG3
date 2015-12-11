@@ -44,15 +44,15 @@
 UnarmedStun1Command = {
 	name = "unarmedstun1",
 
-	damageMultiplier = 1.25,
-	speedMultiplier = 2.0,
-	accuracyBonus = 15,
-	
-	healthCostMultiplier = 1.5,
-	actionCostMultiplier = 1.5,
-	mindCostMultiplier = 1.5,
+	damageMultiplier = 2,
+  speedMultiplier = 1.0,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3.5,
+  mindCostMultiplier = 0,
 
-	animationCRC = hashCode("combo_4c_light"),
+  animationCRC = hashCode("combo_4c_light"),
+
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	combatSpam = "screamingsquill",
 

@@ -46,9 +46,9 @@ TorsoShotCommand = {
 
 	damageMultiplier = 3.0,
 	speedMultiplier = 2.3,
-	healthCostMultiplier = 1,
-	actionCostMultiplier = 1,
-	mindCostMultiplier = 1,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 3,
+	mindCostMultiplier = 0,
 
 	poolsToDamage = HEALTH_ATTRIBUTE,
 
@@ -62,7 +62,7 @@ TorsoShotCommand = {
 		{ "resistance_fire", "fire_resist" },
 		HEALTH,
 		true,
-		0,
+		125,
 		100,
 		30, 
 		30,

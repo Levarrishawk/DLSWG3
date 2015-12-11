@@ -43,28 +43,29 @@
 
 Melee2hArea1Command = {
         name = "melee2harea1",
-	damageMultiplier = 2.0,
-	speedMultiplier = 1.5,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 1.5,
-	mindCostMultiplier = 0.50,
-        accuracyBonus = 10,
+	damageMultiplier = 1.9,
+  speedMultiplier = 1.3,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3.25,
+  mindCostMultiplier = 0,
 
-	areaRange = 16,
-	areaAction = true,
-	stateEffects = {
-	  StateEffect( 
-		POSTUREDOWN_EFFECT, 
-		{ "postureDownRecovery" }, 
-		{ "posture_change_down_defense" }, 
-		{}, 
-		100, 
-		0, 
-		0 
-	  )
-	},
+  areaRange = 7,
+  areaAction = true,
+  stateEffects = {
+    StateEffect( 
+    POSTUREDOWN_EFFECT, 
+    { "postureDownRecovery" }, 
+    { "posture_change_down_defense" }, 
+    {}, 
+    15, 
+    100, 
+    0 
+    )
+  },
 
 	animationCRC = hashCode("attack_high_right_light_2"),
+	
+	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	combatSpam = "descendingstrike",
 	

@@ -48,7 +48,6 @@ Saber2hPhantomCommand = {
 	speedMultiplier = 4.0,
 	coneAngle = 45,
 	coneAction = true,
-	coneRange = 24,
 	forceCostMultiplier = 3.0,
 
 		stateEffects = {
@@ -89,7 +88,7 @@ Saber2hPhantomCommand = {
 	
 	weaponType = TWOHANDJEDIWEAPON,
 
-	range = -1
+	range = 24
 }
 
 AddCommand(Saber2hPhantomCommand)

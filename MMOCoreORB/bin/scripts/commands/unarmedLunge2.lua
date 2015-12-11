@@ -45,12 +45,14 @@ UnarmedLunge2Command = {
 	name = "unarmedlunge2",
 
 	damageMultiplier = 3.0,
-	speedMultiplier = 2.0,
-	accuracyBonus = 15,
-	
-	healthCostMultiplier = 1.5,
-	actionCostMultiplier = 1.5,
-	mindCostMultiplier = 1.5,
+  speedMultiplier = 2.0,
+  accuracyBonus = 15,
+  
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 4,
+  mindCostMultiplier = 0,
+
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animationCRC = hashCode("counter_mid_center_light"),
 

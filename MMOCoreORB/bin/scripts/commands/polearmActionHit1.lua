@@ -44,33 +44,33 @@
 PolearmActionHit1Command = {
         name = "polearmactionhit1",
 
-	damageMultiplier = 1.0,
-	speedMultiplier = 1.5,
-	healthCostMultiplier = 1.0,
-	actionCostMultiplier = 0.5,
-	mindCostMultiplier = 0.5,
-	accuracyBonus = 10,
+	damageMultiplier = 2.25,
+  speedMultiplier = 3.25,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3,
+  mindCostMultiplier = 0,
+  --accuracyBonus = 10,
 
-	animationCRC = hashCode("attack_low_right_medium_0"),
+  animationCRC = hashCode("attack_low_right_medium_0"),
 
-	combatSpam = "kneecracker",
+  combatSpam = "kneecracker",
 
-	dotEffects = {
-	  DotEffect( 
-		BLEEDING, 
-		{ "resistance_bleeding", "bleed_resist" },
-		ACTION,
-		true,
-		0,
-		100,
-		30, 
-		30
-	  )
-	},
+  dotEffects = {
+    DotEffect( 
+    BLEEDING, 
+    { "resistance_bleeding", "bleed_resist", "combat_bleeding_defense" },
+    ACTION,
+    true,
+    125,
+    100,
+    30, 
+    30
+    )
+  },
 	
 	weaponType = POLEARMWEAPON,
 
-	poolsToDamage = ACTION_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	range = -1
 }

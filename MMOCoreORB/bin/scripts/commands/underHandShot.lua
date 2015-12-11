@@ -45,10 +45,11 @@ UnderHandShotCommand = {
         name = "underhandshot",
 
 	damageMultiplier = 3.0,
-	speedMultiplier = 1.5,
-	healthCostMultiplier = 1,
-	actionCostMultiplier = 1,
-	mindCostMultiplier = 1,
+  speedMultiplier = 1.5,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3,
+  mindCostMultiplier = 0,
+	
 
 	stateEffects = {
 	  StateEffect( 
@@ -56,13 +57,15 @@ UnderHandShotCommand = {
 		{ "knockdownRecovery", "lastKnockdown" }, 
 		{ "knockdown_defense" }, 
 		{}, 
-		85, 
-		0, 
+		30, 
+		100, 
 		0 
 	  )
 	},
 
 	animationCRC = hashCode("fire_5_single_medium_face"),
+	
+	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	combatSpam = "underhandshot",
 	

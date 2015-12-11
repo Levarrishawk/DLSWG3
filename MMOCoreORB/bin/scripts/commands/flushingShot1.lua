@@ -44,11 +44,11 @@
 FlushingShot1Command = {
         name = "flushingshot1",
 
-	damageMultiplier = 2.0,
-	speedMultiplier = 2.0,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 0.5,
-	mindCostMultiplier = 1.5,
+	damageMultiplier = 2.25,
+  speedMultiplier = 3.45,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 4,
+  mindCostMultiplier = 0,
 	accuracyBonus = 5,
 
 	stateEffects = {
@@ -72,7 +72,7 @@ FlushingShot1Command = {
 	  )
 	},
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animationCRC = hashCode("fire_3_special_single_medium"),
 

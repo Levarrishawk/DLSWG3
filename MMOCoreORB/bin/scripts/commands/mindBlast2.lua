@@ -42,58 +42,58 @@
 --true = 1, false = 0
 
 MindBlast2Command = {
-	name = "mindblast2",
+  name = "mindblast2",
 
-	minDamage = 1125,
-	maxDamage = 1500,
-	speed = 4.0,
-	forceCost = 160,
-	accuracySkillMod = "mindblast_accuracy";
-	coneAngle = 40,
-	coneAction = true,
+  minDamage = 1125,
+  maxDamage = 1500,
+  speed = 4.0,
+  forceCost = 160,
+  accuracySkillMod = "mindblast_accuracy";
+  coneAngle = 40,
+  coneAction = true,
 
-	stateEffects = {
-	  StateEffect(
-		STUN_EFFECT,
-		{},
-		{ "jedi_state_defense" },
-		{},
-		55,
-		0,
-		10
-	  ),
+  stateEffects = {
+    StateEffect(
+    STUN_EFFECT,
+    {},
+    { "jedi_state_defense" },
+    {},
+    55,
+    0,
+    10
+    ),
 
-	  StateEffect(
-		BLIND_EFFECT,
-		{},
-		{ "jedi_state_defense" },
-		{},
-		55,
-		0,
-		10
-	  ),
+    StateEffect(
+    BLIND_EFFECT,
+    {},
+    { "jedi_state_defense" },
+    {},
+    55,
+    0,
+    10
+    ),
 
-	  StateEffect(
-		DIZZY_EFFECT,
-		{},
-		{ "jedi_state_defense" },
-		{},
-		55,
-		0,
-		10
-	  )
-	},
+    StateEffect(
+    DIZZY_EFFECT,
+    {},
+    { "jedi_state_defense" },
+    {},
+    55,
+    0,
+    10
+    )
+  },
 
-	animationCRC = hashCode("force_mind_blast_1_arc_particle_level_1_light"),
+  animationCRC = hashCode("force_mind_blast_1_arc_particle_level_1_light"),
 
-	combatSpam = "mindblast2",
+  combatSpam = "mindblast2",
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+  poolsToDamage = RANDOM_ATTRIBUTE,
 
-	attackType = FORCEATTACK,
-	damageType = LIGHTSABER_DAMAGE,
+  attackType = FORCEATTACK,
+  damageType = LIGHTSABER_DAMAGE,
 
-	range = 32
+  range = 32
 }
 
 AddCommand(MindBlast2Command)

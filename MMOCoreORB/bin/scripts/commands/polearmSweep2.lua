@@ -44,11 +44,11 @@
 PolearmSweep2Command = {
         name = "polearmsweep2",
 
-	damageMultiplier = 2.5,
-	speedMultiplier = 2.5,
-	healthCostMultiplier = 2.0,
-	actionCostMultiplier = 1.5,
-	mindCostMultiplier = 1.5,
+	damageMultiplier = 4.7,
+  speedMultiplier = 3.25,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 4,
+  mindCostMultiplier = 0,
 	accuracyBonus = 15,
 
 	stateEffects = {
@@ -57,8 +57,8 @@ PolearmSweep2Command = {
 		{ "knockdownRecovery", "lastKnockdown" }, 
 		{ "knockdown_defense" }, 
 		{}, 
-		100, 
-		0, 
+		40, 
+	  100, 
 		0 
 	  )
 	},
@@ -69,7 +69,7 @@ PolearmSweep2Command = {
 
 	combatSpam = "backbreaker",
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 	
 	weaponType = POLEARMWEAPON,
 

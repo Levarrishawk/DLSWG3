@@ -45,27 +45,29 @@ BleedingShotCommand = {
         name = "bleedingshot",
 
 	damageMultiplier = 2.0,
-	speedMultiplier = 1.5,
-	healthCostMultiplier = 1,
-	actionCostMultiplier = 1,
-	mindCostMultiplier = 1,
+  speedMultiplier = 1.5,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3,
+  mindCostMultiplier = 0,
 
-	animationCRC = hashCode("fire_3_single_light"),
+  animationCRC = hashCode("fire_3_single_light"),
 
-	combatSpam = "bleedingshot",
+  combatSpam = "bleedingshot",
+  
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
-	dotEffects = {
-	  DotEffect( 
-		BLEEDING, 
-		{ "resistance_bleeding", "bleed_resist" },
-		MIND,
-		true,
-		0,
-		100,
-		30, 
-		30
-	  )
-	},
+  dotEffects = {
+    DotEffect( 
+    BLEEDING, 
+    { "resistance_bleeding", "bleed_resist", "combat_bleeding_defense" },
+    ACTION,
+    true,
+    125,
+    100,
+    30, 
+    30
+    )
+  },
 	
 	weaponType = PISTOLWEAPON,
 

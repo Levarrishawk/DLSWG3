@@ -47,7 +47,7 @@ ForceThrow2Command = {
 	minDamage = 750,
 	maxDamage = 1000,
 	speed = 4.0,
-	forceCost = 56,
+	forceCost = 45,
 	accuracySkillMod = "forcethrow_accuracy";
 
 	stateEffects = {
@@ -67,7 +67,7 @@ ForceThrow2Command = {
 
 	combatSpam = "forcethrow2",
 	
-	poolsToDamage = RANDOM_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 	
 	attackType = FORCEATTACK,
 	damageType = KINETIC_DAMAGE,

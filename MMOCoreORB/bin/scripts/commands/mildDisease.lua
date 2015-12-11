@@ -48,9 +48,9 @@ MildDiseaseCommand = {
 	  DotEffect( 
 		DISEASED, 
 		{ "resistance_disease", "poison_disease_resist" },
-		ATTACK_POOL,
+		HEALTH,
 		true,
-		0,
+		75,
 		20,
 		30, 
 		125,

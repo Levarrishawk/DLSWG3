@@ -46,4 +46,3 @@ ApplyPoisonCommand = {
 }
 
 AddCommand(ApplyPoisonCommand)
-

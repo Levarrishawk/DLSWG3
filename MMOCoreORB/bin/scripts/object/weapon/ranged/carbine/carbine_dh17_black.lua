@@ -68,7 +68,7 @@ object_weapon_ranged_carbine_carbine_dh17_black = object_weapon_ranged_carbine_s
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = RANGEDATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
 	damageType = ENERGY,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
@@ -100,9 +100,9 @@ object_weapon_ranged_carbine_carbine_dh17_black = object_weapon_ranged_carbine_s
 	
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 19,
-	actionAttackCost = 27,
-	mindAttackCost = 12,
+	healthAttackCost = 0,
+	actionAttackCost = 150,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankRange = 0,

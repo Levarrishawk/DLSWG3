@@ -45,35 +45,49 @@ KnockdownFireCommand = {
         name = "knockdownfire",
 
 	damageMultiplier = 2.5,
-	speedMultiplier = 2.0,
-	healthCostMultiplier = 1,
-	actionCostMultiplier = 1,
-	mindCostMultiplier = 1,
+  speedMultiplier = 2.0,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3,
+  mindCostMultiplier = 0,
 
-	stateEffects = {
-	  StateEffect( 
-		DIZZY_EFFECT, 
-		{}, 
-		{ "dizzy_defense", "resistance_states" }, 
-		{ "jedi_state_defense" }, 
-		85, 
-		0, 
-		10 
-	  ),
-	  StateEffect( 
-		KNOCKDOWN_EFFECT, 
-		{ "knockdownRecovery", "lastKnockdown" }, 
-		{ "knockdown_defense" }, 
-		{}, 
-		85, 
-		0, 
-		0 
-	  )
-	},
+  stateEffects = {
+    StateEffect( 
+    DIZZY_EFFECT, 
+    {}, 
+    { "dizzy_defense", "resistance_states" }, 
+    { "jedi_state_defense" }, 
+    30, 
+    100, 
+    10 
+    ),
+    StateEffect( 
+    KNOCKDOWN_EFFECT, 
+    { "knockdownRecovery", "lastKnockdown" }, 
+    { "knockdown_defense" }, 
+    {}, 
+    30, 
+    100, 
+    0 
+    )
+  },
 
-	animationCRC = hashCode("fire_1_special_single_medium"),
-
-	combatSpam = "knockdownfire",
+  dotEffects = {
+    DotEffect( 
+    ONFIRE, 
+    {"resistance_fire", "fire_resist"},
+    HEALTH,
+    true,
+    100,
+    100,
+    100, 
+    60,
+    10,
+    2
+    )
+  },
+  animationCRC = hashCode("fire_1_special_single_medium"),
+  
+  poolsToDamage = HEALTH_ATTRIBUTE,
 	
 	weaponType = CARBINEWEAPON,
 

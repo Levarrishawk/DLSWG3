@@ -44,11 +44,11 @@
 FullAutoArea2Command = {
         name = "fullautoarea2",
 
-	damageMultiplier = 2.0,
-	speedMultiplier = 1.5,
-	healthCostMultiplier = 2.5,
-	actionCostMultiplier = 2.5,
-	mindCostMultiplier = 0.5,
+	damageMultiplier = 2.85,
+  speedMultiplier = 2.35,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3.85,
+  mindCostMultiplier = 0,
 	accuracyBonus = 25,
 
 	animationCRC = hashCode("fire_defender_posture_change_down"),
@@ -64,9 +64,9 @@ FullAutoArea2Command = {
 		{}, 
 		{ "dizzy_defense", "resistance_states" }, 
 		{ "jedi_state_defense" }, 
-		30, 
-		0, 
-		30 
+		20, 
+		70, 
+		4 
 	  ),
 	  StateEffect( 
 		BLIND_EFFECT, 
@@ -88,7 +88,7 @@ FullAutoArea2Command = {
 	  )
 	},
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 	
 	weaponType = CARBINEWEAPON,
 

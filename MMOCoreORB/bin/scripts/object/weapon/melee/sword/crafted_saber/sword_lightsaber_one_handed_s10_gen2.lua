@@ -68,7 +68,7 @@ object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_s10_gen2 = o
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = MELEEATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
 	damageType = LIGHTSABER,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
@@ -101,7 +101,7 @@ object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_s10_gen2 = o
 	healthAttackCost = 25,
 	actionAttackCost = 47,
 	mindAttackCost = 45,
-	forceCost = 24,
+	forceCost = 0,
 
 	pointBlankRange = 0,
 	pointBlankAccuracy = 20,

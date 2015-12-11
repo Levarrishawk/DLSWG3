@@ -45,16 +45,16 @@ FlameCone1Command = {
         name = "flamecone1",
 
 	damageMultiplier = 5,
-	speedMultiplier = 4,
-	healthCostMultiplier = 1.5,
-	actionCostMultiplier = 0.5,
-	mindCostMultiplier = 0.5,
-	accuracyBonus = 0,
+  speedMultiplier = 4,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 2.5,
+  mindCostMultiplier = 0,
+  accuracyBonus = 0,
 
-	coneAngle = 45,
-	coneAction = true,
+  coneAngle = 45,
+  coneAction = true,
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animationCRC = hashCode("fire_flame_thrower_cone_1_light"),
 	combatSpam = "flamecone1",
@@ -64,7 +64,7 @@ FlameCone1Command = {
 		{"resistance_fire", "fire_resist"},
 		HEALTH,
 		true,
-		0,
+		100,
 		100,
 		100, 
 		60,

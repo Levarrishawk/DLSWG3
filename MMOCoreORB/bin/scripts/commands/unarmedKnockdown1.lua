@@ -44,12 +44,14 @@
 UnarmedKnockdown1Command = {
         name = "unarmedknockdown1",
 
-	damageMultiplier = 1.0,
-	speedMultiplier = 1.5,
-	healthCostMultiplier = 1,
-	actionCostMultiplier = 1,
-	mindCostMultiplier = 1,
+	damageMultiplier = 2,
+  speedMultiplier = 1.5,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 4.5,
+  mindCostMultiplier = 0,
         accuracyBonus = 15,
+
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	stateEffects = {
 	  StateEffect( 
@@ -57,8 +59,8 @@ UnarmedKnockdown1Command = {
 		{ "knockdownRecovery", "lastKnockdown" }, 
 		{ "knockdown_defense" }, 
 		{}, 
+		40, 
 		100, 
-		0, 
 		0 
 	  )
 	},

@@ -60,7 +60,7 @@ Warcry2Command = {
 		{}, 
 		100, 
 		0, 
-		20 
+		8 
 	  )
 	},
 
@@ -72,7 +72,7 @@ Warcry2Command = {
 	coneAction = true,
 	coneAngle = 30,
 
-	poolsToDamage = NO_ATTRIBUTE
+	poolsToDamage = 0
 }
 
 AddCommand(Warcry2Command)

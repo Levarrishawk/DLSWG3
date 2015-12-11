@@ -45,16 +45,18 @@ PointBlankArea1Command = {
 	name = "pointblankarea1",
 
 	damageMultiplier = 2,
-	speedMultiplier = 1.5,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 1.25,
-	mindCostMultiplier = 0.5,
-	accuracyBonus = 15,
+  speedMultiplier = 0.5,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 2.25,
+  mindCostMultiplier = 0,
+  accuracyBonus = 15,
 
-	coneAngle = 15,
-	coneAction = true,
+  coneAngle = 15,
+  coneAction = true,
 
-	animationCRC = hashCode("fire_area_no_trails_light"),
+  animationCRC = hashCode("fire_area_no_trails_light"),
+  
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	combatSpam = "pointblankblast",
 	

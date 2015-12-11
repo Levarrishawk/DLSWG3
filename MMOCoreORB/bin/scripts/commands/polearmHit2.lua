@@ -44,24 +44,15 @@
 PolearmHit2Command = {
         name = "polearmhit2",
 
-	damageMultiplier = 2.5,
-	speedMultiplier = 2.0,
-	healthCostMultiplier = 1.5,
-	actionCostMultiplier = 1.0,
-	mindCostMultiplier = 1.0,
-	accuracyBonus = 10,
+	damageMultiplier = 3.5,
+  speedMultiplier = 2,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3,
+  mindCostMultiplier = 0,
 
-	stateEffects = {
-	  StateEffect( 
-		STUN_EFFECT, 
-		{}, 
-		{ "stun_defense", "resistance_states" }, 
-		{ "jedi_state_defense" }, 
-		75, 
-		0, 
-		45 
-	  )
-	},
+	
+	
+	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animationCRC = hashCode("combo_3a_medium"),
 

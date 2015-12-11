@@ -44,14 +44,14 @@
 UnarmedLegHit1Command = {
         name = "unarmedleghit1",
 
-	damageMultiplier = 2.5,
-	speedMultiplier = 2.0,
-	healthCostMultiplier = 1.75,
-	actionCostMultiplier = 1.75,
-	mindCostMultiplier = 1.75,
-        accuracyBonus = 15,
+	damageMultiplier = 4.5,
+  speedMultiplier = 2.5,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3.5,
+  mindCostMultiplier = 0,
+        --accuracyBonus = 15,
 
-	poolsToDamage = ACTION_ATTRIBUTE,
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animationCRC = hashCode("attack_special_foot_stomp_medium"),
 

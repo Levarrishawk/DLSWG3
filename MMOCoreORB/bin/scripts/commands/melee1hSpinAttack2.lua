@@ -44,11 +44,11 @@
 Melee1hSpinAttack2Command = {
         name = "melee1hspinattack2",
 
-	damageMultiplier = 3.0,
-	speedMultiplier = 2.5,
-	healthCostMultiplier = 1.25,
-	actionCostMultiplier = 1.25,
-	mindCostMultiplier = 2.0,
+	damageMultiplier = 3.25,
+  speedMultiplier = 3.5,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 2.5,
+  mindCostMultiplier = 0,
         accuracyBonus = 25,
 
 	animationCRC = hashCode("lower_posture_2hmelee_6"),
@@ -56,8 +56,9 @@ Melee1hSpinAttack2Command = {
 	combatSpam = "blindspin",
 
 	areaAction = true,
-	areaRange = 16,
-
+	areaRange = 7,
+  poolsToDamage = HEALTH_ATTRIBUTE,
+  
 	stateEffects = {
 	  StateEffect( 
 		BLIND_EFFECT, 

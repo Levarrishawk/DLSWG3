@@ -13,7 +13,7 @@ professions = {
 	"combat_brawler",
 	"combat_marksman",
 	"crafting_artisan",
-	"jedi",
+	"jedi_pad",
 	"outdoors_scout",
 	"science_medic",
 	"social_entertainer"
@@ -47,11 +47,15 @@ marojMelon = "object/tangible/food/foraged/foraged_fruit_s1.iff"
 
 x31Speeder = "object/tangible/deed/vehicle_deed/landspeeder_x31_deed.iff"
 
+robe = "object/tangible/wearables/robe/robe_jedi_padawan.iff"
+
+saber = "object/weapon/melee/sword/crafted_saber/sword_lightsaber_s9_training.iff"
+
 professionSpecificItems = {
 	combat_brawler = { brawlerOneHander, brawlerTwoHander, brawlerPolearm },
 	combat_marksman = { marksmanPistol, marksmanCarbine, marksmanRifle },
 	crafting_artisan = { genericTool, mineralTool, chemicalTool },
-	jedi = { },
+	jedi_pad = { saber, robe, genericTool, mineralTool, chemicalTool },
 	outdoors_scout = { genericTool },
 	science_medic = { foodTool },
 	social_entertainer = { slitherhorn }

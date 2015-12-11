@@ -43,7 +43,7 @@
 
 DefaultAttackCommand = {
         name = "defaultattack",
-	damageMultiplier = 1,
+	damageMultiplier = 0.125,
 	speedMultiplier = 1,
 
 	combatSpam = "attack",
@@ -55,7 +55,7 @@ DefaultAttackCommand = {
 
 	range = -1,
 
-	poolsToDamage = RANDOM_ATTRIBUTE
+	poolsToDamage = HEALTH_ATTRIBUTE
 }
 
 AddCommand(DefaultAttackCommand)

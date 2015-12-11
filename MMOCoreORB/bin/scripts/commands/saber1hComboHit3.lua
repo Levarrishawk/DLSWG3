@@ -44,9 +44,10 @@
 Saber1hComboHit3Command = {
         name = "saber1hcombohit3",
         
-    damageMultiplier = 3.5,
-	speedMultiplier = 3,
-	forceCostMultiplier = 2.25,
+  damageMultiplier = 3.5,
+	speedMultiplier = 1,
+	actionCostMultiplier = 1.25,  
+	forceCostMultiplier = 2,
 
 	animationCRC = hashCode("showoff_1_light"),
 	
@@ -64,7 +65,7 @@ Saber1hComboHit3Command = {
 
 	combatSpam = "saber1hcombohit3",
 	
-	poolsToDamage = HEALTH_ATTRIBUTE + ACTION_ATTRIBUTE + MIND_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 	
 	weaponType = ONEHANDJEDIWEAPON,
 

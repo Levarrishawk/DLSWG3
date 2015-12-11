@@ -44,14 +44,14 @@
 UnarmedHeadHit1Command = {
         name = "unarmedheadhit1",
 
-	damageMultiplier = 2.5,
-	speedMultiplier = 2.0,
-	healthCostMultiplier = 1.75,
-	actionCostMultiplier = 1.75,
-	mindCostMultiplier = 1.75,
-        accuracyBonus = 15,
+	damageMultiplier = 4,
+  speedMultiplier = 2.5,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 5,
+  mindCostMultiplier = 0,
+        --accuracyBonus = 15,
 
-	poolsToDamage = MIND_ATTRIBUTE,
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animationCRC = hashCode("knockdown_unarmed_1"),
 

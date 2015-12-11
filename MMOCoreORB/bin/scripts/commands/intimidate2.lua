@@ -53,23 +53,23 @@ Intimidate2Command = {
 	accuracySkillMod = "intimidate",
 
 	stateEffects = {
-	  StateEffect( 
-		INTIMIDATE_EFFECT, 
-		{}, 
-		{}, 
-		{}, 
-		100, 
-		0, 
-		120 
-	  )
-	},
+    StateEffect( 
+    INTIMIDATE_EFFECT, 
+    {}, 
+    { "intimidate_defense", "resistance_states" }, 
+    { "jedi_state_defense" }, 
+    80, 
+    0, 
+    17 
+    )
+  },
 
 	combatSpam = "intim",
 	animationCRC = hashCode("intimidate"),
 	effectString = "clienteffect/combat_special_attacker_intimidate.cef",
 	range = 24,
 
-	poolsToDamage = NO_ATTRIBUTE
+	poolsToDamage = 0
 }
 
 AddCommand(Intimidate2Command)

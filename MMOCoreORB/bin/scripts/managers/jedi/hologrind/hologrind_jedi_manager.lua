@@ -15,6 +15,8 @@ HologrindJediManager = JediManager:new {
 
 -- Return a list of all professions and their badge number that are available for the hologrind
 -- @return a list of professions and their badge numbers.
+
+--[[
 function HologrindJediManager:getGrindableProfessionList()
 	local grindableProfessions = {
 		-- String Id, badge number, profession name
@@ -23,66 +25,42 @@ function HologrindJediManager:getGrindableProfessionList()
 		--{ "pilot_neutral_corellia", 		PILOT_CORELLIA },
 		--{ "pilot_rebel_navy_tatooine", 	PILOT_REBEL_NAVY_TATOOINE },
 		--{ "pilot_imperial_navy_naboo", 	PILOT_IMPERIAL_NAVY_NABOO },
-		{ "crafting_architect_master", 		CRAFTING_ARCHITECT_MASTER  },
-		{ "crafting_armorsmith_master", 	CRAFTING_ARMORSMITH_MASTER  },
-		{ "crafting_artisan_master", 		CRAFTING_ARTISAN_MASTER  },
-		{ "outdoors_bio_engineer_master", 	OUTDOORS_BIOENGINEER_MASTER  },
-		{ "combat_bountyhunter_master", 	COMBAT_BOUNTYHUNTER_MASTER  },
-		{ "combat_brawler_master", 		COMBAT_BRAWLER_MASTER  },
-		{ "combat_carbine_master", 		COMBAT_CARBINE_MASTER  },
-		{ "crafting_chef_master", 		CRAFTING_CHEF_MASTER  },
-		{ "science_combatmedic_master", 	SCIENCE_COMBATMEDIC_MASTER  },
-		{ "combat_commando_master", 		COMBAT_COMMANDO_MASTER  },
-		{ "outdoors_creaturehandler_master", 	OUTDOORS_CREATUREHANDLER_MASTER  },
-		{ "social_dancer_master", 		SOCIAL_DANCER_MASTER  },
-		{ "science_doctor_master", 		SCIENCE_DOCTOR_MASTER  },
-		{ "crafting_droidengineer_master", 	CRAFTING_DROIDENGINEER_MASTER  },
-		{ "social_entertainer_master", 		SOCIAL_ENTERTAINER_MASTER  },
-		{ "combat_1hsword_master", 		COMBAT_1HSWORD_MASTER  },
-		{ "social_imagedesigner_master", 	SOCIAL_IMAGEDESIGNER_MASTER  },
-		{ "combat_marksman_master", 		COMBAT_MARKSMAN_MASTER  },
-		{ "science_medic_master", 		SCIENCE_MEDIC_MASTER  },
-		{ "crafting_merchant_master", 		CRAFTING_MERCHANT_MASTER  },
-		{ "social_musician_master", 		SOCIAL_MUSICIAN_MASTER  },
-		{ "combat_polearm_master", 		COMBAT_POLEARM_MASTER  },
-		{ "combat_pistol_master", 		COMBAT_PISTOL_MASTER  },
-		--{ "social_politician_master", 	SOCIAL_POLITICIAN_MASTER  },
-		{ "outdoors_ranger_master", 		OUTDOORS_RANGER_MASTER  },
-		{ "combat_rifleman_master", 		COMBAT_RIFLEMAN_MASTER  },
-		{ "outdoors_scout_master", 		OUTDOORS_SCOUT_MASTER  },
-		--{ "crafting_shipwright", 		CRAFTING_SHIPWRIGHT },
-		{ "combat_smuggler_master", 		COMBAT_SMUGGLER_MASTER  },
-		{ "outdoors_squadleader_master", 	OUTDOORS_SQUADLEADER_MASTER  },
-		{ "combat_2hsword_master", 		COMBAT_2HSWORD_MASTER  },
-		{ "crafting_tailor_master", 		CRAFTING_TAILOR_MASTER  },
-		{ "crafting_weaponsmith_master", 	CRAFTING_WEAPONSMITH_MASTER  },
-		--{ "pilot_neutral_naboo", 		PILOT_NEUTRAL_NABOO },
-		--{ "pilot_neutral_tatooine", 		PILOT_TATOOINE },
-		--{ "pilot_imperial_navy_tatooine", 	PILOT_IMPERIAL_NAVY_TATOOINE },
-		{ "combat_unarmed_master", 		COMBAT_UNARMED_MASTER  },
+	
+		{ "jedi_pad_novice", 		JEDI_PAD_NOVICE  },
 		--{ "pilot_rebel_navy_naboo", 		PILOT_REBEL_NAVY_NABOO }
 	}
 	return grindableProfessions
 end
 
+--]]
+
 -- Handling of the onPlayerCreated event.
 -- Hologrind professions will be generated for the player.
 -- @param pCreatureObject pointer to the creature object of the created player.
+
+
 function HologrindJediManager:onPlayerCreated(pCreatureObject)
-	local skillList = self:getGrindableProfessionList()
-	ObjectManager.withCreaturePlayerObject(pCreatureObject, function(playerObject)
-		for i = 1, NUMBEROFPROFESSIONSTOMASTER, 1 do
-			local numberOfSkillsInList = table.getn(skillList)
-			local skillNumber = getRandomNumber(1, numberOfSkillsInList)
-			playerObject:addHologrindProfession(skillList[skillNumber][2])
-			table.remove(skillList, skillNumber)
-		end
+
+  ObjectManager.withCreaturePlayerObject(pCreatureObject, function(playerObject)
+    playerObject:setJediState(2)
+--	local skillList = self:getGrindableProfessionList()
+--	ObjectManager.withCreaturePlayerObject(pCreatureObject, function(playerObject)
+--		for i = 1, NUMBEROFPROFESSIONSTOMASTER, 1 do
+--			local numberOfSkillsInList = table.getn(skillList)
+--			local skillNumber = getRandomNumber(1, numberOfSkillsInList)
+--			playerObject:addHologrindProfession(skillList[skillNumber][2])
+--			table.remove(skillList, skillNumber)
+--		end
 	end)
 end
 
 -- Check and count the number of mastered hologrind professions.
 -- @param pCreatureObject pointer to the creature object of the player which should get its number of mastered professions counted.
 -- @return the number of mastered hologrind professions.
+
+--[[
+
+
 function HologrindJediManager:getNumberOfMasteredProfessions(pCreatureObject)
 	return ObjectManager.withCreaturePlayerObject(pCreatureObject, function(playerObject)
 		local professions = playerObject:getHologrindProfessions()
@@ -121,8 +99,7 @@ end
 -- @param pCreatureObject pointer to the creature object of the player who unlocked jedi.
 function HologrindJediManager:awardJediStatusAndSkill(pCreatureObject)
 	ObjectManager.withCreaturePlayerObject(pCreatureObject, function(playerObject)
-		awardSkill(pCreatureObject, "force_title_jedi_novice")
-		playerObject:setJediState(1)
+		playerObject:setJediState(2)
 	end)
 end
 
@@ -220,6 +197,7 @@ function HologrindJediManager:useItem(pSceneObject, itemType, pCreatureObject)
 		end
 	end
 end
+--]]
 
 registerScreenPlay("HologrindJediManager", true)
 

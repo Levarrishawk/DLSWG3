@@ -44,48 +44,47 @@
 FullAutoSingle1Command = {
         name = "fullautosingle1",
 
-	damageMultiplier = 2,
-	speedMultiplier = 1.5,
-	healthCostMultiplier = 1.75,
-	actionCostMultiplier = 2.5,
-	mindCostMultiplier = 0.5,
-	accuracyBonus = 25,
+	damageMultiplier = 1.5,
+  speedMultiplier = 1.65,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3.5,
+  mindCostMultiplier = 0,
 
-	animationCRC = hashCode("fire_5_special_single_medium"),
+  animationCRC = hashCode("fire_5_special_single_medium"),
 
-	combatSpam = "fullautoattack",
+  combatSpam = "fullautoattack",
 
-	stateEffects = {
-	  StateEffect( 
-		DIZZY_EFFECT, 
-		{}, 
-		{ "dizzy_defense", "resistance_states" }, 
-		{ "jedi_state_defense" }, 
-		30, 
-		0, 
-		30 
-	  ),
-	  StateEffect( 
-		BLIND_EFFECT, 
-		{}, 
-		{ "blind_defense", "resistance_states" }, 
-		{ "jedi_state_defense" }, 
-		30, 
-		0, 
-		40 
-	  ),
-	  StateEffect( 
-		STUN_EFFECT, 
-		{}, 
-		{ "stun_defense", "resistance_states" }, 
-		{ "jedi_state_defense" }, 
-		30, 
-		0, 
-		30 
-	  )
-	},
+  stateEffects = {
+    StateEffect( 
+    DIZZY_EFFECT, 
+    {}, 
+    { "dizzy_defense", "resistance_states" }, 
+    { "jedi_state_defense" }, 
+    30, 
+    100, 
+    2 
+    ),
+    StateEffect( 
+    BLIND_EFFECT, 
+    {}, 
+    { "blind_defense", "resistance_states" }, 
+    { "jedi_state_defense" }, 
+    30, 
+    100, 
+    4 
+    ),
+    StateEffect( 
+    STUN_EFFECT, 
+    {}, 
+    { "stun_defense", "resistance_states" }, 
+    { "jedi_state_defense" }, 
+    30, 
+    100, 
+    4
+    )
+  },
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+  poolsToDamage = HEALTH_ATTRIBUTE,
 	
 	weaponType = CARBINEWEAPON,
 

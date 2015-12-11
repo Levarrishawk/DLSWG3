@@ -45,11 +45,11 @@ PanicShotCommand = {
         name = "panicshot",
 
 	damageMultiplier = 2.0,
-	speedMultiplier = 3.0,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 1.25,
-	mindCostMultiplier = 0.5,
-	accuracyBonus = 50,
+  speedMultiplier = 3.0,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 2.25,
+  mindCostMultiplier = 0,
+  accuracyBonus = 50,
 
 	stateEffects = {
 	  StateEffect( 
@@ -64,6 +64,8 @@ PanicShotCommand = {
 	},
 
 	animationCRC = hashCode("fire_1_special_single_light"),
+	
+	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	combatSpam = "panicshot",
 

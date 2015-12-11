@@ -44,16 +44,16 @@
 PolearmSpinAttack1Command = {
 	name = "polearmspinattack1",
 
-	damageMultiplier = 1.5,
-	speedMultiplier = 1.5,
+	damageMultiplier = 3.25,
+	speedMultiplier = 1.75,
 	accuracyBonus = 10,
 	
-	healthCostMultiplier = 1.5,
-	actionCostMultiplier = 1.0,
-	mindCostMultiplier = 1.0,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 3.5,
+	mindCostMultiplier = 0,
 
 	areaAction = true,
-	areaRange = 16,
+	areaRange = 7,
 
 	animationCRC = hashCode("attack_high_left_light_2"),
 

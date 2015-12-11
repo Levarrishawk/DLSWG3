@@ -42,7 +42,6 @@
 
 
 object_weapon_melee_sword_base_crafted_lightsaber_base = object_weapon_melee_sword_base_shared_crafted_lightsaber_base:new {
-	weaponType = ONEHANDJEDIWEAPON,
 
 	objectMenuComponent = {"cpp", "LightsaberObjectMenuComponent"},
 	--gameObjectType = 131088,

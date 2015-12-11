@@ -44,14 +44,14 @@
 StoppingShotCommand = {
         name = "stoppingshot",
 
-	damageMultiplier = 5.0,
-	speedMultiplier = 2.5,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 1.25,
-	mindCostMultiplier = 0.5,
-	accuracyBonus = 50,
+	damageMultiplier = 9,
+  speedMultiplier = 2.5,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3,
+  mindCostMultiplier = 0,
+  --accuracyBonus = 50,
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animationCRC = hashCode("fire_1_special_single_light"),
 

@@ -44,14 +44,13 @@
 UnarmedHit1Command = {
 	name = "unarmedhit1",
 
-	damageMultiplier = 2.0,
-	speedMultiplier = 1.5,
-	accuracyBonus = 15,
-	
-	healthCostMultiplier = 1.0,
-	actionCostMultiplier = 1.0,
-	mindCostMultiplier = 1.0,
+	damageMultiplier = 2.25,
+  speedMultiplier = 0.5,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3.5,
+  mindCostMultiplier = 0,
 
+  poolsToDamage = HEALTH_ATTRIBUTE,
 	animationCRC = hashCode("combo_2d_light"),
 
 	combatSpam = "steelhands",

@@ -88,12 +88,12 @@ object_tangible_wearables_armor_tantel_armor_tantel_skreej_chest_plate = object_
 				"object/mobile/vendor/zabrak_male.iff" },
 
 	-- Damage types in WeaponObject
-	vulnerability = NONE,
+	vulnerability = LIGHTSABER,
 
 	-- These are default Blue Frog stats
-	healthEncumbrance = 75,
-	actionEncumbrance = 25,
-	mindEncumbrance = 7,
+	healthEncumbrance = 1,
+	actionEncumbrance = 1,
+	mindEncumbrance = 1,
 
 	-- LIGHT, MEDIUM, HEAVY
 	rating = LIGHT,
@@ -106,15 +106,15 @@ object_tangible_wearables_armor_tantel_armor_tantel_skreej_chest_plate = object_
 	heat = 15,
 	cold = 15,
 	acid = 15,
-	lightSaber = 15,
+	lightSaber = 0,
 
 	numberExperimentalProperties = {1, 1, 1, 2, 2, 2, 2, 2, 2, 1, 1, 2, 1},
-	experimentalProperties = {"XX", "XX", "XX", "OQ", "SR", "OQ", "SR", "OQ", "UT", "MA", "OQ", "MA", "OQ", "MA", "OQ", "XX", "XX", "OQ", "SR", "XX"},
+	experimentalProperties = {"XX", "XX", "XX", "OQ", "SR", "OQ", "SR", "OQ", "UT", "MA", "OQ", "MA", "OQ", "XX", "XX", "XX", "XX", "OQ", "SR", "XX"},
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-	experimentalGroupTitles = {"null", "null", "null", "exp_durability", "exp_quality", "exp_durability", "exp_durability", "exp_durability", "exp_durability", "null", "null", "exp_resistance", "null"},
+	experimentalGroupTitles = {"null", "null", "null", "exp_durability", "exp_quality", "exp_durability", "null", "null", "null", "null", "null", "exp_resistance", "null"},
 	experimentalSubGroupTitles = {"null", "null", "sockets", "hit_points", "armor_effectiveness", "armor_integrity", "armor_health_encumbrance", "armor_action_encumbrance", "armor_mind_encumbrance", "armor_rating", "armor_special_type", "armor_special_effectiveness", "armor_special_integrity"},
-	experimentalMin = {0, 0, 0, 1000, 1, 11250, 94, 33, 9, 1, 2, 5, 11250},
-	experimentalMax = {0, 0, 0, 1000, 20, 18750, 56, 20, 5, 1, 2, 30, 18750},
+	experimentalMin = {0, 0, 0, 1000, 1, 11250, 0, 0, 0, 1, 2, 5, 11250},
+	experimentalMax = {0, 0, 0, 1000, 20, 18750, 0, 0, 0, 1, 2, 30, 18750},
 	experimentalPrecision = {0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 4, 1, 1, 1, 1, 1, 1, 4, 4, 4, 1},
 }

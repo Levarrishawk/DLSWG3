@@ -44,32 +44,33 @@
 Melee1hLunge1Command = {
 	name = "melee1hlunge1",
 
-	damageMultiplier = 2.0,
-	speedMultiplier = 1.5,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 0.5,
-	mindCostMultiplier = 1.0,
-        accuracyBonus = 25,
+damageMultiplier = 1.5,
+  speedMultiplier = 1,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 2.5,
+  mindCostMultiplier = 0,
+  
+  poolsToDamage = HEALTH_ATTRIBUTE,
+  animationCRC = hashCode("lower_posture_1hmelee_1"),
 
-	animationCRC = hashCode("lower_posture_1hmelee_1"),
+  combatSpam = "lungestab",
 
-	combatSpam = "lungestab",
-
-	range = 20,
-
+  range = 8,
+	
 	weaponType = ONEHANDMELEEWEAPON,
 
 	stateEffects = {
-	  StateEffect(
-		POSTUREDOWN_EFFECT,
-		{ "postureDownRecovery" },
-		{ "posture_change_down_defense" },
-		{},
-		100,
-		0,
-		0
+	  StateEffect( 
+		POSTUREDOWN_EFFECT, 
+		{ "postureDownRecovery" }, 
+		{ "posture_change_down_defense" }, 
+		{}, 
+		60, 
+		60, 
+		0 
 	  )
 	}
 }
 
 AddCommand(Melee1hLunge1Command)
+

@@ -44,13 +44,13 @@
 PolearmSweep1Command = {
 	name = "polearmsweep1",
 
-	damageMultiplier = 2.0,
-	speedMultiplier = 1.5,
-	accuracyBonus = 10,
-	
-	healthCostMultiplier = 1.5,
-	actionCostMultiplier = 1.0,
-	mindCostMultiplier = 1.0,
+	damageMultiplier = 2.70,
+  speedMultiplier = 1.75,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 4,
+  mindCostMultiplier = 0,
+
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	stateEffects = {
 	  StateEffect( 

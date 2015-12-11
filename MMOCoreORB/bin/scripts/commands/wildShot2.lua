@@ -44,33 +44,33 @@
 WildShot2Command = {
         name = "wildshot2",
 
-	damageMultiplier = 3.0,
-	speedMultiplier = 2.0,
-	healthCostMultiplier = 2.0,
-	actionCostMultiplier = 1.25,
-	mindCostMultiplier = 0.5,
-	accuracyBonus = 25,
+	damageMultiplier = 2.0,
+  speedMultiplier = 2.0,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3.5,
+  mindCostMultiplier = 0,
+  --accuracyBonus = 25,
 
-	animationCRC = hashCode("fire_7_single_medium"),
+  animationCRC = hashCode("fire_7_single_medium"),
 
-	combatSpam = "widewildshot",
-	
-	coneAngle = 30,
-	coneAction = true,
+  combatSpam = "widewildshot",
+  
+  coneAngle = 30,
+  coneAction = true,
 
-	stateEffects = {
-	  StateEffect( 
-		STUN_EFFECT, 
-		{}, 
-		{ "stun_defense", "resistance_states" }, 
-		{ "jedi_state_defense" }, 
-		50, 
-		0, 
-		30 
-	  )
-	},
+  stateEffects = {
+    StateEffect( 
+    STUN_EFFECT, 
+    {}, 
+    { "stun_defense", "resistance_states" }, 
+    { "jedi_state_defense" }, 
+    30, 
+    100, 
+    10 
+    )
+  },
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+  poolsToDamage = HEALTH_ATTRIBUTE,
 	
 	weaponType = CARBINEWEAPON,
 

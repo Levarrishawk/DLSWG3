@@ -44,14 +44,14 @@
 UnarmedCombo2Command = {
 	name = "unarmedcombo2",
 
-	damageMultiplier = 3.0,
-	speedMultiplier = 4.0,
-	healthCostMultiplier = 2.0,
-	actionCostMultiplier = 2.0,
-	mindCostMultiplier = 2.0,
-        accuracyBonus = 15,
+	damageMultiplier = 5,
+  speedMultiplier = 3,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 4,
+  mindCostMultiplier = 0,
+        --accuracyBonus = 15,
 
-	poolsToDamage = HEALTH_ATTRIBUTE + ACTION_ATTRIBUTE + MIND_ATTRIBUTE,
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animationCRC = hashCode("combo_4a_light"),
 

@@ -43,11 +43,11 @@
 
 Melee2hArea2Command = {
         name = "melee2harea2",
-	damageMultiplier = 3.0,
-	speedMultiplier = 2.0,
-	healthCostMultiplier = 1.0,
-	actionCostMultiplier = 2.0,
-	mindCostMultiplier = 1.0,
+	damageMultiplier = 2.75,
+  speedMultiplier = 2.7,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3.25,
+  mindCostMultiplier = 0,
         accuracyBonus = 10,
 
 	stateEffects = {
@@ -56,15 +56,16 @@ Melee2hArea2Command = {
 		{ "postureDownRecovery" }, 
 		{ "posture_change_down_defense" }, 
 		{}, 
+		15, 
 		100, 
-		0, 
 		0 
 	  )
 	},
 
-	areaRange = 16,
+	areaRange = 7,
 	areaAction = true,
 
+  poolsToDamage = HEALTH_ATTRIBUTE,
 	animationCRC = hashCode("combo_4b_medium"),
 
 	combatSpam = "descendingslam",

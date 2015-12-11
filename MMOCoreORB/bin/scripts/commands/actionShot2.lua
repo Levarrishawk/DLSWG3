@@ -45,15 +45,15 @@ ActionShot2Command = {
         name = "actionshot2",
 
 	damageMultiplier = 2.0,
-	speedMultiplier = 2.0,
-	healthCostMultiplier = 2.0,
-	actionCostMultiplier = 1.25,
-	mindCostMultiplier = 0.5,
+  speedMultiplier = 4.0,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 4,
+  mindCostMultiplier = 0,
 
-	coneAngle = 15,
-	coneAction = true,
+  coneAngle = 30,
+  coneAction = true,
 
-	poolsToDamage = ACTION_ATTRIBUTE,
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animationCRC = hashCode("fire_area_medium"),
 
@@ -77,7 +77,7 @@ ActionShot2Command = {
 		{ "resistance_bleeding", "bleed_resist" },
 		ACTION,
 		true,
-		0,
+		125,
 		100,
 		60, 
 		60

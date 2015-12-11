@@ -44,14 +44,14 @@
 CripplingShotCommand = {
         name = "cripplingshot",
 
-	damageMultiplier = 5.0,
-	speedMultiplier = 2.0,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 2.0,
-	mindCostMultiplier = 0.5,
-	accuracyBonus = 25,
+	damageMultiplier = 5.75,
+  speedMultiplier = 3,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 5,
+  mindCostMultiplier = 0,
+  accuracyBonus = 25,
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animationCRC = hashCode("fire_5_single_light_face"),
 

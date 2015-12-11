@@ -44,11 +44,11 @@
 SuppressionFire2Command = {
         name = "suppressionfire2",
 
-	damageMultiplier = 2.5,
-	speedMultiplier = 1.5,
-	healthCostMultiplier = 2.0,
-	actionCostMultiplier = 1.25,
-	mindCostMultiplier = 0.5,
+	damageMultiplier = 3,
+  speedMultiplier = 2,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3.5,
+  mindCostMultiplier = 0,
 	accuracyBonus = 25,
 
 	stateEffects = {
@@ -63,7 +63,7 @@ SuppressionFire2Command = {
 	  )
 	},
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animationCRC = hashCode("fire_area_medium"),
 

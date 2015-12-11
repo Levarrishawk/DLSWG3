@@ -44,15 +44,15 @@
 PolearmHit1Command = {
 	name = "polearmhit1",
 
-	damageMultiplier = 2.0,
-	speedMultiplier = 1.5,
-	accuracyBonus = 10,
-	
-	healthCostMultiplier = 1.0,
-	actionCostMultiplier = 0.5,
-	mindCostMultiplier = 0.5,
+	damageMultiplier = 2.25,
+  speedMultiplier = 1,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3,
+  mindCostMultiplier = 0,
 
 	animationCRC = hashCode("combo_2b_light"),
+	
+	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	combatSpam = "bonebruiser",
 	

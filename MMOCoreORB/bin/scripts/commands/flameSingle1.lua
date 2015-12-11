@@ -45,13 +45,13 @@ FlameSingle1Command = {
         name = "flamesingle1",
 
 	damageMultiplier = 5,
-	speedMultiplier = 4,
-	healthCostMultiplier = 1.5,
-	actionCostMultiplier = 0.5,
-	mindCostMultiplier = 0.5,
-	accuracyBonus = 0,
+  speedMultiplier = 4,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 2.5,
+  mindCostMultiplier = 0,
+  accuracyBonus = 0,
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animationCRC = hashCode("fire_flame_thrower_single_1_light"),
 	combatSpam = "flamesingle1",
@@ -61,7 +61,7 @@ FlameSingle1Command = {
 		{"resistance_fire", "fire_resist"},
 		HEALTH,
 		true,
-		0,
+		100,
 		100,
 		100, 
 		60,
