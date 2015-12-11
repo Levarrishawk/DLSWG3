@@ -1827,7 +1827,7 @@ void CreatureObjectImplementation::enqueueCommand(unsigned int actionCRC,
 		return;
 	}
 
-	if (commandQueue->size() > 15 && priority != QueueCommand::FRONT) {
+	if (commandQueue->size() > 0 && priority != QueueCommand::FRONT) {
 		clearQueueAction(actionCount);
 
 		return;
