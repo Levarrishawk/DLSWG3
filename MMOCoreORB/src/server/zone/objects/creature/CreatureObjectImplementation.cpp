@@ -147,8 +147,8 @@ void CreatureObjectImplementation::initializeMembers() {
 
 	shockWounds = 0;
 
-	accelerationMultiplierBase = 1.f;
-	accelerationMultiplierMod = 1.f;
+	accelerationMultiplierBase = 1.3f;
+	accelerationMultiplierMod = 1.3f;
 	speedMultiplierBase = 1.f;
 	speedMultiplierMod = 1.f;
 	currentSpeed = 0.f;
@@ -993,6 +993,10 @@ int CreatureObjectImplementation::inflictDamage(TangibleObject* attacker, int da
 
 	if (this->isIncapacitated() || this->isDead() || damage == 0)
 		return 0;
+
+	int action = getHAM(CreatureAttribute::ACTION);
+	if (action < 500)
+			setHAM(CreatureAttribute::ACTION, 1000);
 
 	int currentValue = hamList.get(damageType);
 
@@ -2514,8 +2518,9 @@ void CreatureObjectImplementation::activateHAMRegeneration(int latency) {
 	// this formula gives the amount of regen per second
 	uint32 healthTick = (uint32) ceil((float) MAX(0, getHAM(
 			CreatureAttribute::CONSTITUTION)) * 13.0f / 2100.0f * modifier);
-	uint32 actionTick = (uint32) ceil((float) MAX(0, getHAM(
-			CreatureAttribute::STAMINA)) * 13.0f / 2100.0f * modifier);
+	uint32 actionTick = 420;
+	/*uint32 actionTick = (uint32) ceil((float) MAX(0, getHAM(
+			CreatureAttribute::STAMINA)) * 13.0f / 2100.0f * modifier);*/
 	uint32 mindTick = (uint32) ceil((float) MAX(0, getHAM(
 			CreatureAttribute::WILLPOWER)) * 13.0f / 2100.0f * modifier);
 
