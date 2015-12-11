@@ -1830,6 +1830,8 @@ void CreatureObjectImplementation::enqueueCommand(unsigned int actionCRC,
 	if (commandQueue->size() > 0 && priority != QueueCommand::FRONT) {
 		clearQueueAction(actionCount);
 
+		//clear queue and send message to player that the client is busy with their current action.
+		sendSystemMessage("You can not activate another combat ability while one is in progress.");
 		return;
 	}
 
