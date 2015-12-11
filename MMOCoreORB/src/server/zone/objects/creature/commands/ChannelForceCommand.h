@@ -70,17 +70,19 @@ public:
 
 		playerObject->setForcePower(playerObject->getForcePower() + forceBonus);
 
-		creature->setMaxHAM(CreatureAttribute::HEALTH, maxHealth - forceBonus, true);
-		creature->setMaxHAM(CreatureAttribute::ACTION, maxAction - forceBonus, true);
-		creature->setMaxHAM(CreatureAttribute::MIND, maxMind - forceBonus, true);
+		creature->playEffect("clienteffect/pl_force_channel_self.cef");
 
-		creature->setHAM(CreatureAttribute::HEALTH, health - forceBonus, true);
-		creature->setHAM(CreatureAttribute::ACTION, action - forceBonus, true);
-		creature->setHAM(CreatureAttribute::MIND, mind - forceBonus, true);
+		//creature->setMaxHAM(CreatureAttribute::HEALTH, maxHealth - 1000, true);
+		//creature->setMaxHAM(CreatureAttribute::ACTION, maxAction - 200, true);
+		//creature->setMaxHAM(CreatureAttribute::MIND, maxMind - forceBonus, true);
+
+		creature->setHAM(CreatureAttribute::HEALTH, health - 1200, true);
+		//creature->setHAM(CreatureAttribute::ACTION, action - 200, true);
+		//creature->setHAM(CreatureAttribute::MIND, mind - forceBonus, true);
 
 		// Setup task.
-		Reference<ChannelForceRegenTask*> cfTask = new ChannelForceRegenTask(creature, forceBonus);
-		creature->addPendingTask("channelForceRegenTask", cfTask, 6000);
+	//	Reference<ChannelForceRegenTask*> cfTask = new ChannelForceRegenTask(creature, forceBonus);
+	//	creature->addPendingTask("channelForceRegenTask", cfTask, 6000);
 
 		return SUCCESS;
 	}
