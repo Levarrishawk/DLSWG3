@@ -1782,9 +1782,9 @@ int CombatManager::calculatePoolsToDamage(int poolsToDamage) {
 	if (poolsToDamage & RANDOM) {
 		int rand = System::random(100);
 
-		if (rand < 50) {
+		if (rand <= 100) {
 			poolsToDamage = HEALTH;
-		} else if (rand < 85) {
+		} else if (rand < 99) {
 			poolsToDamage = ACTION;
 		} else {
 			poolsToDamage = MIND;
@@ -1800,6 +1800,11 @@ int CombatManager::applyDamage(TangibleObject* attacker, WeaponObject* weapon, C
 
 	float ratio = weapon->getWoundsRatio();
 	float healthDamage = 0.f, actionDamage = 0.f, mindDamage = 0.f;
+
+	if (actionDamage > 0.f)
+			actionDamage = healthDamage;
+	if (mindDamage > 0.f)
+			mindDamage = healthDamage;
 
 	if (defender->isPlayerCreature() && defender->getPvpStatusBitmask() == CreatureFlag::NONE) {
 		return 0;
@@ -1829,30 +1834,30 @@ int CombatManager::applyDamage(TangibleObject* attacker, WeaponObject* weapon, C
 
 	if (poolsToDamage & ACTION) {
 		actionDamage = getArmorReduction(attacker, weapon, defender, damage * data.getActionDamageMultiplier(), ACTION, data) * damageMultiplier;
-		defender->inflictDamage(attacker, CreatureAttribute::ACTION, (int)actionDamage, true, xpType);
+		defender->inflictDamage(attacker, CreatureAttribute::HEALTH, (int)actionDamage, true, xpType);
 
 		if (System::random(100) < ratio)
-			defender->addWounds(CreatureAttribute::ACTION, 1, true);
+			defender->addWounds(CreatureAttribute::HEALTH, 1, true);
 
 		if (System::random(100) < ratio)
-			defender->addWounds(CreatureAttribute::QUICKNESS, 1, true);
+			defender->addWounds(CreatureAttribute::STRENGTH, 1, true);
 
 		if (System::random(100) < ratio)
-			defender->addWounds(CreatureAttribute::STAMINA, 1, true);
+			defender->addWounds(CreatureAttribute::CONSTITUTION, 1, true);
 	}
 
 	if (poolsToDamage & MIND) {
 		mindDamage = getArmorReduction(attacker, weapon, defender, damage * data.getMindDamageMultiplier(), MIND, data) * damageMultiplier;
-		defender->inflictDamage(attacker, CreatureAttribute::MIND, (int)mindDamage, true, xpType);
+		defender->inflictDamage(attacker, CreatureAttribute::HEALTH, (int)mindDamage, true, xpType);
 
 		if (System::random(100) < ratio)
-			defender->addWounds(CreatureAttribute::MIND, 1, true);
+			defender->addWounds(CreatureAttribute::HEALTH, 1, true);
 
 		if (System::random(100) < ratio)
-			defender->addWounds(CreatureAttribute::FOCUS, 1, true);
+			defender->addWounds(CreatureAttribute::STRENGTH, 1, true);
 
 		if (System::random(100) < ratio)
-			defender->addWounds(CreatureAttribute::WILLPOWER, 1, true);
+			defender->addWounds(CreatureAttribute::CONSTITUTION, 1, true);
 	}
 
 	// now splash damage
@@ -1869,7 +1874,7 @@ int CombatManager::applyDamage(TangibleObject* attacker, WeaponObject* weapon, C
 		weapon->decreasePowerupUses(attacker->asCreatureObject());
 	}
 
-	return (int) (healthDamage + actionDamage + mindDamage);
+	return (int) (healthDamage);// + actionDamage + mindDamage);
 }
 
 int CombatManager::applyDamage(CreatureObject* attacker, WeaponObject* weapon, TangibleObject* defender, int poolsToDamage, const CreatureAttackData& data) {
