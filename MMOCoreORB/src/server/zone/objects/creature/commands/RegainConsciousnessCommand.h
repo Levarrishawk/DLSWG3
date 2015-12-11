@@ -31,7 +31,7 @@ public:
 		}
 
 		// Force cost of skill.
-		int forceCost = 1000;
+		int forceCost = 10;
 
 
 		//Check for and deduct Force cost.
@@ -55,18 +55,18 @@ public:
 			// Do the 1 minute of grogginess suffering (no actions can be taken.)
 			// TODO: Unsure how to do this.
 
-			playerObject->setForcePower(playerObject->getForcePower() - forceCost);
+	//		playerObject->setForcePower(playerObject->getForcePower() - forceCost);
 
 			// Cut Force Regen in Half for 30 Minutes.
 
-			playerObject->setForcePowerRegen(playerObject->getForcePowerRegen() / 2);
+			playerObject->setForcePowerRegen(playerObject->getForcePowerRegen() / 1);
 
 			// Jedi experience loss.
-			PlayerManager* playerManager = server->getZoneServer()->getPlayerManager();
+		/*	PlayerManager* playerManager = server->getZoneServer()->getPlayerManager();
 			playerManager->awardExperience(creature, "jedi_general", -50000, true);
 
 			Reference<RegainConsciousnessRegenTask*> rcTask = new RegainConsciousnessRegenTask(creature, playerObject);
-			creature->addPendingTask("regainConsciousnessRegenTask", rcTask, (1800 * 1000));
+			creature->addPendingTask("regainConsciousnessRegenTask", rcTask, (1800 * 1000));*/
 
 			return SUCCESS;
 		}
