@@ -32,7 +32,7 @@ public:
 		}
 
 		// Force cost of skill.
-		int forceCost = 150;
+		int forceCost = 15;
 
 
 		//Check for and deduct Force cost.

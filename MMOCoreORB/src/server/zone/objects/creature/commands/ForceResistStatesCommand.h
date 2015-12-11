@@ -34,7 +34,7 @@ public:
 		uint32 buffcrc = BuffCRC::JEDI_RESIST_STATES;
 
 		// Force cost of skill.
-		int forceCost = 250;
+		int forceCost = 25;
 
 		//Check for and deduct Force cost.
 		ManagedReference<PlayerObject*> playerObject = creature->getPlayerObject();
