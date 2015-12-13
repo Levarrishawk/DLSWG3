@@ -10,17 +10,23 @@ startingBank = 1000
 skillPoints = 250
 
 professions = {
---	"combat_brawler",
---	"combat_marksman",
-	"crafting_artisan",
---	"jedi_pad",
---	"outdoors_scout",
---	"science_medic",
---	"social_entertainer"
+  "combat_commando",
+  "combat_marksman",
+  "combat_rifleman",
+  "combat_pistol",
+  "jedi_pad",
+  "outdoors_squadleader",
+  "outdoors_creaturehandler",
+  "science_medic",
+  "crafting_architect",
+  "crafting_armorsmith",
+  "crafting_droidengineer",
+  "crafting_chef",
+  "social_entertainer"
 }
 
 marksmanPistol = "object/weapon/ranged/pistol/pistol_cdef.iff"
-	
+  
 marksmanRifle = "object/weapon/ranged/rifle/rifle_cdef.iff"
 
 marksmanCarbine = "object/weapon/ranged/carbine/carbine_cdef.iff"
@@ -51,14 +57,20 @@ robe = "object/tangible/wearables/robe/robe_jedi_padawan.iff"
 
 saber = "object/weapon/melee/sword/crafted_saber/sword_lightsaber_s9_training.iff"
 
-professionSpecificItems = {
-	combat_brawler = { brawlerOneHander, brawlerTwoHander, brawlerPolearm },
-	combat_marksman = { marksmanPistol, marksmanCarbine, marksmanRifle },
-	crafting_artisan = { genericTool, mineralTool, chemicalTool },
-	jedi_pad = { robe, genericTool, mineralTool, chemicalTool },
-	outdoors_scout = { genericTool },
-	science_medic = { foodTool },
-	social_entertainer = { slitherhorn }
+professionSpecificItems = { 
+  combat_marksman = { marksmanPistol, marksmanCarbine, marksmanRifle },
+  combat_commando = { marksmanPistol, marksmanCarbine, marksmanRifle },
+  combat_rifleman = { marksmanPistol, marksmanCarbine, marksmanRifle },
+  combat_pistol = { marksmanPistol, marksmanCarbine, marksmanRifle },
+  jedi_pad = { saber, robe, genericTool, mineralTool, chemicalTool },
+  outdoors_squadleader = { genericTool },
+  outdoors_creaturehandler = { genericTool },
+  science_medic = { foodTool },
+  crafting_architect = { genericTool, mineralTool, chemicalTool },
+  crafting_armorsmith = { genericTool, mineralTool, chemicalTool }, 
+  crafting_droidengineer = { genericTool, mineralTool, chemicalTool }, 
+  crafting_chef = { genericTool, mineralTool, chemicalTool },     
+  social_entertainer = { slitherhorn }
 }
 
 commonStartingItems = { marojMelon, survivalKnife, x31Speeder }
