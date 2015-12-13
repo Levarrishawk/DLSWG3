@@ -10,13 +10,13 @@ startingBank = 1000
 skillPoints = 250
 
 professions = {
-	"combat_brawler",
-	"combat_marksman",
+--	"combat_brawler",
+--	"combat_marksman",
 	"crafting_artisan",
-	"jedi_pad",
-	"outdoors_scout",
-	"science_medic",
-	"social_entertainer"
+--	"jedi_pad",
+--	"outdoors_scout",
+--	"science_medic",
+--	"social_entertainer"
 }
 
 marksmanPistol = "object/weapon/ranged/pistol/pistol_cdef.iff"
