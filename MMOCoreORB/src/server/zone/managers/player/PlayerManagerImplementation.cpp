@@ -1162,7 +1162,7 @@ void PlayerManagerImplementation::disseminateExperience(TangibleObject* destruct
 				awardExperience(attacker, xpType, xpAmount);
 			}
 
-			combatXp = 1.f;
+			combatXp = xpAmount;
 
 			awardExperience(attacker, "combat_general", combatXp);
 
