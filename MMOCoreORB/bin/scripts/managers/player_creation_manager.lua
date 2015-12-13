@@ -10,12 +10,18 @@ startingBank = 1000
 skillPoints = 250
 
 professions = {
-	"combat_brawler",
+	"combat_commando",
 	"combat_marksman",
-	"crafting_artisan",
+	"combat_rifleman",
+	"combat_pistol",
 	"jedi_pad",
-	"outdoors_scout",
+	"outdoors_squadleader",
+	"outdoors_creaturehandler",
 	"science_medic",
+	"crafting_architect",
+	"crafting_armorsmith",
+	"crafting_droidengineer",
+	"crafting_chef",
 	"social_entertainer"
 }
 
@@ -54,10 +60,17 @@ saber = "object/weapon/melee/sword/crafted_saber/sword_lightsaber_s9_training.if
 professionSpecificItems = {
 	combat_brawler = { brawlerOneHander, brawlerTwoHander, brawlerPolearm },
 	combat_marksman = { marksmanPistol, marksmanCarbine, marksmanRifle },
-	crafting_artisan = { genericTool, mineralTool, chemicalTool },
+	combat_commando = { marksmanPistol, marksmanCarbine, marksmanRifle },
+	combat_rifleman = { marksmanPistol, marksmanCarbine, marksmanRifle },
+	combat_pistol = { marksmanPistol, marksmanCarbine, marksmanRifle },
 	jedi_pad = { saber, robe, genericTool, mineralTool, chemicalTool },
-	outdoors_scout = { genericTool },
+	outdoors_squadleader = { genericTool },
+	outdoors_creaturehandler = { genericTool },
 	science_medic = { foodTool },
+	crafting_architect = { genericTool, mineralTool, chemicalTool },
+	crafting_armorsmith = { genericTool, mineralTool, chemicalTool }, 
+	crafting_droidengineer = { genericTool, mineralTool, chemicalTool }, 
+	crafting_chef = { genericTool, mineralTool, chemicalTool }, 		
 	social_entertainer = { slitherhorn }
 }
 
