@@ -44,7 +44,7 @@
 FlameSingle2Command = {
        name = "flamesingle2",
 
-	damageMultiplier = 16,
+	damageMultiplier = 6,
   speedMultiplier = 4,
   healthCostMultiplier = 0,
   actionCostMultiplier = 3.0,
