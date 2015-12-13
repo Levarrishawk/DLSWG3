@@ -57,8 +57,7 @@ robe = "object/tangible/wearables/robe/robe_jedi_padawan.iff"
 
 saber = "object/weapon/melee/sword/crafted_saber/sword_lightsaber_s9_training.iff"
 
-professionSpecificItems = {
-	combat_brawler = { brawlerOneHander, brawlerTwoHander, brawlerPolearm },
+professionSpecificItems = {	
 	combat_marksman = { marksmanPistol, marksmanCarbine, marksmanRifle },
 	combat_commando = { marksmanPistol, marksmanCarbine, marksmanRifle },
 	combat_rifleman = { marksmanPistol, marksmanCarbine, marksmanRifle },
