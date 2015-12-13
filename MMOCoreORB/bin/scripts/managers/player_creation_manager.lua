@@ -10,18 +10,12 @@ startingBank = 1000
 skillPoints = 250
 
 professions = {
-	"combat_commando",
+	"combat_brawler",
 	"combat_marksman",
-	"combat_rifleman",
-	"combat_pistol",
+	"crafting_artisan",
 	"jedi_pad",
-	"outdoors_squadleader",
-	"outdoors_creaturehandler",
+	"outdoors_scout",
 	"science_medic",
-	"crafting_architect",
-	"crafting_armorsmith",
-	"crafting_droidengineer",
-	"crafting_chef",
 	"social_entertainer"
 }
 
@@ -57,19 +51,13 @@ robe = "object/tangible/wearables/robe/robe_jedi_padawan.iff"
 
 saber = "object/weapon/melee/sword/crafted_saber/sword_lightsaber_s9_training.iff"
 
-professionSpecificItems = {	
+professionSpecificItems = {
+	combat_brawler = { brawlerOneHander, brawlerTwoHander, brawlerPolearm },
 	combat_marksman = { marksmanPistol, marksmanCarbine, marksmanRifle },
-	combat_commando = { marksmanPistol, marksmanCarbine, marksmanRifle },
-	combat_rifleman = { marksmanPistol, marksmanCarbine, marksmanRifle },
-	combat_pistol = { marksmanPistol, marksmanCarbine, marksmanRifle },
+	crafting_artisan = { genericTool, mineralTool, chemicalTool },
 	jedi_pad = { saber, robe, genericTool, mineralTool, chemicalTool },
-	outdoors_squadleader = { genericTool },
-	outdoors_creaturehandler = { genericTool },
+	outdoors_scout = { genericTool },
 	science_medic = { foodTool },
-	crafting_architect = { genericTool, mineralTool, chemicalTool },
-	crafting_armorsmith = { genericTool, mineralTool, chemicalTool }, 
-	crafting_droidengineer = { genericTool, mineralTool, chemicalTool }, 
-	crafting_chef = { genericTool, mineralTool, chemicalTool }, 		
 	social_entertainer = { slitherhorn }
 }
 
