@@ -1161,15 +1161,10 @@ void PlayerManagerImplementation::disseminateExperience(TangibleObject* destruct
 				//Award individual expType
 				awardExperience(attacker, xpType, xpAmount);
 			}
-			if (attacker->isPet())
-			 			continue;
 
-			combatXp = xpAmount;
-
-			Locker crossLocker(attacker, destructedObject);
+			combatXp = 10.f;
 
 			awardExperience(attacker, "combat_general", combatXp);
-
 
 			//Check if the group leader is a squad leader
 			if (group == NULL)
