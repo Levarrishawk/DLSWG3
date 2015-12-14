@@ -70,34 +70,13 @@ SaberSlash2Command = {
 		75, 
 		60
 	  ),
-	  
-	  	DotEffect( 
-		BLEEDING, 
-		{ "resistance_bleeding", "bleed_resist" },
-		MIND,
-		true,
-		0,
-		100,
-		75, 
-		60
-	  ),
 	},
 	
-	stateEffects = {
-	  StateEffect( 
-		POSTUREDOWN_EFFECT, 
-		{ "postureDownRecovery" }, 
-		{ "posture_change_down_defense" }, 
-		{}, 
-		100, 
-		0, 
-		0 
-	  )
-	},
+	
 
 	combatSpam = "saberslash2",
 	
-	poolsToDamage = RANDOM_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 	
 	weaponType = JEDIWEAPON,
 

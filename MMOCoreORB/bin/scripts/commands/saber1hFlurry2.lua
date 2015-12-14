@@ -47,7 +47,7 @@ Saber1hFlurry2Command = {
         
   damageMultiplier = 4.0,
 	speedMultiplier = 1.0,
-	areaRange = 16,
+	areaRange = 10,
 	areaAction = true,
 	actionCostMultiplier = 1.25,  
 	forceCostMultiplier = 2.0,
@@ -67,9 +67,9 @@ Saber1hFlurry2Command = {
 		{}, 
 		{ "dizzy_defense", "resistance_states" }, 
 		{ "jedi_state_defense" }, 
-		85, 
-		0, 
-		30
+		40, 
+		100, 
+		10
 	  ),
 	  StateEffect( 
 		STUN_EFFECT, 
