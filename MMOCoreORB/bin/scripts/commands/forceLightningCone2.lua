@@ -46,7 +46,7 @@ ForceLightningCone2Command = {
 
     minDamage = 2200,
     maxDamage = 2800,
-	speed = 2.0,
+	speed = 2.5,
 	forceCost = 45,
 	accuracySkillMod = "forcelightning_accuracy";
 	coneAngle = 90,
