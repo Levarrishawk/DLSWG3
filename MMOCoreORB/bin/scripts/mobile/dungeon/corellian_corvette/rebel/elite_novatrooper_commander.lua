@@ -1,6 +1,5 @@
 elite_novatrooper_commander = Creature:new {
 	objectName = "@mob/creature_names:stormtrooper_novatrooper_elite_commander",
-	randomNameType = NAME_STORMTROOPER_TAG,
 	socialGroup = "imperial",
 	faction = "imperial",
 	level = 201,
@@ -9,9 +8,9 @@ elite_novatrooper_commander = Creature:new {
 	damageMax = 2000,
 	baseXp = 19104,
 	baseHAM = 160000,
-	baseHAMmax = 195000,
+	baseHAMmax = 165000,
 	armor = 3,
-	resists = {60,75,80,30,5,5,30,45,-1},
+	resists = {60,70,70,30,5,5,30,45,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -40,7 +39,8 @@ elite_novatrooper_commander = Creature:new {
 				{group = "armor_attachments", chance = 25000},
 				{group = "imperial_officer_common", chance = 450000},
 				{group = "wearables_scarce", chance = 1000000}
-			}
+			},
+			lootChance = 2800000
 		}
 	},
 	weapons = {"stormtrooper_weapons"},

@@ -7,10 +7,10 @@ krayt_dragon_ancient = Creature:new {
 	damageMin = 2270,
 	damageMax = 4250,
 	baseXp = 28549,
-	baseHAM = 410000,
-	baseHAMmax = 501000,
-	armor = 3,
-	resists = {195,195,195,195,165,195,195,195,-1},
+	baseHAM = 170000,
+	baseHAMmax = 191000,
+	armor = 1,
+	resists = {30,30,30,30,30,30,30,30,-1},
 	meatType = "meat_carnivore",
 	meatAmount = 1000,
 	hideType = "hide_bristley",
@@ -24,26 +24,33 @@ krayt_dragon_ancient = Creature:new {
 	creatureBitmask = PACK + KILLER + STALKER,
 	optionsBitmask = 128,
 	diet = CARNIVORE,
-	scale = 1.5,
 
 	templates = {"object/mobile/krayt_dragon.iff"},
 	lootGroups = {
 		{
 	        groups = {
-				{group = "krayt_tissue_rare", chance = 2000000},
-				{group = "krayt_dragon_common", chance = 2500000},
-				{group = "pearls_flawless", chance = 1500000},
-				{group = "armor_all", chance = 2000000},
-				{group = "weapons_all", chance = 2000000},
+				{group = "krayt_tissue_rare", chance = 3300000},
+				{group = "krayt_dragon_common", chance = 3300000},
+				{group = "pearls_flawless", chance = 3400000}				
 			},
-			lootChance = 7720000
+			lootChance = 6500000
+		},
+		{
+	        groups = {
+				{group = "composite_armor", chance = 2000000},
+				{group = "ubese_armor", chance = 2000000},
+				{group = "melee_two_handed", chance = 2000000},
+				{group = "rifles", chance = 2000000},
+				{group = "wearables_all", chance = 2000000},				
+			},
+			lootChance = 3500000
 		}
 	},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"creatureareacombo","stateAccuracyBonus=100"},
-		{"creatureareaknockdown","stateAccuracyBonus=100"}
+		{"creatureareacombo",""},
+		{"creatureareaknockdown",""}
 	}
 }
 
