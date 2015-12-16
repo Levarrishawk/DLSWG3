@@ -909,7 +909,7 @@ void EntertainingSessionImplementation::activateEntertainerBuff(CreatureObject* 
 		switch (performanceType){
 		case PerformanceType::MUSIC:
 		{
-			uint32 focusBuffCRC = STRING_HASHCODE("medical_enhance_action");
+			uint32 focusBuffCRC = STRING_HASHCODE("medical_enhance_health");
 			//uint32 willBuffCRC = STRING_HASHCODE("medical_enhance_disease");
 			oldBuff = cast<PerformanceBuff*>(creature->getBuff(focusBuffCRC));
 			if (oldBuff != NULL && oldBuff->getBuffStrength() > buffStrength)
