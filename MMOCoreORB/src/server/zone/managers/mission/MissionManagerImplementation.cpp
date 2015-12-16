@@ -941,8 +941,10 @@ void MissionManagerImplementation::randomizeGenericBountyMission(CreatureObject*
 				name = creature->getFirstName() + " " + creature->getLastName();
 				name = name.trim();
 
-				int difficulty = creature->getSkillMod("private_jedi_difficulty");
-				level = MIN(difficulty / 10, 250);
+				int difficulty = 250;
+				level = difficulty;
+			/*	int difficulty = creature->getSkillMod("private_jedi_difficulty");
+				level = MIN(difficulty / 10, 250); */
 			}
 
 			mission->setMissionTargetName(name);
