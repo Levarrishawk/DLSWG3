@@ -2397,11 +2397,11 @@ void AiAgentImplementation::fillAttributeList(AttributeListMessage* alm, Creatur
 		alm->insertAttribute("cat_armor_special_protection.armor_eff_elemental_acid", txt.toString());
 	}
 
-	if (isSpecialProtection(WeaponObject::LIGHTSABER)) {
+	/*if (isSpecialProtection(WeaponObject::LIGHTSABER)) {
 		StringBuffer txt;
 		txt << Math::getPrecision(getLightSaber(), 1) << "%";
 		alm->insertAttribute("cat_armor_special_protection.armor_eff_restraint", txt.toString());
-	}
+	}*/
 
 	if (getKinetic() > 0 && !isSpecialProtection(WeaponObject::KINETIC)) {
 		StringBuffer txt;
@@ -2451,11 +2451,11 @@ void AiAgentImplementation::fillAttributeList(AttributeListMessage* alm, Creatur
 		alm->insertAttribute("cat_armor_effectiveness.armor_eff_elemental_acid", txt.toString());
 	}
 
-	if (getLightSaber() > 0 && !isSpecialProtection(WeaponObject::LIGHTSABER)) {
+	/*if (getLightSaber() > 0 && !isSpecialProtection(WeaponObject::LIGHTSABER)) {
 		StringBuffer txt;
 		txt << Math::getPrecision(getLightSaber(), 1) << "%";
 		alm->insertAttribute("cat_armor_effectiveness.armor_eff_restraint", txt.toString());
-	}
+	}*/
 
 	if (getKinetic() < 0)
 		alm->insertAttribute("cat_armor_vulnerability.armor_eff_kinetic", "-");
