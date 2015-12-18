@@ -2481,8 +2481,8 @@ void AiAgentImplementation::fillAttributeList(AttributeListMessage* alm, Creatur
 	if (getAcid() < 0)
 		alm->insertAttribute("cat_armor_vulnerability.armor_eff_elemental_acid", "-");
 
-	if (getLightSaber() < 0)
-		alm->insertAttribute("cat_armor_vulnerability.armor_eff_restraint", "-");
+	/*if (getLightSaber() < 0)
+		alm->insertAttribute("cat_armor_vulnerability.armor_eff_restraint", "-");*/
 
 	if (isPet())
 	{
