@@ -57,12 +57,14 @@ robe = "object/tangible/wearables/robe/robe_jedi_padawan.iff"
 
 saber = "object/weapon/melee/sword/crafted_saber/sword_lightsaber_s9_training.iff"
 
+jediTool= "object/tangible/crafting/station/jedi_tool.iff"
+
 professionSpecificItems = { 
   combat_marksman = { marksmanPistol, marksmanCarbine, marksmanRifle },
   combat_commando = { marksmanPistol, marksmanCarbine, marksmanRifle },
   combat_rifleman = { marksmanPistol, marksmanCarbine, marksmanRifle },
   combat_pistol = { marksmanPistol, marksmanCarbine, marksmanRifle },
-  jedi_pad = { saber, robe, genericTool, mineralTool, chemicalTool },
+  jedi_pad = { genericTool, mineralTool, chemicalTool, jediTool },
   outdoors_squadleader = { genericTool },
   outdoors_creaturehandler = { genericTool },
   science_medic = { foodTool },
