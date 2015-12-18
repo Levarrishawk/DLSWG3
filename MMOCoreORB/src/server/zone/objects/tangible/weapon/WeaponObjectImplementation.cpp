@@ -342,11 +342,11 @@ void WeaponObjectImplementation::fillAttributeList(AttributeListMessage* alm, Cr
 	alm->insertAttribute("cat_wpn_rangemods.wpn_range_max", maxrange);
 
 	//Special Attack Costs
-	alm->insertAttribute("cat_wpn_attack_cost.health", getHealthAttackCost());
+	//alm->insertAttribute("cat_wpn_attack_cost.health", getHealthAttackCost());
 
 	alm->insertAttribute("cat_wpn_attack_cost.action", getActionAttackCost());
 
-	alm->insertAttribute("cat_wpn_attack_cost.mind", getMindAttackCost());
+	//alm->insertAttribute("cat_wpn_attack_cost.mind", getMindAttackCost());
 
 	//Anti Decay Kit
 	if(hasAntiDecayKit()){
@@ -354,8 +354,8 @@ void WeaponObjectImplementation::fillAttributeList(AttributeListMessage* alm, Cr
 	}
 
 	// Force Cost
-	if (getForceCost() > 0)
-		alm->insertAttribute("forcecost", (int)getForceCost());
+	/*if (getForceCost() > 0)
+		alm->insertAttribute("forcecost", (int)getForceCost());*/
 
 	for (int i = 0; i < getNumberOfDots(); i++) {
 
