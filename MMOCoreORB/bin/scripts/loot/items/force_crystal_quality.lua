@@ -8,7 +8,7 @@ force_crystal_quality = {
 	craftingValues = {
 		{"mindamage",10,16,0},
 		{"maxdamage",15,25,0},
-		{"attackspeed",1.4,0,5},		
+		{"attackspeed",0,-0.8,5},	
 		{"hitpoints",750,850,0},
 		{"woundchance",1,6,5},
 		{"attackhealthcost",0,0,0},

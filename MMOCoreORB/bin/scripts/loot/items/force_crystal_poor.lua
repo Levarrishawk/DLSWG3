@@ -8,7 +8,7 @@ force_crystal_poor = {
 	craftingValues = {
 		{"mindamage",2,5,0},
 		{"maxdamage",3,6,0},
-		{"attackspeed",2,0,5},		
+		{"attackspeed",0,-0.8,5},		
 		{"woundchance",1,3,5},
 		{"hitpoints",600,700,0},
 		{"attackhealthcost",0,0,0},

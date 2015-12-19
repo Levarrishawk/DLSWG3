@@ -8,7 +8,7 @@ krayt_dragon_pearl_premium = {
 	craftingValues = {
 		{"mindamage",15,30,0},
 		{"maxdamage",35,50,0},
-		{"attackspeed",1,-1,5},
+		{"attackspeed",0,-0.8,5},
 		{"woundchance",4,8,5},
 		{"hitpoints",800,1200,0},
 		{"attackhealthcost",0,0,0},

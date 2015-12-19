@@ -8,7 +8,7 @@ force_crystal_select = {
 	craftingValues = {
 		{"mindamage",10,25,0},
 		{"maxdamage",26,45,0},
-		{"attackspeed",1.2,-1,5},		
+		{"attackspeed",0,-0.8,5},	
 		{"woundchance",2,7,5},
 		{"hitpoints",800,900,0},		
 		{"attackhealthcost",0,0,0},

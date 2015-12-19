@@ -8,7 +8,7 @@ force_crystal_okay = {
 	craftingValues = {
 		{"mindamage",3,8,0},
 		{"maxdamage",9,16,0},
-		{"attackspeed",1.8,0,5},
+		{"attackspeed",0,-0.8,5},
 		{"hitpoints",650,750,0},		
 		{"woundchance",2,4,5},
 		{"attackhealthcost",0,0,0},
