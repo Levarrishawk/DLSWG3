@@ -649,9 +649,9 @@ function TatooineMosEisleyScreenPlay:spawnMobiles()
 	
 	--Trainers At Starport Courtyard
 	spawnMobile("tatooine", "trainer_chef",0,3512,5,-4815,39,0)
-	spawnMobile("tatooine", "trainer_1hsword",0,3517,5,-4796,129,0)
+	spawnMobile("tatooine", "trainer_1hsword",0,3510.7,5,-4798.5,129,0)
 	spawnMobile("tatooine", "trainer_commando",0,3516,5,-4797,129,0)
-	spawnMobile("tatooine", "trainer_pistol",0,3519,5,-4794,129,0)
+	spawnMobile("tatooine", "trainer_pistol",0,3518.2,5,-4794.5,129,0)
 	spawnMobile("tatooine", "trainer_bountyhunter",0,3489,5,-4780,115,0)
 	spawnMobile("tatooine", "trainer_armorsmith",0,3508,5,-4800,164,0)
 	spawnMobile("tatooine", "trainer_creaturehandler",0,3463,5,-4862,111,0)

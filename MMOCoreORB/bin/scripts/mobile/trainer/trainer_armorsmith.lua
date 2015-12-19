@@ -1,6 +1,7 @@
 trainer_armorsmith = Creature:new {
-	objectName = "@mob/creature_names:trainer_armorsmith",
-	randomNameType = NAME_GENERIC_TAG,
+	objectName = "",
+	customName = "a Munitions Trader trainer",
+	--randomNameType = NAME_GENERIC_TAG,
 	faction = "",
 	level = 100,
 	chanceHit = 0.390000,
