@@ -8,7 +8,7 @@ krayt_dragon_pearl_flawless = {
 	craftingValues = {
 		{"mindamage",25,35,0},
 		{"maxdamage",40,50,0},
-		{"attackspeed",1,-1,5},
+		{"attackspeed",0,1,5},
 		{"woundchance",4,8,5},
 		{"hitpoints",800,1200,0},
 		{"attackhealthcost",0,0,0},
