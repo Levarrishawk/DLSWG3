@@ -44,11 +44,12 @@
 Saber2hPhantomCommand = {
         name = "saber2hphantom",
         
-    damageMultiplier = 4.5,
-	speedMultiplier = 4.0,
-	coneAngle = 45,
-	coneAction = true,
-	forceCostMultiplier = 3.0,
+  damageMultiplier = 4.0,
+  speedMultiplier = 1.0,
+  areaRange = 10,
+  areaAction = true,
+  actionCostMultiplier = 1.25,  
+  forceCostMultiplier = 2.0,
 
 		stateEffects = {
 	   StateEffect( 
@@ -84,7 +85,7 @@ Saber2hPhantomCommand = {
 
 	combatSpam = "saber2hphantom",
 	
-	poolsToDamage = RANDOM_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 	
 	weaponType = TWOHANDJEDIWEAPON,
 

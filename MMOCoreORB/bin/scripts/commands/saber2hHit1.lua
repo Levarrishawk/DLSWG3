@@ -44,15 +44,16 @@
 Saber2hHit1Command = {
         name = "saber2hhit1",
         
-    damageMultiplier = 1.25,
-	speedMultiplier = 1.25,
-	forceCostMultiplier = 1.0,
+  damageMultiplier = 2.5,
+  speedMultiplier = 1,
+  actionCostMultiplier = 1.25,  
+  forceCostMultiplier = 2.0,
 
 	animationCRC = hashCode("combo_2c_light"),
 
 	combatSpam = "saber2hhit1",
 	
-	poolsToDamage = RANDOM_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 	
 	weaponType = TWOHANDJEDIWEAPON,
 
