@@ -1,7 +1,7 @@
 trainer_creaturehandler = Creature:new {
-	objectName = "@mob/creature_names:trainer_creaturehandler",
-	randomNameType = NAME_GENERIC_TAG,
-	faction = "",
+	objectName = "",
+  customName = "a Beast Master trainer",
+  --randomNameType = NAME_GENERIC_TAG,
 	level = 100,
 	chanceHit = 0.390000,
 	damageMin = 290,
