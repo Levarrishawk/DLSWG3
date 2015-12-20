@@ -155,11 +155,11 @@ function TatooineWayfarScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "scientist",60,-5260.46,75,-6556.07,247.019,0)
 	pNpc = spawnMobile("tatooine", "smuggler_pilot",60,-5868.38,90,-6199.5,65.5014,0)
 	self:setMoodString(pNpc, "neutral")
-	spawnMobile("tatooine", "trainer_artisan",0,-5274,75,-6547,139,0)
+--	spawnMobile("tatooine", "trainer_artisan",0,-5274,75,-6547,139,0)
 	spawnMobile("tatooine", "trainer_commando",0,-5038,75,-6609,226,0)
 	spawnMobile("tatooine", "trainer_scout",0,-5051.46,75,-6629.48,7,0)
-	pNpc = spawnMobile("tatooine", "trainer_unarmed",0,-5055,75,-6633,310,0)
-	self:setMoodString(pNpc, "npc_sitting_ground")
+--	pNpc = spawnMobile("tatooine", "trainer_unarmed",0,-5055,75,-6633,310,0)
+--	self:setMoodString(pNpc, "npc_sitting_ground")
 
 	--imperial spawns that will need to be added again with planet-swap function
 	

@@ -84,8 +84,8 @@ function TatooineMosEspaScreenPlay:spawnMobiles()
 	self:setMoodString(pNpc, "conversation")
 	pNpc = spawnMobile("tatooine", "farmer_rancher",60,-49.1,2.6,32.5,-36,1261663)
 	self:setMoodString(pNpc, "happy")
-	pNpc = spawnMobile("tatooine", "trainer_shipwright",60,-3.2,0.6,67.7,177,1261655)
-	self:setMoodString(pNpc, "neutral")
+	--pNpc = spawnMobile("tatooine", "trainer_shipwright",60,-3.2,0.6,67.7,177,1261655)
+	--self:setMoodString(pNpc, "neutral")
 
 	--Tavern -2888 2281
 	pNpc = spawnMobile("tatooine", "scientist",60,-2.1,1,9.1,-26,3065452)
@@ -150,7 +150,7 @@ function TatooineMosEspaScreenPlay:spawnMobiles()
 	--Guild Hall -2857 1987
 	spawnMobile("tatooine", "contractor",60,-3.69,1.13306,-6,11.0003,1256306)
 	spawnMobile("tatooine", "miner",60,3.29,1.13306,-9.58,249.007,1256011)
-	spawnMobile("tatooine", "trainer_artisan",0,-0.0885271,1.13306,-14.0283,2,1256011)
+--	spawnMobile("tatooine", "trainer_artisan",0,-0.0885271,1.13306,-14.0283,2,1256011)
 	spawnMobile("tatooine", "coa3_information_rebel",60,14.2091,1.13306,-10.1408,205.638,1256010)
 
 	--Cantina
@@ -176,10 +176,10 @@ function TatooineMosEspaScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "trainer_architect",0,11,1.133,-14.5,0,1256021)
 	spawnMobile("tatooine", "trainer_armorsmith",0,-12.5142,1.13306,3.63893,165,1256020)
 	spawnMobile("tatooine", "trainer_droidengineer",0,-11.5362,1.13306,-12.6351,1,1256023)
-	spawnMobile("tatooine", "trainer_weaponsmith",0,-2.95975,1.13306,-8.77207,109,1256022)
+--	spawnMobile("tatooine", "trainer_weaponsmith",0,-2.95975,1.13306,-8.77207,109,1256022)
 	spawnMobile("tatooine", "trainer_merchant",0,12,1.13306,6,180,1256019)
 	--Med Center
-	spawnMobile("tatooine", "trainer_combatmedic",0,7.93319,0.184067,5.54261,86,4005424)
+	spawnMobile("tatooine", "trainer_medic",0,7.93319,0.184067,5.54261,86,4005424)
 	--Hotel
 	pNpc = spawnMobile("tatooine", "commoner_technician",60,20.2715,1.28309,-1.14578,360.011,1261018)
 	self:setMoodString(pNpc, "conversation")
@@ -196,7 +196,7 @@ function TatooineMosEspaScreenPlay:spawnMobiles()
 	--Junk Shop
 	--{"junk_nado",60,4.4,-0.5,1.3,-133,1255997, "", "Nado",JUNKGENERIC,JUNKCONVNADOWATTOS},
 	--Guild Hall -2997 2426
-	spawnMobile("tatooine", "trainer_brawler",0,-11,1.1,-14,0,1255994)
+	--spawnMobile("tatooine", "trainer_brawler",0,-11,1.1,-14,0,1255994)
 	spawnMobile("tatooine", "trainer_marksman",0,0,1.13306,-13,0,1255993)
 	spawnMobile("tatooine", "trainer_scout",0,-13,1.1,4.8,180,1255991)
 
@@ -455,21 +455,21 @@ function TatooineMosEspaScreenPlay:spawnMobiles()
 	pNpc = spawnMobile("tatooine", "trace_lyson",60,-2909.17,5,2180.03,180,0)
 	self:setMoodString(pNpc, "calm")
 	spawnMobile("tatooine", "trainer_1hsword",0,-2964,5,2021,33,0)
-	spawnMobile("tatooine", "trainer_2hsword",0,-2971,5,2032,174,0)
+	spawnMobile("tatooine", "trainer_commando",0,-2971,5,2032,174,0)
 	spawnMobile("tatooine", "trainer_architect",0,-2872,5,2159,180,0)
-	spawnMobile("tatooine", "trainer_artisan",0,-2890,5,2142,19,0)
-	spawnMobile("tatooine", "trainer_brawler",0,-2933,5,2125,97,0)
+	spawnMobile("tatooine", "trainer_armorsmith",0,-2890,5,2142,19,0)
+	spawnMobile("tatooine", "trainer_bountyhunter",0,-2933,5,2125,97,0)
 	spawnMobile("tatooine", "trainer_creaturehandler",0,-2994,5,2530,0,0)
-	spawnMobile("tatooine", "trainer_doctor",0,-3163.63,5,2122.39,18,0)
+	spawnMobile("tatooine", "trainer_medic",0,-3163.63,5,2122.39,18,0)
 	spawnMobile("tatooine", "trainer_entertainer",0,-2889,5,2178,161,0)
 	spawnMobile("tatooine", "trainer_marksman",0,-2931,5,2121,91,0)
 	spawnMobile("tatooine", "trainer_medic",0,-3158,5,2122,5,0)
 	spawnMobile("tatooine", "trainer_medic",0,-2931,5,2116,65,0)
-	spawnMobile("tatooine", "trainer_musician",0,-2882,5,2171,180,0)
-	spawnMobile("tatooine", "trainer_polearm",0,-2931,5,2386,0,0)
+	spawnMobile("tatooine", "trainer_entertainer",0,-2882,5,2171,180,0)
+	spawnMobile("tatooine", "trainer_pistol",0,-2931,5,2386,0,0)
 	spawnMobile("tatooine", "trainer_scout",0,-2912.86,5,2106.67,174,0)
-	spawnMobile("tatooine", "trainer_unarmed",0,-2812,5,1973,180,0)
-	spawnMobile("tatooine", "trainer_weaponsmith",0,-2869,5,2146,8,0)
+	spawnMobile("tatooine", "trainer_rifleman",0,-2812,5,1973,180,0)
+	spawnMobile("tatooine", "trainer_squadleader",0,-2869,5,2146,8,0)
 	--{"watto_leg_syndil",60,-2866.54,5,1856.86,242.669,0, "calm", "Syndil"},
 
 	--Creatures

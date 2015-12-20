@@ -104,7 +104,7 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "rebel_recruiter",60,-28.3633,-0.894984,0.335875,171.796,8105504)
 
 	--Guild Hall -243 -4389
-	spawnMobile("corellia", "trainer_brawler",0,-11,1.13306,-14,0,1855508)
+	spawnMobile("corellia", "trainer_rifleman",0,-11,1.13306,-14,0,1855508)
 	spawnMobile("corellia", "trainer_marksman",0,0,1.13306,-14,0,1855507)
 	spawnMobile("corellia", "trainer_scout",0,-12,1.13306,5.5,180,1855505)
 	--{"junk_dealer",0,-14.5,1.1,2.5,88,1855505, "", "",JUNKWEAPONS,JUNKCONVARMS},
@@ -114,8 +114,8 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 
 	--Med Center
 	spawnMobile("corellia", "surgical_droid_21b",60,-25.52,0.26,-3.48,357.849,1855535)
-	spawnMobile("corellia", "trainer_combatmedic",0,26.676,0.26,5.41823,85,1855531)
-	spawnMobile("corellia", "trainer_doctor",0,-25.2731,0.26,-5,13,1855535)
+	spawnMobile("corellia", "trainer_medic",0,26.676,0.26,5.41823,85,1855531)
+	spawnMobile("corellia", "trainer_medic",0,-25.2731,0.26,-5,13,1855535)
 	spawnMobile("corellia", "trainer_medic",0,-17.7359,0.26,-0.58142,137,1855535)
 	spawnMobile("corellia", "trainer_medic",0,14.2688,0.26,4.66124,159,1855531)
 	--3rd floor
@@ -129,7 +129,7 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "trainer_armorsmith",0,-12,1.1,5,180,1855525)
 	spawnMobile("corellia", "trainer_droidengineer",0,-11,1.13306,-14,0,1855528)
 	spawnMobile("corellia", "trainer_merchant",0,12.1,1.1,5.8,177,1855524)
-	spawnMobile("corellia", "trainer_weaponsmith",0,-2.5,1.13306,-8.4,91,1855527)
+	spawnMobile("corellia", "trainer_armorsmith",0,-2.5,1.13306,-8.4,91,1855527)
 
 	--Capitol
 	pNpc = spawnMobile("corellia", "noble",60,5.22842,0.3,2.91677,0,1855463)
@@ -202,12 +202,12 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 	self:setMoodString(pNpc, "conversation")
 	pNpc = spawnMobile("corellia", "contractor",60,26.5189,2.12858,73.0319,180.005,2365399)
 	self:setMoodString(pNpc, "conversation")
-	spawnMobile("corellia", "trainer_dancer",0,18.5885,2.12869,53.9366,0,2365399)
-	spawnMobile("corellia", "trainer_musician",0,21.7,2.1,75.9,180,2365399)
+	spawnMobile("corellia", "trainer_entertainer",0,18.5885,2.12869,53.9366,0,2365399)
+	spawnMobile("corellia", "trainer_entertainer",0,21.7,2.1,75.9,180,2365399)
 	spawnMobile("corellia", "theater_manager",0,21.8947,2.12814,63.5,0,2365399)
 	pNpc = spawnMobile("corellia", "farmer_rancher",60,-20.3488,2.12878,65.9854,180.006,2365400)
 	self:setMoodString(pNpc, "conversation")
-	spawnMobile("corellia", "trainer_imagedesigner",0,-21.4483,2.12878,74.4461,185,2365400)
+	spawnMobile("corellia", "trainer_entertainer",0,-21.4483,2.12878,74.4461,185,2365400)
 
 	--Outside Misc
 	spawnMobile("corellia", "businessman",60,-306.34,28,-4620.82,67.4368,0)
@@ -551,10 +551,10 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 
 	--Trainers Outside
 	spawnMobile("corellia", "trainer_architect",0,-161,28,-4698,-95,0)
-	spawnMobile("corellia", "trainer_artisan",0,-187,28,-4700,92,0)
-	spawnMobile("corellia", "trainer_bioengineer",0,-424.092,28,-4651.85,94,0)
-	spawnMobile("corellia", "trainer_brawler",0,-164,30.9,-4754,88,0)
-	spawnMobile("corellia", "trainer_combatmedic",0,-33.9759,28,-4435.08,95,0)
+	spawnMobile("corellia", "trainer_droidengineer",0,-187,28,-4700,92,0)
+	spawnMobile("corellia", "trainer_creaturehandler",0,-424.092,28,-4651.85,94,0)
+	spawnMobile("corellia", "trainer_bountyhunter",0,-164,30.9,-4754,88,0)
+	spawnMobile("corellia", "trainer_rifleman",0,-33.9759,28,-4435.08,95,0)
 	spawnMobile("corellia", "trainer_creaturehandler",0,-55,28,-4566,0,0)
 	spawnMobile("corellia", "trainer_entertainer",0,-173,28,-4739,0,0)
 	spawnMobile("corellia", "trainer_entertainer",0,-228,28.6,-4118,0,0)
@@ -564,7 +564,7 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "trainer_medic",0,-172,28,-4691,0,0)
 	spawnMobile("corellia", "trainer_merchant",0,-369,28,-4533,92,0)
 	spawnMobile("corellia", "trainer_politician",0,-218,28,-4500,0,0)
-	spawnMobile("corellia", "trainer_ranger",0,-505,28,-4633,180,0)
+	spawnMobile("corellia", "trainer_pistol",0,-505,28,-4633,180,0)
 	spawnMobile("corellia", "trainer_scout",0,-169.45,28,-4712.58,134,0)
 
 	-- Chassis dealer.

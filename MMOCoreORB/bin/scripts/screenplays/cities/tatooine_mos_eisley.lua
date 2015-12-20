@@ -660,5 +660,6 @@ function TatooineMosEisleyScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "trainer_rifleman",0,3532,5,-4815,-48,0)
 	spawnMobile("tatooine", "trainer_politician",0,3511,5,-4781,-52,0)
 	spawnMobile("tatooine", "trainer_squadleader",0,3533,5,-4791,-98,0)
+	spawnMobile("tatooine", "trainer_droidengineer",0,3501.6,5,-4792,-57,0)
 	
 end

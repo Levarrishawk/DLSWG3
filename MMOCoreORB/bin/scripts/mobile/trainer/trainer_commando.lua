@@ -1,6 +1,7 @@
 trainer_commando = Creature:new {
-	objectName = "@mob/creature_names:trainer_commando",
-	randomNameType = NAME_GENERIC_TAG,
+	objectName = "",
+	customName = "a Commando trainer",
+	--randomNameType = NAME_GENERIC_TAG,
 	faction = "",
 	level = 100,
 	chanceHit = 0.390000,
