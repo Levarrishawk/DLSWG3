@@ -312,7 +312,7 @@ includeFile("cities/yavin4_mining_outpost.lua")
 
 -- POIs
 --includeFile("poi/corellia_rogue_corsec_base.lua")
---includeFile("poi/corellia_rebel_hideout.lua")
+includeFile("poi/corellia_rebel_hideout.lua")
 includeFile("poi/corellia_stronghold.lua")
 includeFile("poi/dantooine_abandoned_rebel_base.lua")
 includeFile("poi/dantooine_dantari_village.lua")
