@@ -7,8 +7,6 @@ CorelliaStaticSpawnsScreenPlay = ScreenPlay:new
 
 	screenplayName = "CorelliaStaticSpawnsScreenPlay",
 
-	turret = { template = "object/installation/turret/turret_dish_sm.iff", x = 4111.26, z = 24, y = -1274.28 }
-
 }
 
 registerScreenPlay("CorelliaStaticSpawnsScreenPlay", true)
@@ -20,42 +18,6 @@ function CorelliaStaticSpawnsScreenPlay:start()
 	end
 end
 
-function CorelliaStaticSpawnsScreenPlay:spawnSceneObjects()
-	local turretData = self.turret
-	local pTurret = spawnSceneObject("corellia", turretData.template, turretData.x, turretData.z, turretData.y, 0, 0, 0, -1, 0)
-
-	if pTurret ~= nil then
-		local turret = TangibleObject(pTurret)
-		turret:setFaction(FACTIONREBEL)
-		turret:setPvpStatusBitmask(1)
-	end
-
-	createObserver(OBJECTDESTRUCTION, "CorelliaStaticSpawnsScreenPlay", "notifyTurretDestroyed", pTurret)
-
-	spawnSceneObject("corellia", "object/static/vehicle/static_speeder_bike.iff", 615.7, 26.1, -434.0, 0, math.rad(84) )
-	spawnSceneObject("corellia", "object/static/structure/general/droid_probedroid_powerdown.iff", 640.5, 27.1, -424.0, 0, math.rad(-138) )
-
-end
-
-function CorelliaStaticSpawnsScreenPlay:notifyTurretDestroyed(pTurret, pPlayer)
-	ObjectManager.withSceneObject(pTurret, function(turret)
-		turret:destroyObjectFromWorld()
-		createEvent(1800, "CorelliaStaticSpawnsScreenPlay", "respawnTurret", pTurret)
-	end)
-	CreatureObject(pPlayer):clearCombatState(1)
-	return 0
-end
-
-function CorelliaStaticSpawnsScreenPlay:respawnTurret(pTurret)
-	if pTurret == nil then return end
-
-	TangibleObject(pTurret):setConditionDamage(0, false)
-	local pZone = getZoneByName("corellia")
-
-	if pZone == nil then return end
-
-	SceneObject(pZone):transferObject(pTurret, -1, true)
-end
 
 function CorelliaStaticSpawnsScreenPlay:spawnMobiles()
 

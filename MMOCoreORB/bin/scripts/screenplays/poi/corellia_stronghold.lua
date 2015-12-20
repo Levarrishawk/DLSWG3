@@ -30,14 +30,11 @@ function StrongholdScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "dark_trooper", 360, 4687.68, 25, -5754.00, 128.516, 0)
 	spawnMobile("corellia", "dark_trooper", 360, 4675.80, 25, -5752.56, 288.664, 0)
 	spawnMobile("corellia", "dark_trooper", 360, 4679.01, 25, -5742.91, 9.66, 0)
-	--[[
-	
-	
 
 	spawnMobile("corellia", "imperial_first_lieutenant", 300, 4638.27, 25, -5777.52, 110, 0)
 	spawnMobile("corellia", "imperial_first_lieutenant", 300, 4637.55, 25, -5784.69, 185, 0)
 	spawnMobile("corellia", "imperial_first_lieutenant", 300, 4635.64, 25, -5802.22, 92, 0)
-	--spawnMobile("corellia", "imperial_major", 300, 4629.71, 25, -5770.51, 238, 0)
+	spawnMobile("corellia", "imperial_major", 300, 4629.71, 25, -5770.51, 238, 0)
 	spawnMobile("corellia", "imperial_surface_marshall", 300, 4531.47, 30.7809, -5823.83, 217, 0)
 	spawnMobile("corellia", "stormtrooper", 300, 4497.73, 28.5915, -5829.8, 277.53, 0)
 	spawnMobile("corellia", "stormtrooper", 300, 4680.98, 25, -5821.58, 250, 0)
@@ -54,13 +51,13 @@ function StrongholdScreenPlay:spawnMobiles()
 
 	spawnMobile("corellia", "imperial_first_lieutenant", 400, -0.197, 0.125, -1.714, 0, 2715881)
 	spawnMobile("corellia", "imperial_first_lieutenant", 400, 0.506, 0.125, -1.081, 0, 2716039)
---	spawnMobile("corellia", "stormtrooper_medic", 400, 0.673, 0.125, -0.651, 0, 2716032)
-	--spawnMobile("corellia", "storm_commando", 400, -3.022, 0.125, -3.362, 0, 2716035)
+	spawnMobile("corellia", "stormtrooper_medic", 400, 0.673, 0.125, -0.651, 0, 2716032)
+	spawnMobile("corellia", "storm_commando", 400, -3.022, 0.125, -3.362, 0, 2716035)
 	spawnMobile("corellia", "stormtrooper", 400, -0.207, 0.125, -1.570, 0, 2715952)
 	spawnMobile("corellia", "stormtrooper", 400, 1.455, 0.125, -3.532, 0, 2715952)
 	spawnMobile("corellia", "stormtrooper", 400, 0.879, 0.125, -2.578, 159, 2715909)
 	spawnMobile("corellia", "stormtrooper", 400, -0.805, 0.125, -3.681, 226, 2715909)
---	spawnMobile("corellia", "assault_trooper", 240, -0.197, 0.125, 1.538, 239, 2715902)
+	spawnMobile("corellia", "assault_trooper", 240, -0.197, 0.125, 1.538, 239, 2715902)
 	spawnMobile("corellia", "imperial_surface_marshall", 400, 4.991, 0.125, -4.244, 64.122, 2715904)
 	spawnMobile("corellia", "imperial_noncom", 400, 0, 0.125, -2.85, 0, 2715916)
 	spawnMobile("corellia", "imperial_noncom", 400, 0, 0.125, -5.25, 0, 2715916)
@@ -115,5 +112,5 @@ function StrongholdScreenPlay:spawnMobiles()
 	--spawnMobile("corellia", "rebel_trooper", 400, 0.8, 0.125, 5.247, 202, 2715914)
 	--spawnMobile("corellia", "rebel_recruit", 400, 0.9, 0.125, -2.533, 0, 2715959)
 	--spawnMobile("corellia", "rebel_recruit", 400, -1.61, 0.125, -2.26, 0, 2715959)
---]]
+
 end
