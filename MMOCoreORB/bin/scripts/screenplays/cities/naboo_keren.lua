@@ -54,7 +54,7 @@ function NabooKerenScreenPlay:spawnMobiles()
 	spawnMobile("naboo", "trainer_merchant",0,12,1.13306,6,180,1650541)
 	spawnMobile("naboo", "trainer_chef",0,-2.5,1.13306,-8.4,91,1650544)
 	--Guild Hall 1851 2613
-	spawnMobile("naboo", "trainer_riflemen",0,-11,1.13306,-12.5,0,1650535)
+	spawnMobile("naboo", "trainer_rifleman",0,-11,1.13306,-12.5,0,1650535)
 	spawnMobile("naboo", "trainer_marksman",0,0,0,-13,0,1650534)
 	spawnMobile("naboo", "trainer_scout",0,-12.0327,1.13306,4.62955,179,1650532)
 
