@@ -17,10 +17,10 @@ end
 function VreniIslandScreenPlay:spawnSceneObjects()
 
 	--Hotel
-	spawnSceneObject("corellia", "object/static/structure/general/droid_probedroid_powerdown.iff", -6.2, 1.0, 21.7, 2775411, math.rad(-163) )
+--	spawnSceneObject("corellia", "object/static/structure/general/droid_probedroid_powerdown.iff", -6.2, 1.0, 21.7, 2775411, math.rad(-163) )
 	--Cantina
-	spawnSceneObject("corellia", "object/static/structure/general/escape_pod.iff", -29.2, -0.9, 3.2, 3005705, math.rad(118) )
-	spawnSceneObject("corellia", "object/static/structure/general/skeleton_bith_headandbody.iff", -29.3, -0.9, 1.2, 3005705, math.rad(-9) )
+--	spawnSceneObject("corellia", "object/static/structure/general/escape_pod.iff", -29.2, -0.9, 3.2, 3005705, math.rad(118) )
+--	spawnSceneObject("corellia", "object/static/structure/general/skeleton_bith_headandbody.iff", -29.3, -0.9, 1.2, 3005705, math.rad(-9) )
 
 end
 
