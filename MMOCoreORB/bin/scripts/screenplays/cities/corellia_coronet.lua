@@ -110,7 +110,7 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 	--{"junk_dealer",0,-14.5,1.1,2.5,88,1855505, "", "",JUNKWEAPONS,JUNKCONVARMS},
 
 	--Guild Hall -177 -4390
-	spawnMobile("corellia", "trainer_artisan",0,0,1.13306,-14,0,1855517)
+	spawnMobile("corellia", "trainer_architect",0,0,1.13306,-14,0,1855517)
 
 	--Med Center
 	spawnMobile("corellia", "surgical_droid_21b",60,-25.52,0.26,-3.48,357.849,1855535)

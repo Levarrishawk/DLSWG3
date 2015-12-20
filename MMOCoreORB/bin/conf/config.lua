@@ -99,7 +99,7 @@ ZonesEnabled = {
 	--"endor_asommers",
 	--"floratest",
 	--"godclient_test",
---	"lok",
+	"lok",
 --	"naboo",
 	--"otoh_gunga",
 	--"rivertest",

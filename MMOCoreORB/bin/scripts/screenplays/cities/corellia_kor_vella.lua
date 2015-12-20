@@ -26,8 +26,8 @@ function CorelliaKorVellaScreenPlay:spawnMobiles()
 	local pNpc = spawnMobile("corellia", "bounty_hunter",60,-33.5,1.6,49.2,-88,4255428)
 	self:setMoodString(pNpc, "sad")
 	--starport interior
-	pNpc = spawnMobile("corellia", "trainer_shipwright",60,-0.1,0.6,67.4,176,4255423)
-	self:setMoodString(pNpc, "neutral")
+--	pNpc = spawnMobile("corellia", "trainer_shipwright",60,-0.1,0.6,67.4,176,4255423)
+--	self:setMoodString(pNpc, "neutral")
 	--imperial base near starport at the outskirts of city limits but still re-add planet-swap
 
 	--spawnMobile("corellia", "stormtrooper", 360, -3003.5, 31.0, 2930.4, 180, 0)
