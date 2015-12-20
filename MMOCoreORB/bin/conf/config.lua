@@ -103,7 +103,7 @@ ZonesEnabled = {
 --	"naboo",
 	--"otoh_gunga",
 	--"rivertest",
---	"rori",
+	"rori",
 	--"runtimerules",
 	--"simple",
 	--"space_09",
