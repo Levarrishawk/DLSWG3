@@ -236,9 +236,9 @@ includeFile("tasks/heralds.lua")
 includeFile("tasks/theater_manager.lua")
 
 -- Caves
---includeFile("caves/corellia_afarathu_cave.lua")
---includeFile("caves/corellia_drall_cave.lua")
---includeFile("caves/corellia_lord_nyax_cult.lua")
+includeFile("caves/corellia_afarathu_cave.lua")
+includeFile("caves/corellia_drall_cave.lua")
+includeFile("caves/corellia_lord_nyax_cult.lua")
 includeFile("caves/dantooine_force_crystal_hunter_cave.lua")
 includeFile("caves/dantooine_janta_cave.lua")
 includeFile("caves/dantooine_kunga_stronghold.lua")
@@ -311,7 +311,7 @@ includeFile("cities/yavin4_labor_outpost.lua")
 includeFile("cities/yavin4_mining_outpost.lua")
 
 -- POIs
---includeFile("poi/corellia_rogue_corsec_base.lua")
+includeFile("poi/corellia_rogue_corsec_base.lua")
 includeFile("poi/corellia_rebel_hideout.lua")
 includeFile("poi/corellia_stronghold.lua")
 includeFile("poi/dantooine_abandoned_rebel_base.lua")
