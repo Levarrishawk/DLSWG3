@@ -5,14 +5,7 @@ RebelHideoutScreenPlay = ScreenPlay:new {
 
 	screenplayName = "RebelHideoutScreenPlay",
 
-	turrets = {
-		{ template = "object/installation/turret/turret_tower_large.iff", x = -6559.3, z = 404, y = 5965.1 },
-		{ template = "object/installation/turret/turret_tower_large.iff", x = -6536.3, z = 404, y = 5942.1 },
-		{ template = "object/installation/turret/turret_tower_large.iff", x = -6510.0, z = 404, y = 5931.7 },
-		{ template = "object/installation/turret/turret_tower_large.iff", x = -6474.8, z = 404, y = 5938.6 },
-		{ template = "object/installation/turret/turret_tower_large.iff", x = -6443.1, z = 404, y = 5999.0 },
-		{ template = "object/installation/turret/turret_tower_large.iff", x = -6457.1, z = 404, y = 6031.5 },
-	},
+	
 
 }
 
@@ -26,43 +19,10 @@ function RebelHideoutScreenPlay:start()
 end
 
 function RebelHideoutScreenPlay:spawnSceneObjects()
-	for i = 1, 6, 1 do
-		local turretData = self.turrets[i]
-		local pTurret = spawnSceneObject("corellia", turretData.template, turretData.x, turretData.z, turretData.y, 0, 0.707107, 0, 0.707107, 0)
-
-		if pTurret ~= nil then
-			local turret = TangibleObject(pTurret)
-			turret:setFaction(FACTIONREBEL)
-			turret:setPvpStatusBitmask(1)
-		end
-
-		writeData(SceneObject(pTurret):getObjectID() .. ":rebel_hideout:turret_index", i)
-		createObserver(OBJECTDESTRUCTION, "RebelHideoutScreenPlay", "notifyTurretDestroyed", pTurret)
-	end
-	
+	--	
 end
 
-function RebelHideoutScreenPlay:notifyTurretDestroyed(pTurret, pPlayer)
-	ObjectManager.withSceneObject(pTurret, function(turret)
-		local turretData = self.turrets[readData(turret:getObjectID() .. ":rebel_hideout:turret_index")]
-		turret:destroyObjectFromWorld()
-		createEvent(1800000, "RebelHideoutScreenPlay", "respawnTurret", pTurret)
-	end)
-	CreatureObject(pPlayer):clearCombatState(1)
-	return 0
-end
 
-function RebelHideoutScreenPlay:respawnTurret(pTurret)
-	if pTurret == nil then return end
-
-	TangibleObject(pTurret):setConditionDamage(0, false)
-	local turretData = self.turrets[readData(SceneObject(pTurret):getObjectID() .. ":rebel_hideout:turret_index")]
-	local pZone = getZoneByName("corellia")
-
-	if pZone == nil then return end
-
-	SceneObject(pZone):transferObject(pTurret, -1, true)
-end
 
 function RebelHideoutScreenPlay:spawnMobiles()
 
