@@ -93,7 +93,7 @@ ZonesEnabled = {
 --	"corellia",
 	--"creature_test",
 --	"dantooine",
---	"dathomir",
+	"dathomir",
 --	"dungeon1",
 --	"endor",
 	--"endor_asommers",
