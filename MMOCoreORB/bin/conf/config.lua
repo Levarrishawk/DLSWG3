@@ -100,7 +100,7 @@ ZonesEnabled = {
 	--"floratest",
 	--"godclient_test",
 	"lok",
---	"naboo",
+	"naboo",
 	--"otoh_gunga",
 	--"rivertest",
 	"rori",
