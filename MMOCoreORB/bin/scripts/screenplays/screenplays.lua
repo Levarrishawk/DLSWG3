@@ -368,7 +368,7 @@ includeFile("poi/yavin4_imperial_base.lua")
 includeFile("poi/yavin4_woolamander_temple.lua")
 
 --Static Spawns
---includeFile("static_spawns/corellia_static_spawns.lua")
+includeFile("static_spawns/corellia_static_spawns.lua")
 includeFile("static_spawns/dantooine_static_spawns.lua")
 includeFile("static_spawns/dathomir_static_spawns_ne.lua")
 includeFile("static_spawns/dathomir_static_spawns_nw.lua")
