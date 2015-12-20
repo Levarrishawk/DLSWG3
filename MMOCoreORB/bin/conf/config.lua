@@ -95,7 +95,7 @@ ZonesEnabled = {
 --	"dantooine",
 	"dathomir",
 --	"dungeon1",
---	"endor",
+	"endor",
 	--"endor_asommers",
 	--"floratest",
 	--"godclient_test",
