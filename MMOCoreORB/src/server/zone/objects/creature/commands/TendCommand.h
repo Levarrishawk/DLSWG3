@@ -24,6 +24,7 @@ class TendCommand : public QueueCommand {
 protected:
 	int mindCost;
 	int mindWoundCost;
+	int actionCost;
 
 	int healthHealed;
 	int actionHealed;
@@ -44,6 +45,7 @@ public:
 		: QueueCommand(name, server) {
 
 		mindCost = 0;
+		actionCost = 0;
 		mindWoundCost = 0;
 
 		range = 0;
@@ -79,12 +81,10 @@ public:
 
 		StringBuffer msgPlayer, msgTarget, msgBody, msgTail;
 
-		if (healthDamage > 0 && actionDamage > 0) {
-			msgBody << healthDamage << " health and " << actionDamage << " action";
+		if (healthDamage > 0) {
+			msgBody << healthDamage << " health ";
 		} else if (healthDamage > 0) {
 			msgBody << healthDamage << " health";
-		} else if (actionDamage > 0) {
-			msgBody << actionDamage << " action";
 		} else {
 			return; //No damage to heal.
 		}
