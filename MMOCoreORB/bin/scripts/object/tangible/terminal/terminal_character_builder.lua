@@ -349,35 +349,35 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 				"Medic",
 				{
 					"Novice", "science_medic_novice",
-					"First Aid",
+					"Chemical Warfare",
 					{
-						"First Aid I", "science_medic_injury_01",
-						"First Aid II", "science_medic_injury_02",
-						"First Aid III", "science_medic_injury_03",
-						"First Aid IV", "science_medic_injury_04"
+						"Chemical Warfare I", "science_medic_injury_01",
+						"Chemical Warfare II", "science_medic_injury_02",
+						"Chemical Warfare III", "science_medic_injury_03",
+						"Chemical Warfare IV", "science_medic_injury_04"
 					},
-					"Diagnostics",
+					"Combat Medicine",
 					{
-						"Diagnostics I", "science_medic_injury_speed_01",
-						"Diagnostics II", "science_medic_injury_speed_02",
-						"Diagnostics III", "science_medic_injury_speed_03",
-						"Diagnostics IV", "science_medic_injury_speed_04"
+						"Combat Medicine I", "science_medic_injury_speed_01",
+						"Combat Medicine II", "science_medic_injury_speed_02",
+						"Combat Medicine III", "science_medic_injury_speed_03",
+						"Combat Medicine IV", "science_medic_injury_speed_04"
 					},
-					"Pharmacology",
+					"Pistol Specialization",
 					{
-						"Pharmacology I", "science_medic_ability_01",
-						"Pharmacology II", "science_medic_ability_02",
-						"Pharmacology III", "science_medic_ability_03",
-						"Pharmacology IV", "science_medic_ability_04"	
+						"Pistol Specialization I", "science_medic_ability_01",
+						"Pistol Specialization II", "science_medic_ability_02",
+						"Pistol Specialization III", "science_medic_ability_03",
+						"Pistol Specialization IV", "science_medic_ability_04"	
 					},
-					"Organic Chemistry",
+					"Polearm Specialization",
 					{
-						"Organic Chemistry I", "science_medic_crafting_01",
-						"Organic Chemistry II", "science_medic_crafting_02",
-						"Organic Chemistry III", "science_medic_crafting_03",
-						"Organic Chemistry IV", "science_medic_crafting_04"				
+						"Polearm Specialization I", "science_medic_crafting_01",
+						"Polearm Specialization II", "science_medic_crafting_02",
+						"Polearm Specialization III", "science_medic_crafting_03",
+						"Polearm Specialization IV", "science_medic_crafting_04"				
 					},
-					"Master", "science_medic_master"
+					--"Master", "science_medic_master"
 				},
 				"Merchant",
 				{
