@@ -631,7 +631,7 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
             "Force Enhancement III", "jedi_pad_c_3",
             "Force Enhancement IV", "jedi_pad_c_4"
           },
-          "Tactics",
+          "Dark Side",
           {
             "Dark Side I", "jedi_pad_d_1",
             "Dark Side II", "jedi_pad_d_2",
