@@ -62,8 +62,8 @@ FlameSingle2Command = {
 		HEALTH,
 		true,
 		10,
-		100,
-		10, 
+		10,
+		100, 
 		60,
 		10,
 		2
