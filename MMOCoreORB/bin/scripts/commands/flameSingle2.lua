@@ -61,7 +61,7 @@ FlameSingle2Command = {
 		{"resistance_fire", "fire_resist"},
 		HEALTH,
 		true,
-		10,
+		100,
 		10,
 		10, 
 		60,
