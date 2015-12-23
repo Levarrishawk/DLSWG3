@@ -47,7 +47,7 @@ FireHeavyWeaponCommand = {
 	damageMultiplier = 1.0,
 	speedMultiplier = 1.0,
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 3.0,
+	actionCostMultiplier = 1.0,
 	mindCostMultiplier = 0,
 
 	range = 64,
