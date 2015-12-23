@@ -189,7 +189,7 @@ public:
 			creatureTarget = creature;
 
 		if (!creatureTarget->isInRange(creature, range + creatureTarget->getTemplateRadius() + creature->getTemplateRadius()))
-			return TOOFAR;
+			return INVALIDTARGET;
 
 		uint8 attribute = findAttribute(creatureTarget);
 
@@ -198,7 +198,7 @@ public:
 			return GENERALERROR;
 		}
 
-		int mindCostNew = creature->calculateCostAdjustment(CreatureAttribute::FOCUS, mindCost);
+		int mindCostNew = creature->calculateCostAdjustment(CreatureAttribute::ACTION, actionCost);
 
 		if (creature->getHAM(CreatureAttribute::ACTION) < mindCostNew) {
 			creature->sendSystemMessage("@healing_response:not_enough_mind"); //You do not have enough mind to do that.
