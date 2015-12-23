@@ -47,7 +47,7 @@ FlameSingle2Command = {
 	damageMultiplier = 6,
   speedMultiplier = 4,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 1.0,
+  actionCostMultiplier = 3.0,
   mindCostMultiplier = 0,
   accuracyBonus = 0,
 
@@ -61,18 +61,18 @@ FlameSingle2Command = {
 		{"resistance_fire", "fire_resist"},
 		HEALTH,
 		true,
-		200,
-		200,
-		200, 
-		260,
-		40,
+		10,
+		10,
+		10, 
+		600,
+		10,
 		2
 	  )
 	},
 	
 	weaponType = SPECIALHEAVYWEAPON,
 	
-	range = 32
+	range = 16
 }
 
 AddCommand(FlameSingle2Command)
