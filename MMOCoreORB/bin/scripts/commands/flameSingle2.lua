@@ -47,7 +47,7 @@ FlameSingle2Command = {
 	damageMultiplier = 6,
   speedMultiplier = 4,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 3.0,
+  actionCostMultiplier = 1.0,
   mindCostMultiplier = 0,
   accuracyBonus = 0,
 

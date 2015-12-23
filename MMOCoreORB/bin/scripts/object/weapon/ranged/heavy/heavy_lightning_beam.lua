@@ -103,7 +103,7 @@ object_weapon_ranged_heavy_heavy_lightning_beam = object_weapon_ranged_heavy_sha
 	animationType = "lightning_beam",
 
 	healthAttackCost = 0,
-	actionAttackCost = 130,
+	actionAttackCost = 300,
 	mindAttackCost = 0,
 	forceCost = 0,
 
@@ -116,10 +116,10 @@ object_weapon_ranged_heavy_heavy_lightning_beam = object_weapon_ranged_heavy_sha
 	maxRange = 64,
 	maxRangeAccuracy = -80,
 
-	minDamage = 10,
-	maxDamage = 400,
+	minDamage = 110,
+	maxDamage = 1000,
 
-	attackSpeed = 6,
+	attackSpeed = 1,
 
 	woundsRatio = 18,
 
@@ -128,8 +128,8 @@ object_weapon_ranged_heavy_heavy_lightning_beam = object_weapon_ranged_heavy_sha
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "expEffeciency", "exp_durability", "null", "null", "null", "expRange", "expEffeciency", "null", "null", "null"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "roundsused", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "charges", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 936, 1550, 9.6, 13, 30, 750, -45, -125, 32, 0, 25, 0, 150, 0},
-	experimentalMax = {0, 0, 1340, 3400, 5.4, 23, 65, 1500, -35, -95, 32, 40, 50, 0, 150, 0},
+	experimentalMin = {0, 0, 110, 801, 1.0, 13, 30, 750, -45, -125, 32, 0, 25, 0, 300, 0},
+	experimentalMax = {0, 0, 178, 1000, 1.0, 23, 65, 1500, -35, -95, 32, 40, 50, 0, 300, 0},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1},
 }
