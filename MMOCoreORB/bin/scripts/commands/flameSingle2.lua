@@ -61,18 +61,18 @@ FlameSingle2Command = {
 		{"resistance_fire", "fire_resist"},
 		HEALTH,
 		true,
-		100,
-		100,
-		100, 
-		60,
-		10,
+		200,
+		200,
+		200, 
+		160,
+		40,
 		2
 	  )
 	},
 	
 	weaponType = SPECIALHEAVYWEAPON,
 	
-	range = 16
+	range = 32
 }
 
 AddCommand(FlameSingle2Command)
