@@ -50,7 +50,7 @@ FlameCone2Command = {
   mindCostMultiplier = 0,
   accuracyBonus = 0,
   
-  coneAngle = 45,
+  coneAngle = 90,
   coneAction = true,
 
   poolsToDamage = HEALTH_ATTRIBUTE,
@@ -66,8 +66,8 @@ FlameCone2Command = {
 		100,
 		100,
 		100, 
-		60,
-		20,
+		30,
+		15,
 		20
 	  )
 	},
