@@ -246,14 +246,15 @@ public:
 				return GENERALERROR;
 			}
 
-			int healPower = round(((float)creature->getSkillMod("healing_wound_treatment") / 3.f + 20.f) * bfScale);
+			//int healPower = round(((float)creature->getSkillMod("healing_wound_treatment") / 3.f + 20.f) * bfScale);
 
+			int healPower = 100;
 			int healedWounds = creatureTarget->healWound(creature, attribute, healPower);
 
 			sendWoundMessage(creature, creatureTarget, attribute, healedWounds);
 
 			if (creatureTarget != creature && healedWounds > 0)
-				awardXp(creature, "medical", round(healedWounds * 2.5f));
+				awardXp(creature, "combat_general", round(healedWounds * 2.5f));
 
 		} else {
 			return GENERALERROR;
