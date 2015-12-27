@@ -35,6 +35,7 @@ protected:
 
 	bool tendDamage;
 	bool tendWound;
+	bool healDamage;
 
 	float speed;
 	float range;
