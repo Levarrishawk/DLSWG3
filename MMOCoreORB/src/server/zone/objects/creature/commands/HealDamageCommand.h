@@ -5,7 +5,31 @@
 #ifndef HEALDAMAGECOMMAND_H_
 #define HEALDAMAGECOMMAND_H_
 
+
 #include "server/zone/objects/scene/SceneObject.h"
+#include "TendCommand.h"
+
+class HealDamageCommand : public TendCommand {
+public:
+
+	HealDamageCommand(const String& name, ZoneProcessServer* server)
+			: TendCommand(name, server) {
+		effectName = "clienteffect/medic_heal.cef";
+
+		actionCost = 400;
+		mindWoundCost = 0;
+
+		tendDamage = true;
+
+		healthHealed = 1750;
+		//actionHealed = 50;
+
+		defaultTime = 2.0;
+		range = 32;
+	}
+
+};
+/*#include "server/zone/objects/scene/SceneObject.h"
 #include "server/zone/objects/tangible/pharmaceutical/StimPack.h"
 #include "server/zone/objects/tangible/pharmaceutical/RangedStimPack.h"
 #include "server/zone/ZoneServer.h"
@@ -436,6 +460,6 @@ public:
 		return SUCCESS;
 	}
 
-};
+};*/
 
 #endif //HEALDAMAGECOMMAND_H_

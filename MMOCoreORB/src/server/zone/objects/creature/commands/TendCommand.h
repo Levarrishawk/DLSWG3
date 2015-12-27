@@ -59,6 +59,7 @@ public:
 
 		tendDamage = false;
 		tendWound = false;
+		healDamage = false;
 
 		speed = 0.0f;
 	}
@@ -230,7 +231,32 @@ public:
 			int healedAction = creatureTarget->healDamage(creature, CreatureAttribute::ACTION, healPower, true, false);
 
 			sendHealMessage(creature, creatureTarget, healedHealth, healedAction);
-		} else if (tendWound) {
+		}
+		else if (healDamage) {
+					if (!creatureTarget->hasDamage(CreatureAttribute::HEALTH) && !creatureTarget->hasDamage(CreatureAttribute::ACTION)) {
+						if (creatureTarget == creature)
+							creature->sendSystemMessage("@healing_response:healing_response_61"); //You have no damage to heal.
+						else if (creatureTarget->isPlayerCreature()) {
+							StringIdChatParameter stringId("healing_response", "healing_response_63"); //%NT has no damage to heal.
+							stringId.setTT(creatureTarget->getObjectID());
+							creature->sendSystemMessage(stringId);
+						} else {
+							StringBuffer message;
+							message << creatureTarget->getDisplayedName() << " has no damage to heal.";
+							creature->sendSystemMessage(message.toString());
+						}
+						return GENERALERROR;
+					}
+
+					//int healPower = round(((float)creature->getSkillMod("healing_injury_treatment") / 3.f + 20.f) * bfScale);
+					int healPower = 1750;
+
+					int healedHealth = creatureTarget->healDamage(creature, CreatureAttribute::HEALTH, healPower);
+					int healedAction = creatureTarget->healDamage(creature, CreatureAttribute::ACTION, healPower, true, false);
+
+					sendHealMessage(creature, creatureTarget, healedHealth, healedAction);
+				}
+		else if (tendWound) {
 			if (attribute >= CreatureAttribute::MIND)
 				attribute = CreatureAttribute::UNKNOWN;
 

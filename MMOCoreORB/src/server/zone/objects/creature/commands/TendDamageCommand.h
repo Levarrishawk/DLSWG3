@@ -13,7 +13,7 @@ public:
 
 	TendDamageCommand(const String& name, ZoneProcessServer* server)
 			: TendCommand(name, server) {
-		effectName = "clienteffect/healing_healdamage.cef";
+		effectName = "clienteffect/medic_heal.cef";
 
 		actionCost = 400;
 		mindWoundCost = 0;
