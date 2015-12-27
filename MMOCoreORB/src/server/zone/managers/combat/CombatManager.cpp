@@ -1894,7 +1894,7 @@ int CombatManager::applyDamage(CreatureObject* attacker, WeaponObject* weapon, T
 
 	String xpType;
 	if (data.getAttackType() == CombatManager::FORCEATTACK)
-		xpType = "combat_general";
+		xpType = "jedi_general";
 	else if (attacker->isPet())
 		xpType = "creaturehandler";
 	else
