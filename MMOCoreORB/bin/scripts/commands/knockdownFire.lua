@@ -45,18 +45,20 @@ KnockdownFireCommand = {
         name = "knockdownfire",
 
 	damageMultiplier = 2.5,
-  speedMultiplier = 2.0,
+  speedMultiplier = 1.0,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 3,
+  actionCostMultiplier = 1,
   mindCostMultiplier = 0,
-
+  coneAngle = 40,
+  coneAction = true,
+  
   stateEffects = {
     StateEffect( 
     DIZZY_EFFECT, 
     {}, 
     { "dizzy_defense", "resistance_states" }, 
     { "jedi_state_defense" }, 
-    30, 
+    100, 
     100, 
     10 
     ),
@@ -65,31 +67,18 @@ KnockdownFireCommand = {
     { "knockdownRecovery", "lastKnockdown" }, 
     { "knockdown_defense" }, 
     {}, 
-    30, 
+    75, 
     100, 
     0 
     )
   },
 
-  dotEffects = {
-    DotEffect( 
-    ONFIRE, 
-    {"resistance_fire", "fire_resist"},
-    HEALTH,
-    true,
-    100,
-    100,
-    100, 
-    60,
-    10,
-    2
-    )
-  },
+  
   animationCRC = hashCode("fire_1_special_single_medium"),
   
   poolsToDamage = HEALTH_ATTRIBUTE,
 	
-	weaponType = CARBINEWEAPON,
+	weaponType = SPECIALHEAVYWEAPON,
 
 	range = -1
 }

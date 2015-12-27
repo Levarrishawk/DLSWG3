@@ -24,7 +24,7 @@ public:
 		tendWound = true;
 
 		//defaultTime = 5.0;
-		range = 6.0;
+		range = 32.0;
 	}
 
 
