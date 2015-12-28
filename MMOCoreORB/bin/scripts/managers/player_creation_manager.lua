@@ -22,8 +22,7 @@ professions = {
   "crafting_armorsmith",
   "crafting_droidengineer",
   "crafting_chef",
-  "science_combatmedic",
-  "social_entertainer" 
+  "social_entertainer"
 }
 
 marksmanPistol = "object/weapon/ranged/pistol/pistol_cdef.iff"
@@ -71,7 +70,6 @@ professionSpecificItems = {
   outdoors_squadleader = { genericTool },
   outdoors_creaturehandler = { genericTool },
   science_medic = { foodTool },
-  science_combatmedic = { foodTool, genericTool,  mineralTool, chemicalTool },
   crafting_architect = { genericTool, mineralTool, chemicalTool },
   crafting_armorsmith = { genericTool, mineralTool, chemicalTool }, 
   crafting_droidengineer = { genericTool, mineralTool, chemicalTool }, 
