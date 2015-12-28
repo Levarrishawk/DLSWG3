@@ -45,7 +45,7 @@ ForceLightningSingle2Command = {
 	name = "forcelightningsingle2",
 
 	minDamage = 2500,
-	maxDamage = 3000,
+	maxDamage = 3800,
 	speed = 2.5,
 	forceCost = 35,
 	accuracySkillMod = "forcelightning_accuracy";
@@ -59,7 +59,16 @@ ForceLightningSingle2Command = {
 		30,
 		0,
 		10
-	  )
+	  ),
+    StateEffect( 
+    KNOCKDOWN_EFFECT, 
+    { "knockdownRecovery", "lastKnockdown" }, 
+    { "force_defense" }, 
+    {}, 
+    65, 
+    0, 
+    0 
+    )
 	},
 
 	animationCRC = hashCode("force_lightning_1_particle_level_3_light"),
