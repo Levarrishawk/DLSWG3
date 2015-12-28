@@ -71,6 +71,7 @@ professionSpecificItems = {
   outdoors_squadleader = { genericTool },
   outdoors_creaturehandler = { genericTool },
   science_medic = { foodTool },
+  science_combatmedic = { foodTool, genericTool,  mineralTool, chemicalTool },
   crafting_architect = { genericTool, mineralTool, chemicalTool },
   crafting_armorsmith = { genericTool, mineralTool, chemicalTool }, 
   crafting_droidengineer = { genericTool, mineralTool, chemicalTool }, 
