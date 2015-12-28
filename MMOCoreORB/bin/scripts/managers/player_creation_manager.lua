@@ -22,6 +22,7 @@ professions = {
   "crafting_armorsmith",
   "crafting_droidengineer",
   "crafting_chef",
+  "science_combatmedic",
   "social_entertainer"
 }
 
@@ -73,7 +74,8 @@ professionSpecificItems = {
   crafting_architect = { genericTool, mineralTool, chemicalTool },
   crafting_armorsmith = { genericTool, mineralTool, chemicalTool }, 
   crafting_droidengineer = { genericTool, mineralTool, chemicalTool }, 
-  crafting_chef = { genericTool, mineralTool, chemicalTool },     
+  crafting_chef = { genericTool, mineralTool, chemicalTool, foodTool },
+  science_combatmedic = { genericTool, mineralTool, chemicalTool, foodTool },     
   social_entertainer = { slitherhorn }
 }
 
