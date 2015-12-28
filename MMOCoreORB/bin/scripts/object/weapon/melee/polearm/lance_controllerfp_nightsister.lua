@@ -101,7 +101,7 @@ object_weapon_melee_polearm_lance_controllerfp_nightsister = object_weapon_melee
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
 	healthAttackCost = 0,
-	actionAttackCost = 150,
+	actionAttackCost = 300,
 	mindAttackCost = 0,
 	forceCost = 0,
 
@@ -117,7 +117,7 @@ object_weapon_melee_polearm_lance_controllerfp_nightsister = object_weapon_melee
 	minDamage = 10,
 	maxDamage = 190,
 
-	attackSpeed = 5.15,
+	attackSpeed = 1,
 
 	woundsRatio = 14,
 

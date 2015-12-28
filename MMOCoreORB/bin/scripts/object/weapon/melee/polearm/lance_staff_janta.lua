@@ -101,7 +101,7 @@ object_weapon_melee_polearm_lance_staff_janta = object_weapon_melee_polearm_shar
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
 	healthAttackCost = 0,
-	actionAttackCost = 150,
+	actionAttackCost = 300,
 	mindAttackCost = 0,
 	forceCost = 0,
 
@@ -114,10 +114,10 @@ object_weapon_melee_polearm_lance_staff_janta = object_weapon_melee_polearm_shar
 	maxRange = 6,
 	maxRangeAccuracy = 5,
 
-	minDamage = 25,
-	maxDamage = 56,
+	minDamage = 250,
+	maxDamage = 500,
 
-	attackSpeed = 5.8,
+	attackSpeed = 1,
 
 	woundsRatio = 7,
 

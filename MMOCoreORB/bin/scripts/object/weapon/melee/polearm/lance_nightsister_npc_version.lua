@@ -101,7 +101,7 @@ object_weapon_melee_polearm_lance_nightsister_npc_version = object_weapon_melee_
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
 	healthAttackCost = 0,
-	actionAttackCost = 150,
+	actionAttackCost = 300,
 	mindAttackCost = 0,
 	forceCost = 0,
 
