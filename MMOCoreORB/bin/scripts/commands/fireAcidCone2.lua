@@ -54,6 +54,21 @@ FireAcidCone2Command = {
   coneAngle = 45,
   coneAction = true,
 
+dotEffects = {
+    DotEffect( 
+    POISONED_EFFECT, 
+    {"resistance_poison", "poison_resist"},
+    HEALTH,
+    true,
+    100,
+    100,
+    100, 
+    40,
+    50,
+    0
+    )
+  },
+
   poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animationCRC = hashCode("fire_acid_rifle_single_2_medium"),
@@ -63,6 +78,7 @@ FireAcidCone2Command = {
 	weaponType = SPECIALHEAVYWEAPON,
 	
 	range = 32
+	
 }
 
 AddCommand(FireAcidCone2Command)

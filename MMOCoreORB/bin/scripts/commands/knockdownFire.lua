@@ -67,7 +67,7 @@ KnockdownFireCommand = {
     { "knockdownRecovery", "lastKnockdown" }, 
     { "knockdown_defense" }, 
     {}, 
-    75, 
+    85, 
     100, 
     0 
     )

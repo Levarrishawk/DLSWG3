@@ -44,10 +44,10 @@
 FlushingShot1Command = {
         name = "flushingshot1",
 
-	damageMultiplier = 2.25,
-  speedMultiplier = 3.45,
+	damageMultiplier = 3.25,
+  speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 4,
+  actionCostMultiplier = 1,
   mindCostMultiplier = 0,
 	accuracyBonus = 5,
 
@@ -60,16 +60,7 @@ FlushingShot1Command = {
 		100, 
 		0, 
 		35 
-	  ),
-	  StateEffect( 
-		POSTUREUP_EFFECT, 
-		{ "postureUpRecovery" }, 
-		{ "posture_change_up_defense" }, 
-		{}, 
-		100, 
-		0, 
-		0 
-	  )
+	  ),  
 	},
 
 	poolsToDamage = HEALTH_ATTRIBUTE,
@@ -78,7 +69,7 @@ FlushingShot1Command = {
 
 	combatSpam = "flushingshot",
 	
-	weaponType = RIFLEWEAPON,
+	weaponType = SPECIALHEAVYWEAPON,
 
 	range = -1
 }

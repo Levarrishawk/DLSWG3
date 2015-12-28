@@ -51,6 +51,21 @@ FireAcidSingle2Command = {
   mindCostMultiplier = 0,
   accuracyBonus = 0,
 
+dotEffects = {
+    DotEffect( 
+    POISONED_EFFECT, 
+    {"resistance_poison", "poison_resist"},
+    HEALTH,
+    true,
+    100,
+    100,
+    100, 
+    40,
+    50,
+    0
+    )
+  },
+
   poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animationCRC = hashCode("fire_acid_rifle_single_2_light"),
@@ -60,6 +75,7 @@ FireAcidSingle2Command = {
 	weaponType = SPECIALHEAVYWEAPON,
 	
 	range = 32
+	
 }
 
 AddCommand(FireAcidSingle2Command)

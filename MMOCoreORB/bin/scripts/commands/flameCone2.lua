@@ -44,7 +44,7 @@
 FlameCone2Command = {
         name = "flamecone2",
 	damageMultiplier = 5,
-  speedMultiplier = 4,
+  speedMultiplier = 1,
   healthCostMultiplier = 0,
   actionCostMultiplier = 1.5,
   mindCostMultiplier = 0,
