@@ -14,7 +14,7 @@ public:
 
 	HealDamageCommand(const String& name, ZoneProcessServer* server)
 			: TendCommand(name, server) {
-		effectName = "clienteffect/medic_heal.cef";
+		effectName = "clienteffect/bacta_bomb.cef";
 
 		actionCost = 400;
 		mindWoundCost = 0;
@@ -24,7 +24,7 @@ public:
 		healthHealed = 1750;
 		//actionHealed = 50;
 
-		defaultTime = 2.0;
+		defaultTime = 4.0;
 		range = 32;
 	}
 
