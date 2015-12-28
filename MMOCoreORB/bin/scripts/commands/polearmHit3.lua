@@ -43,10 +43,10 @@
 
 PolearmHit3Command = {
         name = "polearmhit3",
-	damageMultiplier = 5.5,
+	damageMultiplier = 1.5,
   speedMultiplier = 3,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 3,
+  actionCostMultiplier = 1,
   mindCostMultiplier = 0,
   accuracyBonus = 30,
   poolsToDamage = HEALTH_ATTRIBUTE,

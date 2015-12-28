@@ -44,10 +44,10 @@
 PolearmStun2Command = {
         name = "polearmstun2",
 
-	damageMultiplier = 4.75,
-  speedMultiplier = 3.25,
+	damageMultiplier = 1.5,
+  speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 3.5,
+  actionCostMultiplier = 1,
   mindCostMultiplier = 0,
   accuracyBonus = 30,
   poolsToDamage = HEALTH_ATTRIBUTE,
