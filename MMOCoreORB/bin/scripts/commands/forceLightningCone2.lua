@@ -71,7 +71,7 @@ ForceLightningCone2Command = {
 	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	attackType = FORCEATTACK,
-	damageType = ELECTRICITY_DAMAGE,
+	damageType = LIGHTSABER_DAMAGE,
 
 	range = 32
 }

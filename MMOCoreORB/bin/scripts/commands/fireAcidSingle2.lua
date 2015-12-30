@@ -54,15 +54,13 @@ FireAcidSingle2Command = {
 dotEffects = {
     DotEffect( 
     POISONED_EFFECT, 
-    {"resistance_poison", "poison_resist"},
-    HEALTH,
+    { "resistance_poison", "poison_disease_resist" },
+    ATTACK_POOL,
     true,
-    100,
-    100,
-    100, 
-    40,
+    0,
     50,
-    0
+    50, 
+    120
     )
   },
 
