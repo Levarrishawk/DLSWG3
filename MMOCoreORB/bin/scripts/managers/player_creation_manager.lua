@@ -23,7 +23,7 @@ professions = {
   "crafting_droidengineer",
   "crafting_chef",
   "science_combatmedic",
-  "social_entertainer"
+ -- "social_entertainer"
 }
 
 marksmanPistol = "object/weapon/ranged/pistol/pistol_cdef.iff"
@@ -76,7 +76,7 @@ professionSpecificItems = {
   crafting_droidengineer = { genericTool, mineralTool, chemicalTool }, 
   crafting_chef = { genericTool, mineralTool, chemicalTool, foodTool },
   science_combatmedic = { genericTool, mineralTool, chemicalTool, foodTool },     
-  social_entertainer = { slitherhorn }
+--  social_entertainer = { slitherhorn }
 }
 
 commonStartingItems = { marojMelon, survivalKnife, x31Speeder }
