@@ -182,7 +182,7 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 				"Commando",
 				{
 					"Novice", "combat_commando_novice",
-					"Field Tactics",
+					--[["Field Tactics",
 					{
 						"Field Tactics I", "combat_commando_heavyweapon_accuracy_01",
 						"Field Tactics II", "combat_commando_heavyweapon_accuracy_02",
@@ -195,7 +195,7 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 						"Heavy Support Weapons II", "combat_commando_heavyweapon_speed_02",
 						"Heavy Support Weapons III", "combat_commando_heavyweapon_speed_03",
 						"Heavy Support Weapons IV", "combat_commando_heavyweapon_speed_04"
-					},
+					},--]]
 					"Flamethrower",
 					{
 						"Flamethrower Specialization I", "combat_commando_thrownweapon_01",
@@ -210,7 +210,7 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 						"Acid Rifle Specialization III", "combat_commando_support_03",
 						"Acid Rifle Specialization IV", "combat_commando_support_04"
 					},
-					"Master", "combat_commando_master"
+					--"Master", "combat_commando_master"
 				},
 				"Beast Master",
 				{

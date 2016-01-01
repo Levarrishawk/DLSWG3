@@ -44,24 +44,13 @@
 FlushingShot1Command = {
         name = "flushingshot1",
 
-	damageMultiplier = 3.25,
+	damageMultiplier = 3.0,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
   actionCostMultiplier = 1,
   mindCostMultiplier = 0,
 	accuracyBonus = 5,
 
-	stateEffects = {
-	  StateEffect( 
-		STUN_EFFECT, 
-		{}, 
-		{ "stun_defense", "resistance_states" }, 
-		{ "jedi_state_defense" }, 
-		100, 
-		0, 
-		35 
-	  ),  
-	},
 
 	poolsToDamage = HEALTH_ATTRIBUTE,
 
