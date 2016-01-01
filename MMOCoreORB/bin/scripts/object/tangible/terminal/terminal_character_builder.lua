@@ -203,12 +203,12 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 						"Flamethrower Specialization III", "combat_commando_thrownweapon_03",
 						"Flamethrower Specialization IV", "combat_commando_thrownweapon_04"
 					},
-					"Acid Rifle",
+					"Sword Specialization",
 					{
-						"Acid Rifle Specialization I", "combat_commando_support_01",
-						"Acid Rifle Specialization II", "combat_commando_support_02",
-						"Acid Rifle Specialization III", "combat_commando_support_03",
-						"Acid Rifle Specialization IV", "combat_commando_support_04"
+						"Sword Specialization I", "combat_commando_support_01",
+						"Sword Specialization II", "combat_commando_support_02",
+						"Sword Specialization III", "combat_commando_support_03",
+						"Sword Specialization IV", "combat_commando_support_04"
 					},
 					--"Master", "combat_commando_master"
 				},
@@ -487,9 +487,9 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 				"Assassin",
 				{
 					"Novice", "combat_rifleman_novice",
-					"Sniping",
+					--[["Rifle Marksmanship",
 					{
-						"Sniping I", "combat_rifleman_accuracy_01",
+						"Rifle Marksmanship I", "combat_rifleman_accuracy_01",
 						"Sniping II", "combat_rifleman_accuracy_02",
 						"Sniping III", "combat_rifleman_accuracy_03",
 						"Sniping IV", "combat_rifleman_accuracy_04"
@@ -500,22 +500,22 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 						"Concealment II", "combat_rifleman_speed_02",
 						"Concealment III", "combat_rifleman_speed_03",
 						"Concealment IV", "combat_rifleman_speed_04"
-					},
-					"Counter-Sniping",
+					},--]]
+					"Rifle Marksmanship",
 					{
-						"Counter-Sniping I", "combat_rifleman_ability_01",
-						"Counter-Sniping II", "combat_rifleman_ability_02",
-						"Counter-Sniping III", "combat_rifleman_ability_03",
-						"Counter-Sniping IV", "combat_rifleman_ability_04"
+						"Rifle Marksmanship I", "combat_rifleman_ability_01",
+						"Rifle Marksmanship II", "combat_rifleman_ability_02",
+						"Rifle Marksmanship III", "combat_rifleman_ability_03",
+						"Rifle Marksmanship IV", "combat_rifleman_ability_04"
 					},
-					"Rifle Abilities",
+					"Teras Kasi",
 					{
-						"Rifle Abilities I", "combat_rifleman_support_01",
-						"Rifle Abilities II", "combat_rifleman_support_02",
-						"Rifle Abilities III", "combat_rifleman_support_03",
-						"Rifle Abilities IV", "combat_rifleman_support_04"
+						"Teras Kasi I", "combat_rifleman_support_01",
+						"Teras Kasi II", "combat_rifleman_support_02",
+						"Teras Kasi III", "combat_rifleman_support_03",
+						"Teras Kasi IV", "combat_rifleman_support_04"
 					},
-					"Master", "combat_rifleman_master"
+					--"Master", "combat_rifleman_master"
 				},
 				"Ranger",
 				{
