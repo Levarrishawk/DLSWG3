@@ -826,7 +826,7 @@ void MissionManagerImplementation::randomizeGenericBountyMission(CreatureObject*
 
 	int level = 1;
 	int randomTexts = 25;
-	if (player->hasSkill("combat_bountyhunter_investigation_03")) {
+	if (player->hasSkill("combat_bountyhunter_master")) {
 		level = 3;
 	} else if (player->hasSkill("combat_bountyhunter_investigation_01")) {
 		level = 2;
@@ -938,8 +938,9 @@ void MissionManagerImplementation::randomizeGenericBountyMission(CreatureObject*
 			String name = "";
 
 			if (creature != NULL) {
-				name = creature->getFirstName() + " " + creature->getLastName();
-				name = name.trim();
+				name = "Player Target";
+				/*name = creature->getFirstName() + " " + creature->getLastName();
+				name = name.trim();*/
 
 				int difficulty = 250;
 				level = difficulty;
