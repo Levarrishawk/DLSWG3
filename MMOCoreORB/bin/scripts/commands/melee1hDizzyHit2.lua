@@ -45,10 +45,10 @@ Melee1hDizzyHit2Command = {
         name = "melee1hdizzyhit2",
 
 	damageMultiplier = 3.5,
-	speedMultiplier = 2.25,
-	healthCostMultiplier = 0.75,
-	actionCostMultiplier = 0.75,
-	mindCostMultiplier = 1.25,
+	speedMultiplier = 1,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 1,
+	mindCostMultiplier = 0,
         accuracyBonus = 25,
 
 	areaRange = 16,
@@ -60,14 +60,23 @@ Melee1hDizzyHit2Command = {
 
 	stateEffects = {
 	  StateEffect( 
-		DIZZY_EFFECT, 
-		{}, 
-		{ "dizzy_defense", "resistance_states" }, 
-		{ "jedi_state_defense" }, 
-		100, 
-		0, 
-		50 
-	  )
+    DIZZY_EFFECT, 
+    {}, 
+    { "dizzy_defense", "resistance_states" }, 
+    { "jedi_state_defense" }, 
+    40, 
+    100, 
+    10 
+    ),
+    StateEffect( 
+    KNOCKDOWN_EFFECT, 
+    { "knockdownRecovery", "lastKnockdown" }, 
+    { "knockdown_defense" }, 
+    {}, 
+    40, 
+    50, 
+    0 
+    )
 	},
 	
 	weaponType = ONEHANDMELEEWEAPON,
