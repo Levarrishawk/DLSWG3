@@ -50,8 +50,6 @@ ActionShot2Command = {
   actionCostMultiplier = 1,
   mindCostMultiplier = 0,
 
-  coneAngle = 30,
-  coneAction = true,
 
   poolsToDamage = HEALTH_ATTRIBUTE,
 
