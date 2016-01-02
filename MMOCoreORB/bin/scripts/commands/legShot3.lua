@@ -45,11 +45,14 @@ LegShot3Command = {
         name = "legshot3",
 
 	damageMultiplier = 2.0,
-	speedMultiplier = 2.0,
+	speedMultiplier = 1,
 	healthCostMultiplier = 0,
-  actionCostMultiplier = 4.5,
+  actionCostMultiplier = 1,
   mindCostMultiplier = 0,
 	accuracyBonus = 25,
+	
+	coneAngle = 180,
+  coneAction = true,
 
 	stateEffects = {
 	  StateEffect( 
@@ -60,12 +63,21 @@ LegShot3Command = {
 		100, 
 		0, 
 		30 
-	  )
+	  ),
+	  StateEffect( 
+    KNOCKDOWN_EFFECT, 
+    { "knockdownRecovery", "lastKnockdown" }, 
+    { "knockdown_defense" }, 
+    {}, 
+    100, 
+    0, 
+    0
+    ) 
 	},
 
 	poolsToDamage = HEALTH_ATTRIBUTE,
 
-	animationCRC = hashCode("test_homing"),
+	animationCRC = hashCode("fire_defender_posture_change_down"),
 
 	combatSpam = "kneecapshot",
 	

@@ -44,10 +44,10 @@
 FullAutoArea2Command = {
         name = "fullautoarea2",
 
-	damageMultiplier = 2.85,
-  speedMultiplier = 2.35,
+	damageMultiplier = 3,
+  speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 3.85,
+  actionCostMultiplier = 1,
   mindCostMultiplier = 0,
 	accuracyBonus = 25,
 
@@ -55,7 +55,7 @@ FullAutoArea2Command = {
 
 	combatSpam = "a_auto",
 
-	coneAngle = 30,
+	coneAngle = 180,
 	coneAction = true,
 
 	stateEffects = {
@@ -65,7 +65,7 @@ FullAutoArea2Command = {
 		{ "dizzy_defense", "resistance_states" }, 
 		{ "jedi_state_defense" }, 
 		20, 
-		70, 
+		40, 
 		4 
 	  ),
 	  StateEffect( 
