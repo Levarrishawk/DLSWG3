@@ -103,7 +103,7 @@ object_weapon_melee_baton_victor_baton_gaderiffi = object_weapon_melee_baton_sha
 	
 	-- The values below are the default values.  To be used for blue frog objects primarily
 	healthAttackCost = 0,
-	actionAttackCost = 150,
+	actionAttackCost = 300,
 	mindAttackCost = 0,
 	forceCost = 0,
 	
@@ -119,7 +119,7 @@ object_weapon_melee_baton_victor_baton_gaderiffi = object_weapon_melee_baton_sha
 	minDamage = 128,
 	maxDamage = 148,
 	
-	attackSpeed = 3,
+	attackSpeed = 1,
 
 	woundsRatio = 16,
 }

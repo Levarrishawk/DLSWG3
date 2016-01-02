@@ -100,9 +100,9 @@ object_weapon_melee_special_blacksun_razor = object_weapon_melee_special_shared_
 	       
 	
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 35,
-	actionAttackCost = 50,
-	mindAttackCost = 40,
+	healthAttackCost = 0,
+	actionAttackCost = 300,
+	mindAttackCost = 0,
 	forceCost = 0,
 	
 	pointBlankAccuracy = 0,
@@ -117,7 +117,7 @@ object_weapon_melee_special_blacksun_razor = object_weapon_melee_special_shared_
 	minDamage = 89,
 	maxDamage = 224,
 	
-	attackSpeed = 3.0,
+	attackSpeed = 1,
 
 	woundsRatio = 8,
 
@@ -126,8 +126,8 @@ object_weapon_melee_special_blacksun_razor = object_weapon_melee_special_shared_
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "exp_durability", "expRange", "expRange", "null", "expRange", "null", "null", "null", "null"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "maxrange", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 7, 60, 3.6, 14, 750, 5, 5, 1, 5, 5, 0, 150, 0},
-	experimentalMax = {0, 0, 13, 111, 2.5, 26, 1500, 15, 15, 1, 15, 5, 0, 150, 0},
+	experimentalMin = {0, 0, 17, 160, 1, 14, 750, 5, 5, 1, 5, 5, 0, 300, 0},
+	experimentalMax = {0, 0, 89, 224, 1, 26, 1500, 15, 15, 1, 15, 5, 0, 300, 0},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }

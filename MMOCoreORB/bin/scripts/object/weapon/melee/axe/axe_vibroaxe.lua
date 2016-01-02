@@ -100,9 +100,9 @@ object_weapon_melee_axe_axe_vibroaxe = object_weapon_melee_axe_shared_axe_vibroa
 
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 65,
-	actionAttackCost = 40,
-	mindAttackCost = 15,
+	healthAttackCost = 0,
+	actionAttackCost = 300,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankRange = 0,
@@ -126,8 +126,8 @@ object_weapon_melee_axe_axe_vibroaxe = object_weapon_melee_axe_shared_axe_vibroa
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "exp_durability", "expRange", "expRange", "null", "expRange", "null", "null", "null", "null"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "maxrange", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 53, 123, 6.5, 6, 750, -26, -26, 3, -26, 4, 0, 150, 0},
-	experimentalMax = {0, 0, 98, 228, 4.5, 14, 1500, -14, -14, 3, -14, 4, 0, 150, 0},
+	experimentalMin = {0, 0, 53, 123, 1, 6, 750, -26, -26, 3, -26, 4, 0, 300, 0},
+	experimentalMax = {0, 0, 98, 228, 1, 14, 1500, -14, -14, 3, -14, 4, 0, 300, 0},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }

@@ -101,7 +101,7 @@ object_weapon_melee_sword_sword_curved_nyax = object_weapon_melee_sword_shared_s
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
 	healthAttackCost = 0,
-	actionAttackCost = 150,
+	actionAttackCost = 300,
 	mindAttackCost = 0,
 	forceCost = 0,
 
@@ -115,9 +115,9 @@ object_weapon_melee_sword_sword_curved_nyax = object_weapon_melee_sword_shared_s
 	maxRangeAccuracy = 4,
 
 	minDamage = 17,
-	maxDamage = 78,
+	maxDamage = 178,
 
-	attackSpeed = 4.0,
+	attackSpeed = 1,
 
 	woundsRatio = 15,
 

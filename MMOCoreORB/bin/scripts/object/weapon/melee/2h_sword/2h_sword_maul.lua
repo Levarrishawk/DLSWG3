@@ -101,7 +101,7 @@ object_weapon_melee_2h_sword_2h_sword_maul = object_weapon_melee_2h_sword_shared
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
 	healthAttackCost = 0,
-	actionAttackCost = 150,
+	actionAttackCost = 300,
 	mindAttackCost = 0,
 	forceCost = 0,
 
@@ -117,7 +117,7 @@ object_weapon_melee_2h_sword_2h_sword_maul = object_weapon_melee_2h_sword_shared
 	minDamage = 400,
 	maxDamage = 500,
 
-	attackSpeed = 4,
+	attackSpeed = 1,
 
 	woundsRatio = 15,
 
@@ -126,8 +126,8 @@ object_weapon_melee_2h_sword_2h_sword_maul = object_weapon_melee_2h_sword_shared
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "exp_durability", "expRange", "expRange", "null", "expRange", "null", "null", "null", "null"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "maxrange", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 53, 235, 8.5, 11, 750, -46, -46, 3, -46, 4, 0, 150, 0},
-	experimentalMax = {0, 0, 98, 436, 5.8, 20, 1500, -25, -25, 3, -25, 4, 0, 150, 0},
+	experimentalMin = {0, 0, 53, 235, 1, 11, 750, -46, -46, 3, -46, 4, 0, 300, 0},
+	experimentalMax = {0, 0, 98, 436, 1, 20, 1500, -25, -25, 3, -25, 4, 0, 300, 0},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }

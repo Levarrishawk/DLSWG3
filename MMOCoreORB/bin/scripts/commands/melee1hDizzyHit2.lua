@@ -74,7 +74,7 @@ Melee1hDizzyHit2Command = {
     { "knockdown_defense" }, 
     {}, 
     40, 
-    50, 
+    60, 
     0 
     )
 	},

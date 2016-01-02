@@ -101,7 +101,7 @@ object_weapon_melee_special_vibroknuckler = object_weapon_melee_special_shared_v
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
 	healthAttackCost = 0,
-	actionAttackCost = 100,
+	actionAttackCost = 300,
 	mindAttackCost = 0,
 	forceCost = 0,
 
@@ -126,8 +126,8 @@ object_weapon_melee_special_vibroknuckler = object_weapon_melee_special_shared_v
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "exp_durability", "expRange", "expRange", "null", "expRange", "null", "null", "null", "null"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "maxrange", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 7, 60, 3.6, 14, 750, 5, 5, 1, 5, 5, 0, 150, 0},
-	experimentalMax = {0, 0, 13, 111, 2.5, 26, 1500, 15, 15, 1, 15, 5, 0, 150, 0},
+	experimentalMin = {0, 0, 37, 160, 1, 14, 750, 5, 5, 1, 5, 5, 0, 300, 0},
+	experimentalMax = {0, 0, 190, 211, 1, 26, 1500, 15, 15, 1, 15, 5, 0, 300, 0},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }

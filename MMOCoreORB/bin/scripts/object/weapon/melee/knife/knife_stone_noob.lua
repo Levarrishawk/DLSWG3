@@ -101,7 +101,7 @@ object_weapon_melee_knife_knife_stone_noob = object_weapon_melee_knife_shared_kn
 	
 	-- The values below are the default values.  To be used for blue frog objects primarily
 	healthAttackCost = 0,
-	actionAttackCost = 150,
+	actionAttackCost = 300,
 	mindAttackCost = 0,
 	forceCost = 0,
 
@@ -117,7 +117,7 @@ object_weapon_melee_knife_knife_stone_noob = object_weapon_melee_knife_shared_kn
 	minDamage = 7,
 	maxDamage = 47,
 
-	attackSpeed = 3,
+	attackSpeed = 1,
 
 	woundsRatio = 7
 }

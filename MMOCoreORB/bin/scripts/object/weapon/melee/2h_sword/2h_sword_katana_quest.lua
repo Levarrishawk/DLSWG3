@@ -72,7 +72,7 @@ object_weapon_melee_2h_sword_2h_sword_katana_quest = object_weapon_melee_2h_swor
 	damageType = KINETIC,
 	
 	-- NONE, LIGHT, MEDIUM, HEAVY
-	armorPiercing = MEDIUM,
+	armorPiercing = HEAVY,
 	
 	-- combat_rangedspecialize_bactarifle, combat_rangedspecialize_rifle, combat_rangedspecialize_pistol, combat_rangedspecialize_heavy, combat_rangedspecialize_carbine
 	-- combat_meleespecialize_unarmed, combat_meleespecialize_twohand, combat_meleespecialize_polearm, combat_meleespecialize_onehand, combat_general,
@@ -101,7 +101,7 @@ object_weapon_melee_2h_sword_2h_sword_katana_quest = object_weapon_melee_2h_swor
 	
 	-- The values below are the default values.  To be used for blue frog objects primarily
 	healthAttackCost = 0,
-	actionAttackCost = 150,
+	actionAttackCost = 300,
 	mindAttackCost = 0,
 	forceCost = 0,
 	
@@ -117,7 +117,7 @@ object_weapon_melee_2h_sword_2h_sword_katana_quest = object_weapon_melee_2h_swor
 	minDamage = 17,
 	maxDamage = 184,
 	
-	attackSpeed = 3.5,
+	attackSpeed = 1,
 
 	woundsRatio = 24
 }
