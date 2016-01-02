@@ -45,9 +45,9 @@ FireLightningCone2Command = {
         name = "firelightningcone2",
 
 	damageMultiplier = 4.0,
-  speedMultiplier = 2.0,
+  speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 3,
+  actionCostMultiplier = 1,
   mindCostMultiplier = 0,
 
   animationCRC = hashCode("fire_area_medium"),
@@ -56,7 +56,7 @@ FireLightningCone2Command = {
 
 	combatSpam = "firelightningcone2",
 
-	coneAngle = 60,
+	coneAngle = 180,
 	coneAction = true,
 	
 	weaponType = SPECIALHEAVYWEAPON,

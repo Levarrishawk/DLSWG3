@@ -420,7 +420,7 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 				"Shock Trooper",
 				{
 					"Novice", "combat_pistol_novice",
-					"Grips",
+				--[[	"Grips",
 					{
 						"Pistol Grips I", "combat_pistol_accuracy_01",
 						"Pistol Grips II", "combat_pistol_accuracy_02",
@@ -433,22 +433,22 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 						"Pistol Marksmanship II", "combat_pistol_speed_02",
 						"Pistol Marksmanship III", "combat_pistol_speed_03",
 						"Pistol Marksmanship IV", "combat_pistol_speed_04"
-					},
+					},--]]
 					"Techniques",
 					{
-						"Pistol Techniques I", "combat_pistol_ability_01",
-						"Pistol Techniques II", "combat_pistol_ability_02",
-						"Pistol Techniques III", "combat_pistol_ability_03",
-						"Pistol Techniques IV", "combat_pistol_ability_04"
+						"Electrocution Techniques I", "combat_pistol_ability_01",
+						"Electrocution Techniques II", "combat_pistol_ability_02",
+						"Electrocution Techniques III", "combat_pistol_ability_03",
+						"Electrocution Techniques IV", "combat_pistol_ability_04"
 					},
 					"Stances",
 					{
-						"Pistol Stances I", "combat_pistol_support_01",
-						"Pistol Stances II", "combat_pistol_support_02",
-						"Pistol Stances III", "combat_pistol_support_03",
-						"Pistol Stances IV", "combat_pistol_support_04"
+						"Voltage Suppression I", "combat_pistol_support_01",
+						"Voltage Suppression II", "combat_pistol_support_02",
+						"Voltage Suppression III", "combat_pistol_support_03",
+						"Voltage Suppression IV", "combat_pistol_support_04"
 					},
-					"Master", "combat_pistol_master"
+					--"Master", "combat_pistol_master"
 				},
 				"Politician",
 				{

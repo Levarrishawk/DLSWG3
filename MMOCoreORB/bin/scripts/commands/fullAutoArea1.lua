@@ -45,17 +45,17 @@ FullAutoArea1Command = {
         name = "fullautoarea1",
 
 	damageMultiplier = 1.85,
-  speedMultiplier = 1.85,
+  speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 3.85,
+  actionCostMultiplier = 1,
   mindCostMultiplier = 0,
 	accuracyBonus = 25,
 
-	animationCRC = hashCode("fire_defender_posture_change_down"),
+	animationCRC = hashCode("fire_area_light"),
 
 	combatSpam = "areashot",
 
-	coneAngle = 30,
+	coneAngle = 40,
 	coneAction = true,
 
 	stateEffects = {
@@ -90,7 +90,7 @@ FullAutoArea1Command = {
 
 	poolsToDamage = HEALTH_ATTRIBUTE,
 	
-	weaponType = CARBINEWEAPON,
+	weaponType = SPECIALHEAVYWEAPON,
 
 	range = -1
 }
