@@ -316,7 +316,7 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 				"Soldier",
 				{
 					"Novice", "combat_marksman_novice",
-					"Rifles",
+					--[["Rifles",
 					{
 						"Rifles I", "combat_marksman_rifle_01",
 						"Rifles II", "combat_marksman_rifle_02",
@@ -329,22 +329,22 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 						"Pistols II", "combat_marksman_pistol_02",
 						"Pistols III", "combat_marksman_pistol_03",
 						"Pistols IV", "combat_marksman_pistol_04"
-					},
-					"Carbines",
+					},--]]
+					"Light Infantry",
 					{
-						"Carbines I", "combat_marksman_carbine_01",
-						"Carbines II", "combat_marksman_carbine_02",
-						"Carbines III", "combat_marksman_carbine_03",
-						"Carbines IV", "combat_marksman_carbine_04"
+						"Light Infantry I", "combat_marksman_carbine_01",
+						"Light Infantry II", "combat_marksman_carbine_02",
+						"Light Infantry III", "combat_marksman_carbine_03",
+						"Light Infantry IV", "combat_marksman_carbine_04"
 					},
-					"Ranged Support",
+					"Heavy Infantry",
 					{
-						"Ranged Support I", "combat_marksman_support_01",
-						"Ranged Support II", "combat_marksman_support_02",
-						"Ranged Support III", "combat_marksman_support_03",
-						"Ranged Support IV", "combat_marksman_support_04"
+						"Heavy Infantry I", "combat_marksman_support_01",
+						"Heavy Infantry II", "combat_marksman_support_02",
+						"Heavy Infantry III", "combat_marksman_support_03",
+						"Heavy Infantry IV", "combat_marksman_support_04"
 					},
-					"Master", "combat_marksman_master"
+					--"Master", "combat_marksman_master"
 				},
 				"Medic",
 				{
@@ -434,14 +434,14 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 						"Pistol Marksmanship III", "combat_pistol_speed_03",
 						"Pistol Marksmanship IV", "combat_pistol_speed_04"
 					},--]]
-					"Techniques",
+					"Electrocution Trooper",
 					{
 						"Electrocution Techniques I", "combat_pistol_ability_01",
 						"Electrocution Techniques II", "combat_pistol_ability_02",
 						"Electrocution Techniques III", "combat_pistol_ability_03",
 						"Electrocution Techniques IV", "combat_pistol_ability_04"
 					},
-					"Stances",
+					"Suppression Trooper",
 					{
 						"Voltage Suppression I", "combat_pistol_support_01",
 						"Voltage Suppression II", "combat_pistol_support_02",
