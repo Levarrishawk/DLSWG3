@@ -229,7 +229,8 @@ public:
 			int healPower = 1250;
 
 			int healedHealth = creatureTarget->healDamage(creature, CreatureAttribute::HEALTH, healPower);
-			int healedAction = creatureTarget->healDamage(creature, CreatureAttribute::ACTION, healPower, true, false);
+			int healedAction = 0;
+			//int healedAction = creatureTarget->healDamage(creature, CreatureAttribute::ACTION, healPower, true, false);
 
 			sendHealMessage(creature, creatureTarget, healedHealth, healedAction);
 		}
@@ -253,7 +254,8 @@ public:
 					int healPower = 1750;
 
 					int healedHealth = creatureTarget->healDamage(creature, CreatureAttribute::HEALTH, healPower);
-					int healedAction = creatureTarget->healDamage(creature, CreatureAttribute::ACTION, healPower, true, false);
+					int healedAction = 0;
+					//int healedAction = creatureTarget->healDamage(creature, CreatureAttribute::ACTION, healPower, true, false);
 
 					sendHealMessage(creature, creatureTarget, healedHealth, healedAction);
 				}
