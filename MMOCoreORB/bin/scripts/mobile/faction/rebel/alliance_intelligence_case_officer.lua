@@ -1,6 +1,6 @@
 alliance_intelligence_case_officer = Creature:new {
 	objectName = "@mob/creature_names:alliance_intelligence_case_officer",
-	randomNameType = NAME_GENERIC_TAG,
+	--randomNameType = NAME_GENERIC_TAG,
 	socialGroup = "rebel",
 	faction = "rebel",
 	level = 22,

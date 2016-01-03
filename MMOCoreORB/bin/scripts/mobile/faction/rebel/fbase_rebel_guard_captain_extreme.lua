@@ -1,6 +1,6 @@
 fbase_rebel_guard_captain_extreme = Creature:new {
 	objectName = "@mob/creature_names:fbase_rebel_guard_captain_extreme",
-	randomNameType = NAME_GENERIC_TAG,
+	--randomNameType = NAME_GENERIC_TAG,
 	socialGroup = "rebel",
 	faction = "rebel",
 	level = 180,

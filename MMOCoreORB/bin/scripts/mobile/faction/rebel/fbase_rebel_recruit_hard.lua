@@ -1,6 +1,6 @@
 fbase_rebel_recruit_hard = Creature:new {
 	objectName = "@mob/creature_names:fbase_rebel_recruit_hard",
-	randomNameType = NAME_GENERIC_TAG,
+	--randomNameType = NAME_GENERIC_TAG,
 	socialGroup = "rebel",
 	faction = "rebel",
 	level = 47,

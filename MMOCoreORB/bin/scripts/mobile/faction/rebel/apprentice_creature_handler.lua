@@ -1,6 +1,6 @@
 apprentice_creature_handler = Creature:new {
 	objectName = "@mob/creature_names:rebel_creature_handler_apprentice",
-	randomNameType = NAME_GENERIC_TAG,
+	--randomNameType = NAME_GENERIC_TAG,
 	socialGroup = "rebel",
 	faction = "rebel",
 	level = 12,
