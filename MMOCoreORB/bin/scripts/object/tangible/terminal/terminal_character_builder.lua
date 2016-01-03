@@ -215,14 +215,14 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 				"Beast Master",
 				{
 					"Novice", "outdoors_creaturehandler_novice",
-					"Taming",
+					"Huntsman",
 					{
-						"Creature Taming I", "outdoors_creaturehandler_taming_01",
-						"Creature Taming II", "outdoors_creaturehandler_taming_02",
-						"Creature Taming III", "outdoors_creaturehandler_taming_03",
-						"Creature Taming IV", "outdoors_creaturehandler_taming_04"
+						"Huntsman I", "outdoors_creaturehandler_taming_01",
+						"Huntsman II", "outdoors_creaturehandler_taming_02",
+						"Huntsman III", "outdoors_creaturehandler_taming_03",
+						"Huntsman IV", "outdoors_creaturehandler_taming_04"
 					},
-					"Training",
+				--[[	"Training",
 					{
 						"Creature Training I", "outdoors_creaturehandler_training_01",
 						"Creature Training II", "outdoors_creaturehandler_training_02",
@@ -235,15 +235,15 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 						"Creature Empathy II", "outdoors_creaturehandler_healing_02",
 						"Creature Empathy III", "outdoors_creaturehandler_healing_03",
 						"Creature Empathy IV", "outdoors_creaturehandler_healing_04"
-					},
-					"Management",
+					},--]]
+					"Primalist",
 					{
-						"Creature Management I", "outdoors_creaturehandler_support_01",
-						"Creature Management II", "outdoors_creaturehandler_support_02",
-						"Creature Management III", "outdoors_creaturehandler_support_03",
-						"Creature Management IV", "outdoors_creaturehandler_support_04"
+						"Primalist I", "outdoors_creaturehandler_support_01",
+						"Primalist II", "outdoors_creaturehandler_support_02",
+						"Primalist III", "outdoors_creaturehandler_support_03",
+						"Primalist IV", "outdoors_creaturehandler_support_04"
 					},
-					"Master", "outdoors_creaturehandler_master"
+				--	"Master", "outdoors_creaturehandler_master"
 				},
 				
 				
@@ -577,35 +577,35 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 				"Officer",
 				{
 					"Novice", "outdoors_squadleader_novice",
-					"Mobility",
+				--[[	"Mobility",
 					{
 						"Mobility I", "outdoors_squadleader_movement_01",
 						"Mobility II", "outdoors_squadleader_movement_02",
 						"Mobility III", "outdoors_squadleader_movement_03",
 						"Mobility IV", "outdoors_squadleader_movement_04"
-					},
-					"Strategy",
+					},--]]
+					"Strike Coordination",
 					{
-						"Strategy I", "outdoors_squadleader_offense_01",
-						"Strategy II", "outdoors_squadleader_offense_02",
-						"Strategy III", "outdoors_squadleader_offense_03",
-						"Strategy IV", "outdoors_squadleader_offense_04"
+						"Strike Coordination I", "outdoors_squadleader_offense_01",
+						"Strike Coordination II", "outdoors_squadleader_offense_02",
+						"Strike Coordination III", "outdoors_squadleader_offense_03",
+						"Strike Coordination IV", "outdoors_squadleader_offense_04"
 					},
-					"Leadership",
+				--[[	"Leadership",
 					{
 						"Leadership I", "outdoors_squadleader_defense_01",
 						"Leadership II", "outdoors_squadleader_defense_02",
 						"Leadership III", "outdoors_squadleader_defense_03",
 						"Leadership IV", "outdoors_squadleader_defense_04"
-					},
-					"Tactics",
+					},--]]
+					"Battlefield Tactics",
 					{
 						"Tactics I", "outdoors_squadleader_support_01",
 						"Tactics II", "outdoors_squadleader_support_02",
 						"Tactics III", "outdoors_squadleader_support_03",
 						"Tactics IV", "outdoors_squadleader_support_04"
 					},
-					"Master", "outdoors_squadleader_master"
+					--"Master", "outdoors_squadleader_master"
 				},
 				"Jedi",
         {
