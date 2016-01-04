@@ -441,6 +441,11 @@ tutorial = {
 	gcwEnabled = 0,
 }
 
+chandrila = {
+  weatherEnabled = 0,
+  gcwEnabled = 0,
+}
+
 dungeon1 = {
 	weatherEnabled = 0,
 	gcwEnabled = 0,
