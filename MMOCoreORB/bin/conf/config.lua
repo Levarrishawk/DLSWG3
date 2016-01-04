@@ -129,8 +129,7 @@ ZonesEnabled = {
 	"tutorial",
 	--"umbra",
 	--"watertabletest",
-	"yavin4",
-	"chandrila"
+	"yavin4"
 }
 
 
@@ -139,7 +138,6 @@ TrePath = "/home/swgemu/Desktop/SWGEmu"
 
 TreFiles = {
 	"default_patch.tre",
-	"chandrila.tre",
 	"patch_darklight_01.tre",
 	"patch_sku1_14_00.tre",
 	"patch_14_00.tre",
