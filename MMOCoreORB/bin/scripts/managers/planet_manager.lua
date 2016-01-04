@@ -445,8 +445,3 @@ dungeon1 = {
 	weatherEnabled = 0,
 	gcwEnabled = 0,
 }
-
-chandrila = {
-  weatherEnabled = 1,
-  gcwEnabled = 1,
-}
