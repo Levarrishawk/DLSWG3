@@ -23,13 +23,17 @@ public:
 		if (!checkInvalidLocomotions(creature))
 			return INVALIDLOCOMOTION;
 
-		PlayerObject* ghost = creature->getPlayerObject();
+		sendSystemMessage("This command is not active yet.  Working on it!");
+		/*
+
+
+		 PlayerObject* ghost = creature->getPlayerObject();
 
 		if (ghost->getFactionStatus() == 1)
 			ghost->setFactionStatus(2);
 		if (ghost->getFactionStatus() == 2)
 			ghost->setFactionStatus(1);
-
+*/
 		return SUCCESS;
 	}
 
