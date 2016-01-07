@@ -29,5 +29,8 @@ function Yavin4StaticSpawnsScreenPlay:spawnMobiles()
 	spawnMobile("yavin4", "crazed_geonosian_guard",300,-6299.1,25.6,-1506.4,179,0)
 	spawnMobile("yavin4", "crazed_geonosian_guard",300,-6302.1,24.9,-1504.2,-90,0)
 	spawnMobile("yavin4", "crazed_geonosian_guard",300,-6296.0,25.3,-1504.2,90,0)	
+	
+	-- Yavin4 Massassi Temple (-3150 -3050)
+	spawnMobile("yavin4", "luke_skywalker_temple",0,-2991.4,125.0,-2957.2,-101,3465362) 
 
 end
