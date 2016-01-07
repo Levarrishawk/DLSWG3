@@ -451,6 +451,6 @@ chandrila = {
   gcwEnabled = 0,
   
   planetTravelPoints = {
-    {name = "Hanna City Spaceport", x = 1644, z = 6, y = -2937, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
+    {name = "Hanna City Spaceport", x = 164, z = 6, y = -2937, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
     },
 }
