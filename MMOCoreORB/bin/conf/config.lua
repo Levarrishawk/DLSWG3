@@ -97,7 +97,7 @@ ZonesEnabled = {
 	"dungeon1",
 	"endor",
 	--"endor_asommers",
-	"floratest",
+	--"floratest",
 	--"godclient_test",
 	"lok",
 	"naboo",
