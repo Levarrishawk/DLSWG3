@@ -1,5 +1,5 @@
-luke_skywalker = Creature:new {
-	objectName = "Luke Skywalker",
+luke_skywalker_temple = Creature:new {
+	objectName = "@mob/creature_names:luke_skywalker",
 	socialGroup = "rebel",
 	faction = "rebel",
 	level = 100,
