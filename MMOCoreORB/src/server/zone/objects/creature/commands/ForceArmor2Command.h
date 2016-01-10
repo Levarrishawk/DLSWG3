@@ -7,10 +7,6 @@
 
 #include "server/zone/objects/scene/SceneObject.h"
 #include "server/zone/objects/creature/buffs/SingleUseBuff.h"
-#include "server/zone/objects/scene/SceneObject.h"
-#include "server/chat/ChatManager.h"
-#include "server/zone/managers/stringid/StringIdManager.h"
-#include "CombatQueueCommand.h"
 
 class ForceArmor2Command : public QueueCommand {
 public:
@@ -36,7 +32,7 @@ public:
 		}
 
 		// Force cost of skill.
-		int actionCost = 15;
+		int forceCost = 15;
 
 
 		//Check for and deduct Force cost.
@@ -44,7 +40,7 @@ public:
 		ManagedReference<PlayerObject*> playerObject = creature->getPlayerObject();
 
 
-		if (playerObject->getAction() <= actionCost) {
+		if (playerObject->getForcePower() <= forceCost) {
 			creature->sendSystemMessage("@jedi_spam:no_force_power"); //"You do not have enough Force Power to peform that action.
 
 			return GENERALERROR;
@@ -59,7 +55,7 @@ public:
 			creature->removeBuff(buffcrc2);
 		}
 
-		playerObject->setAction(playerObject->getAction() - actionCost);
+		playerObject->setForcePower(playerObject->getForcePower() - forceCost);
 
 		StringIdChatParameter startStringId("jedi_spam", "apply_forcearmor2");
 		StringIdChatParameter endStringId("jedi_spam", "remove_forcearmor2");
@@ -99,7 +95,7 @@ public:
 
 		// TODO: Force Rank modifiers.
 		int forceCost = param * 0.3;
-		if (playerObject->getAction() <= actionCost) { // Remove buff if not enough force.
+		if (playerObject->getForcePower() <= forceCost) { // Remove buff if not enough force.
 			Buff* buff = creo->getBuff(BuffCRC::JEDI_FORCE_ARMOR_2);
 			if (buff != NULL) {
 				Locker locker(buff);
@@ -107,7 +103,7 @@ public:
 				creo->removeBuff(buff);
 			}
 		} else
-			playerObject->setAction(playerObject->getAction() - actionCost);
+			playerObject->setForcePower(playerObject->getForcePower() - forceCost);
 	}
 
 };
