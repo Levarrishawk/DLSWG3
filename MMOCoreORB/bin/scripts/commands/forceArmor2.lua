@@ -43,6 +43,7 @@
 
 ForceArmor2Command = {
         name = "forcearmor2",
+        actionCost = 1800,
 }
 
 AddCommand(ForceArmor2Command)
