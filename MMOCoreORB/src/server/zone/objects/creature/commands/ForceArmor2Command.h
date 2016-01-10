@@ -7,6 +7,8 @@
 
 #include "server/zone/objects/scene/SceneObject.h"
 #include "server/zone/objects/creature/buffs/SingleUseBuff.h"
+#include "server/zone/packets/object/CombatAction.h"
+
 
 class ForceArmor2Command : public QueueCommand {
 public:
