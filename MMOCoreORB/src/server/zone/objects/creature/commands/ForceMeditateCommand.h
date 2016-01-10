@@ -60,7 +60,7 @@ public:
 		creature->addPendingTask("meditate", meditateTask, 3500);
 
 		PlayerManager* playermgr = server->getZoneServer()->getPlayerManager();
-		player->registerObserver(ObserverEventType::POSTURECHANGED, playermgr);
+		creature->registerObserver(ObserverEventType::POSTURECHANGED, playermgr);
 		/*
 		Reference<ForceMeditateTask*> fmeditateTask = new ForceMeditateTask(creature);
 		fmeditateTask->setMoodString(creature->getMoodString());
