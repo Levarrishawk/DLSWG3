@@ -599,7 +599,7 @@ void PlanetManagerImplementation::loadClientRegions() {
 					scenery = zone->getZoneServer()->createObject(STRING_HASHCODE("object/static/particle/particle_distant_ships.iff"), 0);
 				}
 			} else {
-				scenery = zone->getZoneServer()->createObject(STRING_HASHCODE("object/static/particle/particle_distant_ships.iff"), 0);
+				scenery = zone->getZoneServer()->createObject(STRING_HASHCODE("object/static/particle/particle_distant_ships_rebel.iff"), 0);
 			}
 
 			Locker slocker(scenery, region);
