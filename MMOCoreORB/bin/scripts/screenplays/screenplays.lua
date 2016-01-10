@@ -399,3 +399,6 @@ includeFile("space/space_chassis_dealer_conv_handler.lua")
 
 --Record Keepers
 includeFile("record_keepers/record_keepers.lua")
+
+--Chandrila
+includeFile("cities/chandrila_hanna_city.lua")
