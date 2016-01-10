@@ -32,7 +32,7 @@ public:
 		}
 
 		// Force cost of skill.
-		int forceCost = 15;
+		int forceCost = 60;
 
 
 		//Check for and deduct Force cost.
@@ -60,7 +60,7 @@ public:
 		StringIdChatParameter startStringId("jedi_spam", "apply_forcearmor2");
 		StringIdChatParameter endStringId("jedi_spam", "remove_forcearmor2");
 
-		int duration = 1800;
+		int duration = 30;
 
 		Vector<unsigned int> eventTypes;
 		eventTypes.add(ObserverEventType::FORCEBUFFHIT);
