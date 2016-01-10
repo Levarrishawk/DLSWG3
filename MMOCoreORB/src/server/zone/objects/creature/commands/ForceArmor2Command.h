@@ -7,6 +7,10 @@
 
 #include "server/zone/objects/scene/SceneObject.h"
 #include "server/zone/objects/creature/buffs/SingleUseBuff.h"
+#include "server/zone/objects/scene/SceneObject.h"
+#include "server/chat/ChatManager.h"
+#include "server/zone/managers/stringid/StringIdManager.h"
+#include "CombatQueueCommand.h"
 
 class ForceArmor2Command : public QueueCommand {
 public:
