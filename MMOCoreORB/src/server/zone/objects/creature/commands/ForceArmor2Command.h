@@ -32,7 +32,9 @@ public:
 		}
 
 		// Force cost of skill.
-		int actionCost = 1800;
+		int actionCost = 900;
+		int duration = 0;
+		duration = creature->getSkillMod("center_of_being_duration_unarmed");
 
 
 		//Check for and deduct Force cost.
@@ -66,7 +68,7 @@ public:
 
 		buff->setStartMessage(startStringId);
 		buff->setEndMessage(endStringId);
-		buff->setSkillModifier("force_armor", 40);
+		buff->setSkillModifier("force_armor", 80);
 		buff->init(&eventTypes);
 
 		creature->addBuff(buff);
