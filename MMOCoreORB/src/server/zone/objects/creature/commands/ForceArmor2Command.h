@@ -32,7 +32,7 @@ public:
 		}
 
 		// Force cost of skill.
-		int forceCost = 15;
+		int actionCost = 15;
 
 
 		//Check for and deduct Force cost.
@@ -55,7 +55,7 @@ public:
 			creature->removeBuff(buffcrc2);
 		}
 
-		playerObject->setForcePower(playerObject->getForcePower() - forceCost);
+		playerObject->setAction(playerObject->getAction() - actionCost);
 
 		StringIdChatParameter startStringId("jedi_spam", "apply_forcearmor2");
 		StringIdChatParameter endStringId("jedi_spam", "remove_forcearmor2");
@@ -95,7 +95,7 @@ public:
 
 		// TODO: Force Rank modifiers.
 		int forceCost = param * 0.3;
-		if (playerObject->getForcePower() <= forceCost) { // Remove buff if not enough force.
+		if (playerObject->getAction() <= actionCost) { // Remove buff if not enough force.
 			Buff* buff = creo->getBuff(BuffCRC::JEDI_FORCE_ARMOR_2);
 			if (buff != NULL) {
 				Locker locker(buff);
@@ -103,7 +103,7 @@ public:
 				creo->removeBuff(buff);
 			}
 		} else
-			playerObject->setForcePower(playerObject->getForcePower() - forceCost);
+			playerObject->setAction(playerObject->getAction() - actionCost);
 	}
 
 };
