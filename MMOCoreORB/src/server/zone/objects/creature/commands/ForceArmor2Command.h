@@ -33,8 +33,7 @@ public:
 
 		// Force cost of skill.
 		int actionCost = 900;
-		int duration = 0;
-		duration = creature->getSkillMod("center_of_being_duration_unarmed");
+
 
 
 		//Check for and deduct Force cost.
