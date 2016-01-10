@@ -51,13 +51,13 @@ public:
 		
 		creature->sendSystemMessage("@teraskasi:med_begin");
 
-		Reference<MeditateTask*> meditateTask = new MeditateTask(player);
+		Reference<MeditateTask*> meditateTask = new MeditateTask(creature);
 		meditateTask->setMoodString(player->getMoodString());
-		player->sendSystemMessage("@teraskasi:med_begin");
+		creature->sendSystemMessage("@teraskasi:med_begin");
 
-		player->setMeditateState();
+		creature->setMeditateState();
 
-		player->addPendingTask("meditate", meditateTask, 3500);
+		creature->addPendingTask("meditate", meditateTask, 3500);
 
 		PlayerManager* playermgr = server->getZoneServer()->getPlayerManager();
 		player->registerObserver(ObserverEventType::POSTURECHANGED, playermgr);
