@@ -7,7 +7,6 @@
 
 #include "server/zone/objects/scene/SceneObject.h"
 #include "server/zone/objects/player/events/ForceMeditateTask.h"
-#include "server/zone/objects/player/events/MeditateTask.h"
 
 class ForceMeditateCommand : public QueueCommand {
 public:
@@ -50,27 +49,14 @@ public:
 		ManagedReference<PlayerObject*> ghost = creature->getPlayerObject();
 		
 		creature->sendSystemMessage("@teraskasi:med_begin");
-
-		Reference<MeditateTask*> meditateTask = new MeditateTask(creature);
-		meditateTask->setMoodString(player->getMoodString());
-		creature->sendSystemMessage("@teraskasi:med_begin");
-
-		creature->setMeditateState();
-
-		creature->addPendingTask("meditate", meditateTask, 3500);
-
-		PlayerManager* playermgr = server->getZoneServer()->getPlayerManager();
-		creature->registerObserver(ObserverEventType::POSTURECHANGED, playermgr);
-		/*
 		Reference<ForceMeditateTask*> fmeditateTask = new ForceMeditateTask(creature);
 		fmeditateTask->setMoodString(creature->getMoodString());
+		creature->addPendingTask("forcemeditate", fmeditateTask, 3500);
 
 		creature->setMeditateState();
 
-		creature->addPendingTask("forcemeditate", fmeditateTask, 3500);
-
 		PlayerManager* playermgr = server->getZoneServer()->getPlayerManager();	
-		creature->registerObserver(ObserverEventType::POSTURECHANGED, playermgr); */
+		creature->registerObserver(ObserverEventType::POSTURECHANGED, playermgr);
 
 		return SUCCESS;
 
