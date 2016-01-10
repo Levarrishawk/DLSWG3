@@ -32,7 +32,7 @@ public:
 		}
 
 		// Force cost of skill.
-		int forceCost = 15;
+		int actionCost = 45;
 
 
 		//Check for and deduct Force cost.
@@ -40,11 +40,7 @@ public:
 		ManagedReference<PlayerObject*> playerObject = creature->getPlayerObject();
 
 
-		if (playerObject->getForcePower() <= forceCost) {
-			creature->sendSystemMessage("@jedi_spam:no_force_power"); //"You do not have enough Force Power to peform that action.
 
-			return GENERALERROR;
-		}
 
 		uint32 buffcrc1 = BuffCRC::JEDI_FORCE_ARMOR_1;
 		uint32 buffcrc2 = BuffCRC::JEDI_FORCE_ARMOR_2;
@@ -55,12 +51,11 @@ public:
 			creature->removeBuff(buffcrc2);
 		}
 
-		playerObject->setForcePower(playerObject->getForcePower() - forceCost);
 
 		StringIdChatParameter startStringId("jedi_spam", "apply_forcearmor2");
 		StringIdChatParameter endStringId("jedi_spam", "remove_forcearmor2");
 
-		int duration = 1800;
+		int duration = 30;
 
 		Vector<unsigned int> eventTypes;
 		eventTypes.add(ObserverEventType::FORCEBUFFHIT);
@@ -94,17 +89,6 @@ public:
 			return;
 
 		// TODO: Force Rank modifiers.
-		int forceCost = param * 0.3;
-		if (playerObject->getForcePower() <= forceCost) { // Remove buff if not enough force.
-			Buff* buff = creo->getBuff(BuffCRC::JEDI_FORCE_ARMOR_2);
-			if (buff != NULL) {
-				Locker locker(buff);
-
-				creo->removeBuff(buff);
-			}
-		} else
-			playerObject->setForcePower(playerObject->getForcePower() - forceCost);
-	}
 
 };
 
