@@ -44,7 +44,7 @@ public:
 		ManagedReference<PlayerObject*> playerObject = creature->getPlayerObject();
 
 
-		if (playerObject->getForcePower() <= forceCost) {
+		if (playerObject->getAction() <= actionCost) {
 			creature->sendSystemMessage("@jedi_spam:no_force_power"); //"You do not have enough Force Power to peform that action.
 
 			return GENERALERROR;
