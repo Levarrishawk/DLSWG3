@@ -90,6 +90,10 @@ public:
 
 		// TODO: Force Rank modifiers.
 
+
+
+	}
+
 };
 
 #endif //FORCEARMOR2COMMAND_H_
