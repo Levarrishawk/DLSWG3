@@ -44,9 +44,9 @@
 ForceLightningSingle2Command = {
 	name = "forcelightningsingle2",
 
-	minDamage = 700,
-	maxDamage = 1000,
-	speed = 2.5,
+	minDamage = 850,
+	maxDamage = 1200,
+	speed = 2.0,
 	forceCost = 50,
 	
 	accuracySkillMod = "forcelightning_accuracy";
