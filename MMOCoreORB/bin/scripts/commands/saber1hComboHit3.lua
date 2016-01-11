@@ -44,9 +44,9 @@
 Saber1hComboHit3Command = {
         name = "saber1hcombohit3",
         
-  damageMultiplier = 3.5,
+  damageMultiplier = 4.5,
 	speedMultiplier = 1,
-	actionCostMultiplier = 1.25,  
+	actionCostMultiplier = 1,  
 	forceCostMultiplier = 2,
 
 	animationCRC = hashCode("showoff_1_light"),
@@ -69,7 +69,7 @@ Saber1hComboHit3Command = {
 	
 	weaponType = ONEHANDJEDIWEAPON,
 
-	range = -1
+	range = 10
 }
 
 AddCommand(Saber1hComboHit3Command)

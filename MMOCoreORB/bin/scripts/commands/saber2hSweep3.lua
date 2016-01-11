@@ -44,9 +44,9 @@
 Saber2hSweep3Command = {
         name = "saber2hsweep3",
         
-   damageMultiplier = 3.5,
+   damageMultiplier = 4.5,
   speedMultiplier = 1,
-  actionCostMultiplier = 1.25,  
+  actionCostMultiplier = 1,  
   forceCostMultiplier = 2,
 
 	stateEffects = {
@@ -69,7 +69,7 @@ Saber2hSweep3Command = {
 	
 	weaponType = TWOHANDJEDIWEAPON,
 
-	range = -1
+	range = 10
 }
 
 AddCommand(Saber2hSweep3Command)

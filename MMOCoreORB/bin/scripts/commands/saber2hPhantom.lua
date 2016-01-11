@@ -44,11 +44,11 @@
 Saber2hPhantomCommand = {
         name = "saber2hphantom",
         
-  damageMultiplier = 4.0,
+  damageMultiplier = 4.5,
   speedMultiplier = 1.0,
   areaRange = 10,
   areaAction = true,
-  actionCostMultiplier = 1.25,  
+  actionCostMultiplier = 1,  
   forceCostMultiplier = 2.0,
 
 		stateEffects = {
@@ -89,7 +89,7 @@ Saber2hPhantomCommand = {
 	
 	weaponType = TWOHANDJEDIWEAPON,
 
-	range = 24
+	range = 10
 }
 
 AddCommand(Saber2hPhantomCommand)

@@ -32,7 +32,7 @@ public:
 		}
 
 		// Force cost of skill.
-		int forceCost = 60;
+		int forceCost = 70;
 
 
 		//Check for and deduct Force cost.
@@ -60,7 +60,7 @@ public:
 		StringIdChatParameter startStringId("jedi_spam", "apply_forcearmor2");
 		StringIdChatParameter endStringId("jedi_spam", "remove_forcearmor2");
 
-		int duration = 30;
+		int duration = 20;
 
 		Vector<unsigned int> eventTypes;
 		eventTypes.add(ObserverEventType::FORCEBUFFHIT);
@@ -71,7 +71,7 @@ public:
 
 		buff->setStartMessage(startStringId);
 		buff->setEndMessage(endStringId);
-		buff->setSkillModifier("force_armor", 25);
+		buff->setSkillModifier("force_armor",75);
 		buff->init(&eventTypes);
 
 		creature->addBuff(buff);

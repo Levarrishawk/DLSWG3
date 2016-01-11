@@ -44,10 +44,10 @@
 SaberPolearmSpinAttack2Command = {
         name = "saberpolearmspinattack2",
         
-    damageMultiplier = 3.5,
+    damageMultiplier = 4.5,
   speedMultiplier = 1,
-  actionCostMultiplier = 1.25,  
-  forceCostMultiplier = 2,
+  actionCostMultiplier = 1,  
+  forceCostMultiplier = 1,
 	areaAction = true,
 	areaRange = 16,
 	
@@ -71,7 +71,7 @@ SaberPolearmSpinAttack2Command = {
 	
 	weaponType = POLEARMJEDIWEAPON,
 
-	range = -1
+	range = 10
 }
 
 AddCommand(SaberPolearmSpinAttack2Command)

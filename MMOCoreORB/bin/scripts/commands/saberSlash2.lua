@@ -44,9 +44,9 @@
 SaberSlash2Command = {
         name = "saberslash2",	
         
-    damageMultiplier = 2.5,
-	speedMultiplier = 2.0,
-	forceCostMultiplier = 2.0,
+    damageMultiplier = 4.5,
+	speedMultiplier = 1.0,
+	forceCostMultiplier = 1.0,
 	
 	dotEffects = {
 	  DotEffect( 
@@ -80,7 +80,7 @@ SaberSlash2Command = {
 	
 	weaponType = JEDIWEAPON,
 
-	range = -1
+	range = 10
 }
 
 AddCommand(SaberSlash2Command)

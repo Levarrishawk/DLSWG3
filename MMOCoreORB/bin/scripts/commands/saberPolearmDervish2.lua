@@ -45,11 +45,11 @@ SaberPolearmDervish2Command = {
         name = "saberpolearmdervish2",
         
         
-	damageMultiplier = 4.0,
+	damageMultiplier = 4.5,
   speedMultiplier = 1.0,
   areaRange = 10,
   areaAction = true,
-  actionCostMultiplier = 1.25,  
+  actionCostMultiplier = 1,  
   forceCostMultiplier = 2.0,
 
 		stateEffects = {
@@ -90,7 +90,7 @@ SaberPolearmDervish2Command = {
 	
 	weaponType = POLEARMJEDIWEAPON,
 
-	range = 24
+	range = 10
 }
 
 AddCommand(SaberPolearmDervish2Command)
