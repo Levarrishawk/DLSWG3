@@ -53,4 +53,7 @@ function EndorStaticSpawnsScreenPlay:spawnMobiles()
     spawnMobile("endor", "merek_harvester", 300, 3915, 202, 5793, getRandomNumber(360), 0)
     spawnMobile("endor", "merek_harvester", 300, 3942, 199, 5754, getRandomNumber(360), 0)
     spawnMobile("endor", "merek_harvester", 300, 3938, 199, 5734, getRandomNumber(360), 0)
+    
+    --Test Instance Spawn
+    spawnMobile("endor", "luke_skywalker_temple", 0, 103.9, 9.0, 22.6, 106, 0)
 end
