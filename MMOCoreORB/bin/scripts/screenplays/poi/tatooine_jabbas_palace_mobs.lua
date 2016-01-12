@@ -35,7 +35,7 @@ TatooineJabbasPalaceMobsScreenPlay = ScreenPlay:new {
 
 	jabba_band = {
 		{"sy_snootles", 60, -9, 2, 37, 0, 1177487, "Sy Snootles", "themepark_sy_snootles"},
-		{"max_rebo", 60, -11, 2, 36, 0, 1177487, "Max Rebo","themepark_music_3"},
+		{"max_rebo", 60, 25.4, -0.9, 10.7, 0, 35791444, "Max Rebo","themepark_music_3"},
 		{"droopy_mccool", 60, -13, 2, 37, 0, 1177487, "Droopy McCool","themepark_music_3"},
 		{"oola", 60, -10, 2, 43, 180, 1177487, "Oola", "themepark_oola"}
 	},
@@ -45,8 +45,8 @@ TatooineJabbasPalaceMobsScreenPlay = ScreenPlay:new {
 registerScreenPlay("TatooineJabbasPalaceMobsScreenPlay", true)
 
 function TatooineJabbasPalaceMobsScreenPlay:start()
-	if (isZoneEnabled("tatooine")) then
-		spawnSceneObject("tatooine","object/tangible/instrument/organ_max_rebo.iff", -11, 2, 36, 1177487, 0.0707,0,0.0707,0)
+	if (isZoneEnabled("chandrila")) then
+		spawnSceneObject("chandrila","object/tangible/instrument/organ_max_rebo.iff", 25.4, -0.9, 10.7, 35791444, 0,0,0,0)
 		--spawnSceneObject("tatooine", "object/tangible/instrument/instrument_organ_max_rebo.iff", -11.1, 2, 36.2, 1177487, 0.9974847113288691, 0, -0.07088194879630508, 0)
 		self:spawnMobiles()
 		self:spawnStatics()
