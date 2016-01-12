@@ -25,5 +25,5 @@ transit_convo_deny_quest = ConvoScreen:new {
    options = {   
    }
 }
-
+instance_test:addScreen(instance_convo_first_screen);
 addConversationTemplate("instance_test", instance_test);
