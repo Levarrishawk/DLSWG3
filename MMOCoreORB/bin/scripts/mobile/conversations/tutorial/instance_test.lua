@@ -7,7 +7,7 @@ instance_test = ConvoTemplate:new {
 
 instance_convo_first_screen = ConvoScreen:new {
    id = "first_screen",
-   leftDialog = "",
+   leftDialog = "@tatooine_convo:greeting_1",
    customDialogText = "Are you ready for the battle?",
    stopConversation = "false",
    options = {
