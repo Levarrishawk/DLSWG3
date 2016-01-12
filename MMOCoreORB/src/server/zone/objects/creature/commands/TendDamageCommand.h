@@ -16,7 +16,6 @@ public:
 		effectName = "clienteffect/medic_heal.cef";
 
 		actionCost = 900;
-		defaultTime = 20.0;
 		mindWoundCost = 0;
 
 
