@@ -191,3 +191,6 @@ includeFile("conversations/record_keepers/record_keeper_rebel_conv.lua")
 
 -- Personality Conversations
 includeFile("conversations/pet/pets_conv.lua")
+
+-- instance test
+includeFile("conversations/tutorial/instance_test.lua")
