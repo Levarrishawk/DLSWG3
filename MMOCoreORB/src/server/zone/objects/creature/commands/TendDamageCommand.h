@@ -16,7 +16,10 @@ public:
 		effectName = "clienteffect/medic_heal.cef";
 
 		actionCost = 900;
+<<<<<<< HEAD
 		cooldown = 20;
+=======
+>>>>>>> origin/unstable
 		mindWoundCost = 0;
 
 
