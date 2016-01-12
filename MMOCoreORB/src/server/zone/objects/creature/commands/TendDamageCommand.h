@@ -16,7 +16,9 @@ public:
 		effectName = "clienteffect/medic_heal.cef";
 
 		actionCost = 900;
+		cooldown = 20;
 		mindWoundCost = 0;
+
 
 		tendDamage = true;
 
