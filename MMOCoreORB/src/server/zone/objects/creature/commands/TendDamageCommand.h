@@ -29,7 +29,7 @@ public:
 		//defaultTime = 5.0;
 		range = 0;
 		}
-		void deactivateInjuryTreatment(CreatureObject* creature, bool isRangedStim) const {
+		void deactivateInjuryTreatment(CreatureObject* creature) const {
 				float modSkill = 0.0f;
 
 				int delay = 4;
