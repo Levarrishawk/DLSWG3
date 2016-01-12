@@ -12,18 +12,10 @@ instance_convo_first_screen = ConvoScreen:new {
    stopConversation = "false",
    options = {
       {"Jakku Instance 1", "jakku1"},   
-      {"Jakku Instance 2", "jakku2"},
-      {"No thank you.", "deny_quest"}
+      {"Jakku Instance 2", "jakku2"}
+      
    }
 }
-transitconvo_template:addScreen(transit_convo_about_quest);
-transit_convo_deny_quest = ConvoScreen:new {
-   id = "deny_quest",
-   leftDialog = "",
-   customDialogText = "Be vigilant Soldier",
-   stopConversation = "true",
-   options = {   
-   }
-}
+
 instance_test:addScreen(instance_convo_first_screen);
 addConversationTemplate("instance_test", instance_test);
