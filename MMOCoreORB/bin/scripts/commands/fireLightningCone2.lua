@@ -44,7 +44,7 @@
 FireLightningCone2Command = {
         name = "firelightningcone2",
 
-	damageMultiplier = 4.0,
+	damageMultiplier = 3.0,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
   actionCostMultiplier = 1,
