@@ -7,6 +7,7 @@
 
 #include "server/zone/objects/scene/SceneObject.h"
 #include "TendCommand.h"
+#include "server/zone/objects/creature/events/InjuryTreatmentTask.h"
 
 class TendDamageCommand : public TendCommand {
 public:
