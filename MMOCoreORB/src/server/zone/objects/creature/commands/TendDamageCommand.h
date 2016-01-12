@@ -7,7 +7,6 @@
 
 #include "server/zone/objects/scene/SceneObject.h"
 #include "TendCommand.h"
-#include "server/zone/objects/creature/events/InjuryTreatmentTask.h"
 
 class TendDamageCommand : public TendCommand {
 public:
@@ -16,7 +15,7 @@ public:
 			: TendCommand(name, server) {
 		effectName = "clienteffect/medic_heal.cef";
 
-		actionCost = 1250;
+		actionCost = 900;
 		cooldown = 20;
 		mindWoundCost = 0;
 
@@ -28,18 +27,7 @@ public:
 
 		//defaultTime = 5.0;
 		range = 0;
-		}
-		void deactivateInjuryTreatment(CreatureObject* creature, bool isRangedStim) const {
-				float modSkill = 0.0f;
-
-				int delay = 4;
-
-				delay = (delay < 4) ? 4 : delay;
-
-				StringIdChatParameter message("healing_response", "healing_response_58"); //You are now ready to heal more damage.
-				Reference<InjuryTreatmentTask*> task = new InjuryTreatmentTask(creature, message, "injuryTreatment");
-				creature->addPendingTask("injuryTreatment", task, delay * 1000);
-
+	}
 
 };
 

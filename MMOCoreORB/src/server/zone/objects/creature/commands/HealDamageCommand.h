@@ -16,7 +16,7 @@ public:
 			: TendCommand(name, server) {
 		effectName = "clienteffect/bacta_bomb.cef";
 
-		actionCost = 900;
+		actionCost = 400;
 		mindWoundCost = 0;
 
 		tendDamage = true;
