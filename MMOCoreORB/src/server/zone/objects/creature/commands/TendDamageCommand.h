@@ -16,7 +16,7 @@ public:
 			: TendCommand(name, server) {
 		effectName = "clienteffect/medic_heal.cef";
 
-		actionCost = 1250;
+		actionCost = 450;
 		cooldown = 20;
 		mindWoundCost = 0;
 
