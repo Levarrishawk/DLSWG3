@@ -46,7 +46,7 @@ registerScreenPlay("TatooineJabbasPalaceMobsScreenPlay", true)
 
 function TatooineJabbasPalaceMobsScreenPlay:start()
 	if (isZoneEnabled("chandrila")) then
-		spawnSceneObject("chandrila","object/tangible/instrument/organ_max_rebo.iff", 25.4, -0.9, 10.7, 35791444, -0.92,0,0.38,0)
+		spawnSceneObject("chandrila","object/tangible/instrument/organ_max_rebo.iff", 25.4, -0.9, 10.7, 35791444, 0.38,0,-0.92,0)
 		--spawnSceneObject("tatooine", "object/tangible/instrument/instrument_organ_max_rebo.iff", -11.1, 2, 36.2, 1177487, 0.9974847113288691, 0, -0.07088194879630508, 0)
 		self:spawnMobiles()
 		self:spawnStatics()
