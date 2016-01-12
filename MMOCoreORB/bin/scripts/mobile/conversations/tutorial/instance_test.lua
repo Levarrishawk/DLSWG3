@@ -1,7 +1,7 @@
 instance_test = ConvoTemplate:new {
 	initialScreen = "first_convo",
 	templateType = "Lua",
-	luaClassHandler = "instance_test",
+	luaClassHandler = "testconvohandler",
 	screens = {}
 }
 
