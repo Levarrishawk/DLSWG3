@@ -6,30 +6,8 @@
 #define HEALDAMAGECOMMAND_H_
 
 
+
 #include "server/zone/objects/scene/SceneObject.h"
-#include "TendCommand.h"
-
-class HealDamageCommand : public TendCommand {
-public:
-
-	HealDamageCommand(const String& name, ZoneProcessServer* server)
-			: TendCommand(name, server) {
-		effectName = "clienteffect/bacta_bomb.cef";
-
-		actionCost = 400;
-		mindWoundCost = 0;
-
-		tendDamage = true;
-
-		healthHealed = 1750;
-		//actionHealed = 50;
-
-		defaultTime = 4.0;
-		range = 32;
-	}
-
-};
-/*#include "server/zone/objects/scene/SceneObject.h"
 #include "server/zone/objects/tangible/pharmaceutical/StimPack.h"
 #include "server/zone/objects/tangible/pharmaceutical/RangedStimPack.h"
 #include "server/zone/ZoneServer.h"
@@ -460,6 +438,31 @@ public:
 		return SUCCESS;
 	}
 
-};*/
+};
+
+/*#include "server/zone/objects/scene/SceneObject.h"
+#include "TendCommand.h"
+
+class HealDamageCommand : public TendCommand {
+public:
+
+	HealDamageCommand(const String& name, ZoneProcessServer* server)
+			: TendCommand(name, server) {
+		effectName = "clienteffect/bacta_bomb.cef";
+
+		actionCost = 400;
+		mindWoundCost = 0;
+
+		tendDamage = true;
+
+		healthHealed = 1750;
+		//actionHealed = 50;
+
+		defaultTime = 4.0;
+		range = 32;
+	}
+
+};
+*/
 
 #endif //HEALDAMAGECOMMAND_H_
