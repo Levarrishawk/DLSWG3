@@ -35,7 +35,7 @@ npcMapStarter =
 
 ThemeParkSkyyyr = ThemeParkLogic:new {
 	numberOfActs = 1,
-	npcMap = npcMapSkyyyr,
+	npcMap = npcMapStarter,
 	--permissionMap = permissionMapJabba,
 	className = "ThemeParkSkyyyr",
 	screenPlayState = "skyyyr_theme_park",
