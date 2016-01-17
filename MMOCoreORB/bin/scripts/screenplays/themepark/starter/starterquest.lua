@@ -29,7 +29,7 @@ npcMapStarter =
 			--worldPosition = { x = 3517, y = -4796 },
 			npcNumber = 1,
 			stfFile = "@theme_park_skyyyr/skyyyr",
-			missions = skyyyr_missions
+			missions = starter_quest
 		},
 	}
 
