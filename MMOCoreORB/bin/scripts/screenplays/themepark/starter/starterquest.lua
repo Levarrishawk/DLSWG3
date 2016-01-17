@@ -4,18 +4,8 @@ starter_quest =
 	{
 		{
 			missionType = "assassinate",
-			}
 			primarySpawns =
 			{
-				{ npcTemplate = "dune_bantha", planetName = "tatooine", npcName = "Infected Dune Bantha" },
-				{ npcTemplate = "dune_bantha", planetName = "tatooine", npcName = "Infected Dune Bantha" },
-				{ npcTemplate = "dune_bantha", planetName = "tatooine", npcName = "Infected Dune Bantha" },
-				{ npcTemplate = "dune_bantha", planetName = "tatooine", npcName = "Infected Dune Bantha" },
-				{ npcTemplate = "dune_bantha", planetName = "tatooine", npcName = "Infected Dune Bantha" },
-				{ npcTemplate = "dune_bantha", planetName = "tatooine", npcName = "Infected Dune Bantha" },
-				{ npcTemplate = "dune_bantha", planetName = "tatooine", npcName = "Infected Dune Bantha" },
-				{ npcTemplate = "dune_bantha", planetName = "tatooine", npcName = "Infected Dune Bantha" },
-				{ npcTemplate = "dune_bantha", planetName = "tatooine", npcName = "Infected Dune Bantha" },
 				{ npcTemplate = "dune_bantha", planetName = "tatooine", npcName = "Infected Dune Bantha" }
 			},
 			
