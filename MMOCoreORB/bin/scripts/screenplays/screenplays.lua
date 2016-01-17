@@ -403,5 +403,5 @@ includeFile("record_keepers/record_keepers.lua")
 --Chandrila
 includeFile("cities/chandrila_hanna_city.lua")
 
---Convo Test (this will be removed after testing complete)
-includeFile("themepark/testconvohandler.lua")
+--Starter Quests
+includeFile("themepark/starter/starterquest.lua")
