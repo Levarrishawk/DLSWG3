@@ -11,11 +11,11 @@ Template
 	}
 }
 
-exarKunConvo:addScreen();
+exar_kun_conv:addScreen();
 
 ]]
 
-exarKunConvo = ConvoTemplate:new {
+exar_kun_conv = ConvoTemplate:new {
 	initialScreen = "first_screen",
 	templateType = "Lua",
 	luaClassHandler = "exarKun_convo_handler",
@@ -31,7 +31,7 @@ first_screen = ConvoScreen:new {
 	}
 }
 
-exarKunConvo:addScreen(first_screen);
+exar_kun_conv:addScreen(first_screen);
 
 
 
