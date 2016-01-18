@@ -42,3 +42,7 @@ includeFile("lair/serverobjects.lua")
 
 -- Outfits
 includeFile("outfits/serverobjects.lua")
+
+
+--Custom Folder
+includeFile("custom/serverobjects.lua")
