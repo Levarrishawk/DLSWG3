@@ -49,25 +49,59 @@ function exarKun:spawnMobiles()
 end
 
 
---[[
+
+function exarKun:getActivePlayerName()
+	return self.questdata.activePlayerName
+end
+
+function exarKun:setActivePlayerName(playerName)
+	self.questdata.activePlayerName = playerName	
+end
+
+exarKun_convo_handler = Object:new {
+}
+
 function exarKun_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
+
 	local creature = LuaCreatureObject(conversingPlayer)
-	local convosession = creature:getConve2
+	local convosession = creature:getConversationSession()
+	lastConversation = nil
+	local conversation = LuaConversationTemplate(conversationTemplate)
+--	local completedQuest = false --creature:hasScreenPlayState(initiateQuest.states.quest.phaseone, initiateQuest.questString)
+	--local completedFS = creature:hasScreenPlayState(exarKun.states.quest.intro, exarKun.questString)
+	--local completedFS = creature:hasScreenPlayState(64, "ForceSensitive")
+	local player = LuaCreatureObject(conversingPlayer)
+	local nextConversationScreen 
+	if ( conversation ~= nil ) then
+		if ( convosession ~= nil ) then
+			 local session = LuaConversationSession(convosession)
+			 if ( session ~= nil ) then
+			 	lastConversationScreen = session:getLastConversationScreen()
+			 end
+		end
+		
+		if ( lastConversationScreen == nil ) then
+			local creature = LuaCreatureObject(conversingPlayer)
+			nextConversationScreen = conversation:getScreen("first_screen")
+--[[
+			if (completedFS == false) then
+				nextConversationScreen = conversation:getScreen("intro_first_screen")
+			elseif ( completedQuest == false ) then
+				nextConversationScreen = conversation:getScreen("intro_first_screen")
+			elseif ( completedQuest == true ) then
 				nextConversationScreen = conversation:getScreen("next_npc_screen")
 			else
 				nextConversationScreen = conversation:getScreen("hello_screen")
 			end
+]]--
 		else
 			local luaLastConversationScreen = LuaConversationScreen(lastConversationScreen)
 			local optionLink = luaLastConversationScreen:getOptionLink(selectedOption)		
 			nextConversationScreen = conversation:getScreen(optionLink)			
 		end			
 	end			
-
 	return nextConversationScreen	
-
 end
-
 
 
 function exarKun_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)	
@@ -75,17 +109,13 @@ function exarKun_convo_handler:runScreenHandlers(conversationTemplate, conversin
 	local screen = LuaConversationScreen(conversationScreen)	
 	local screenID = screen:getScreenID()
 	local player = LuaCreatureObject(conversingPlayer)
-	local completed = player:getScreenPlayState(exarKun.states.quest.intro, exarKun.questString)	
-	
-	if ( screenID == "intro_first_screen" ) then
-		player:setScreenPlayState(exarKun.states.quest.intro, exarKun.questString)
+	--local completed = player:getScreenPlayState(black_atlas.states.quest.intro, black_atlas.questString)	
+	if ( screenID == "first_screen" ) then
+	--	player:setScreenPlayState(black_atlas.states.quest.intro, black_atlas.questString)
 		local pGhost = player:getPlayerObject()
 		if pGhost ~= nil then
-			PlayerObject(pGhost):addWaypoint("tatooine", "test", "", 1, 1, 1, true, true, WAYPOINTTHEMEPARK, 1)
+			PlayerObject(pGhost):addWaypoint("talus", "Go here cunt!", "", 4171, 6, 1025, true, true, WAYPOINTTHEMEPARK, 1)
 		end
 	end
-	
 	return conversationScreen
-	
 end
-]]--
