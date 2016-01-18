@@ -32,3 +32,9 @@ first_screen = ConvoScreen:new {
 }
 
 exarKunConvo:addScreen(first_screen);
+
+
+
+
+
+addConversationTemplate("exar_kun_conv", exar_kun_conv);
