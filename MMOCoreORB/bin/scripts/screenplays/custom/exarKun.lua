@@ -112,10 +112,10 @@ function exarKun_convo_handler:runScreenHandlers(conversationTemplate, conversin
 	--local completed = player:getScreenPlayState(black_atlas.states.quest.intro, black_atlas.questString)	
 	if ( screenID == "first_screen" ) then
 	--	player:setScreenPlayState(black_atlas.states.quest.intro, black_atlas.questString)
-		local pGhost = player:getPlayerObject()
-		if pGhost ~= nil then
-			PlayerObject(pGhost):addWaypoint("talus", "Go here cunt!", "", 4171, 6, 1025, true, true, WAYPOINTTHEMEPARK, 1)
-		end
+		local creo = LuaSceneObject(creatureObject)
+		--Dbld to prevent unloaded objects/mobiles
+		creo:switchZone("talus", 2, 1, 1.5, 2735646)
+		--creo:switchZone("talus", 2, 1, 1.5, 2735646) *Disabled for now.
 	end
 	return conversationScreen
 end
