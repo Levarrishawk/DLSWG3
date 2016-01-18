@@ -34,7 +34,7 @@ exarKunQMobile = Creature:new {
 	},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "trainer_1hsword_convotemplate",
+	conversationTemplate = "exar_kun_conv",
 	attacks = {}
 }
 
