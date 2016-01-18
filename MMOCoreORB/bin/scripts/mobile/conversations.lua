@@ -194,3 +194,7 @@ includeFile("conversations/pet/pets_conv.lua")
 
 -- instance test
 includeFile("conversations/tutorial/instance_test.lua")
+
+
+--Custom
+includeFile("conversations/custom/exarKunConvo.lua")
