@@ -45,7 +45,7 @@ end
 
 
 function exarKun:spawnMobiles()
-		spawnMobile("talus", "trainer_artisan", 1, 10.4, 2.2, -7, -5, 9895517)
+		spawnMobile("talus", "exarKunQMobile", 1, 10.4, 2.2, -7, -5, 9895517)
 end
 
 
