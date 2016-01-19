@@ -25,7 +25,7 @@ starter_quest =
 npcMapStarter =
 	{
 		{
-			spawnData = { planetName = "tatooine", npcTemplate = "sullustan_male", x = 3517, z = 5, y = -4796, direction = 124, cellID = 0, position = STAND },
+			spawnData = { planetName = "tatooine", npcTemplate = "sullustan_male", x = 351, z = 5, y = -4796, direction = 124, cellID = 0, position = STAND },
 			--worldPosition = { x = 3517, y = -4796 },
 			npcNumber = 1,
 			stfFile = "@theme_park_skyyyr/skyyyr",
@@ -37,8 +37,8 @@ ThemeParkSkyyyr = ThemeParkLogic:new {
 	numberOfActs = 1,
 	npcMap = npcMapStarter,
 	--permissionMap = permissionMapJabba,
-	className = "ThemeParkSkyyyr",
-	screenPlayState = "skyyyr_theme_park",
+	className = "StarterQuest",
+	screenPlayState = "starter_quest",
 	distance = 850,
 	missionDescriptionStf = "@theme_park_skyyyr/quest_details:skyyyr_theme_",
 	--missionCompletionMessageStf = "@theme_park/messages:jabba_completion_message"
