@@ -7,39 +7,39 @@
 
 #include "server/zone/objects/scene/SceneObject.h"
 #include "TendCommand.h"
-#include "server/zone/objects/creature/events/InjuryTreatmentTask.h"
 
 class TendDamageCommand : public TendCommand {
 public:
 
 	TendDamageCommand(const String& name, ZoneProcessServer* server)
 			: TendCommand(name, server) {
-		/*
-		TODO:
-			Attach buff
-			Duration (cooldown)
-			Check for 'if on cooldown'
-		*/
-		
-		
+
+	}
+		int doQueueCommand(CreatureObject* creature, const uint64& target, const UnicodeString& arguments) const {
+
+		//effectName = "clienteffect/healing_healdamage.cef";
+		int duration = 10;
+		int healthHealed = 1250;
+		int mindCost = 900;
 		uint32 buffcrc = BuffCRC::JEDI_RESIST_BLEEDING;
 		StringIdChatParameter startStringId("medical_heal", "apply_healCooldown");
 		StringIdChatParameter endStringId("medical_heal", "remove_healCooldown");
-		duration = 10;
+		//duration = 10;
 		ManagedReference<Buff*> buff = new Buff(creature, buffcrc, duration, BuffType::JEDI);
 		Locker locker(buff);
 		buff->setStartMessage(startStringId);
 		buff->setEndMessage(endStringId);
-		
-		if (!creature->hasbuff(BuffCRC:JEDI_RESIST_BLEEDING)) {
+
+		if (!creature->hasBuff(BuffCRC::JEDI_RESIST_BLEEDING)) {
 			creature->addBuff(buff);
-			tendDamage = true;
+			
 			healthHealed = 1250;
 			actionCost = 900;
 			creature->playEffect("clienteffect/medic_heal.cef", "");
 		} else {
-			creature->sendSystemMessage("You're Still on cooldown");	
+			creature->sendSystemMessage("You're Still on cooldown");
 		}
+		return SUCCESS;
 	}
 
 };
