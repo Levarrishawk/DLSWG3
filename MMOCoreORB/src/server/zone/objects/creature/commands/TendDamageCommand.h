@@ -1,7 +1,45 @@
 /*
 				Copyright <SWGEmu>
+
 		See file COPYING for copying conditions.*/
 
+/*
+				Copyright <SWGEmu>
+		See file COPYING for copying conditions.*/
+
+#ifndef TENDDAMAGECOMMAND_H_
+#define TENDDAMAGECOMMAND_H_
+
+#include "server/zone/objects/scene/SceneObject.h"
+#include "TendCommand.h"
+#include "server/zone/objects/creature/events/InjuryTreatmentTask.h"
+
+class TendDamageCommand : public TendCommand {
+public:
+
+	TendDamageCommand(const String& name, ZoneProcessServer* server)
+			: TendCommand(name, server) {
+		effectName = "clienteffect/medic_heal.cef";
+
+		actionCost = 900;
+		mindWoundCost = 0;
+
+		tendDamage = true;
+
+		healthHealed = 1250;
+		//actionHealed = 50;
+
+		//defaultTime = 5.0;
+		range = 0;
+	}
+
+};
+
+#endif //TENDDAMAGECOMMAND_H_
+
+/*
+ * Pre-Reversion change attempt from Skyyyr (To be Finished)
+ *
 #ifndef TENDDAMAGECOMMAND_H_
 #define TENDDAMAGECOMMAND_H_
 
@@ -45,3 +83,4 @@ public:
 };
 
 #endif //TENDDAMAGECOMMAND_H_
+*/
