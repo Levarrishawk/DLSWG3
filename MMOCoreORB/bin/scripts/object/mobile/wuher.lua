@@ -45,4 +45,4 @@ object_mobile_wuher = object_mobile_shared_wuher:new {
 
 }
 
-ObjectTemplates:addTemplate(object_mobile_wuher, "object/mobile/wuher.iff")
+ObjectTemplates:addTemplate(object_mobile_wuher, "object/mobile/dressed_tatooine_wuher.iff")
