@@ -17,10 +17,10 @@ TatooineJabbasPalaceMobsScreenPlay = ScreenPlay:new {
 	
 		{"gamorrean_guard", 60, -8.3, 0.9, -6.2, 180, 35791444, "Gartogg","guard3"},
 		
-		{"gamorrean_guard", 60, -1, 5.8, 98, 180, 1177469, "Torrug","guard4"},
-		{"gamorrean_guard", 60, 10, 5.8, 71, 180, 1177470, "Grogur", "guard5"},
-		{"gamorrean_guard", 60, -30.78, 0.2, 82.64, 180, 1177476, "Urgott","guard6"},
-		{"gamorrean_guard", 60, -2.04, 0.2, 82.61, 180, 1177480, "Artogg","guard7"},
+	--	{"gamorrean_guard", 60, -1, 5.8, 98, 180, 1177469, "Torrug","guard4"},
+	--	{"gamorrean_guard", 60, 10, 5.8, 71, 180, 1177470, "Grogur", "guard5"},
+	--	{"gamorrean_guard", 60, -30.78, 0.2, 82.64, 180, 1177476, "Urgott","guard6"},
+	--	{"gamorrean_guard", 60, -2.04, 0.2, 82.61, 180, 1177480, "Artogg","guard7"},
 	--	{"gamorrean_guard", 60, -13, 3, 59, 180, 1177474, "Ogtur","guard8"},
 	--	{"gamorrean_guard", 60, -37, 5, 46, 180, 1177486, "Rautog","guard9"},
 	--	{"gamorrean_guard", 60, -25, 3.6, 34, 180, 1177487,  "Agtor","guard10"},
