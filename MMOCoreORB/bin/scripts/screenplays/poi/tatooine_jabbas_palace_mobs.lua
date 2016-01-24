@@ -12,19 +12,21 @@ TatooineJabbasPalaceMobsScreenPlay = ScreenPlay:new {
 	},
 
 	gamorrean_guards = {
-		{"gamorrean_guard", 60, -0.3, 5.8, 87.2, 93, 1177469, "Ortugg", "guard1"},
-		{"gamorrean_guard", 60, -11, 5.8, 88, 148, 1177469, "Rogua","guard2"},
-		{"gamorrean_guard", 60, -11, 5.8, 88, 180, 1177469, "Gartogg","guard3"},
+	--	{"gamorrean_guard", 60, -0.3, 5.8, 87.2, 93, 1177469, "Ortugg", "guard1"},
+	--	{"gamorrean_guard", 60, -11, 5.8, 88, 148, 1177469, "Rogua","guard2"},
+	
+		{"gamorrean_guard", 60, -8.3, 0.9, -6.2, 180, 35791444, "Gartogg","guard3"},
+		
 		{"gamorrean_guard", 60, -1, 5.8, 98, 180, 1177469, "Torrug","guard4"},
 		{"gamorrean_guard", 60, 10, 5.8, 71, 180, 1177470, "Grogur", "guard5"},
 		{"gamorrean_guard", 60, -30.78, 0.2, 82.64, 180, 1177476, "Urgott","guard6"},
 		{"gamorrean_guard", 60, -2.04, 0.2, 82.61, 180, 1177480, "Artogg","guard7"},
-		{"gamorrean_guard", 60, -13, 3, 59, 180, 1177474, "Ogtur","guard8"},
-		{"gamorrean_guard", 60, -37, 5, 46, 180, 1177486, "Rautog","guard9"},
-		{"gamorrean_guard", 60, -25, 3.6, 34, 180, 1177487,  "Agtor","guard10"},
-		{"gamorrean_guard", 60, 6, 4, 26, 180, 1177487, "Torgau","guard11"},
-		{"gamorrean_guard", 60, 22, -9, 48, 180, 1177502, "Ugtaur","guard12"},
-		{"gamorrean_guard", 60, 0.14, 2, 53.1, 180, 1177487,  "Gurgot","guard13"},
+	--	{"gamorrean_guard", 60, -13, 3, 59, 180, 1177474, "Ogtur","guard8"},
+	--	{"gamorrean_guard", 60, -37, 5, 46, 180, 1177486, "Rautog","guard9"},
+	--	{"gamorrean_guard", 60, -25, 3.6, 34, 180, 1177487,  "Agtor","guard10"},
+	--	{"gamorrean_guard", 60, 6, 4, 26, 180, 1177487, "Torgau","guard11"},
+	--	{"gamorrean_guard", 60, 22, -9, 48, 180, 1177502, "Ugtaur","guard12"},
+	--	{"gamorrean_guard", 60, 0.14, 2, 53.1, 180, 1177487,  "Gurgot","guard13"},
 	},
 
 	droid_spawns = {
@@ -63,10 +65,10 @@ function TatooineJabbasPalaceMobsScreenPlay:spawnStatics()
 --	spawnMobile("tatooine", "le_repair_droid", 60, 23.67, 0.2, 76.43, 130.65, 1177479)
 --	spawnMobile("tatooine", "malakili", 60, 19, -11, 42, 23.355, 1177502)
 --	spawnMobile("tatooine", "jabba_rancor", 60, 3.93472, -10.9823, 45.0053, 101.285, 1177503)
-	spawnMobile("tatooine", "protocol_droid_3po_red", 60, 10.71, 0.2, 84.27, 216, 1177479)
-	spawnMobile("tatooine", "ra7_bug_droid", 60, 13.33, 0.2, 88.72, 111.64,1177479)
+--	spawnMobile("tatooine", "protocol_droid_3po_red", 60, 10.71, 0.2, 84.27, 216, 1177479)
+--	spawnMobile("tatooine", "ra7_bug_droid", 60, 13.33, 0.2, 88.72, 111.64,1177479)
 
-	pNpc = spawnMobile("tatooine", "outlaw", 300, 9.0, 5.8, 73.0, 153, 1177470)
+--[[	pNpc = spawnMobile("tatooine", "outlaw", 300, 9.0, 5.8, 73.0, 153, 1177470)
 	self:setMoodString(pNpc, "angry")
 
 	pNpc = spawnMobile("tatooine", "commoner_naboo", 60, -33.8, 0.1, 76.6, 329, 1177491)
@@ -91,7 +93,7 @@ function TatooineJabbasPalaceMobsScreenPlay:spawnStatics()
 	self:setMoodString(pNpc, "angry")
 
 	pNpc = spawnMobile("tatooine", "commoner_tatooine", 60, -15.4, 0.1, 87.7, 42, 1177498)
-	self:setMoodString(pNpc, "nervous")
+	self:setMoodString(pNpc, "nervous") --]]
 
 --[[	pNpc = spawnMobile("tatooine", "fringer", 300, -8.7, 2.0, 49.6, 347, 1177487)
 	createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverse", pNpc)
@@ -288,9 +290,9 @@ function TatooineJabbasPalaceMobsScreenPlay:JabbaPatrol(pMobile)
 
 	if (name == "guard3") then
 		if (curLoc == 1) then
-		nextLoc = { -24.89, 6.6, 90.77, 1177490 }
+		nextLoc = { -8.3, -0.9, -6.2, 35791444 }
 		else
-		nextLoc = { -11, 5.8, 88, 1177469 }
+		nextLoc = { 19.6, -0.9, -7.7, 35791444 }
 		end
 	end
 
