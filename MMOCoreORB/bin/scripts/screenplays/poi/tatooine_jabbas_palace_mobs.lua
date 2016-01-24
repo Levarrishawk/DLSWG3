@@ -176,7 +176,7 @@ end
 function TatooineJabbasPalaceMobsScreenPlay:spawnMobiles()
 
 	for i,v in ipairs(self.jabba_band) do
-		local pMobile = spawnMobile("tatooine", v[1], v[2], v[3], v[4], v[5], v[6], v[7])
+		local pMobile = spawnMobile("chandrila", v[1], v[2], v[3], v[4], v[5], v[6], v[7])
 		if (pMobile ~= nil) then
 		CreatureObject(pMobile):setCustomObjectName(v[8])
 		CreatureObject(pMobile):setMoodString(pMobile, v[9])
@@ -198,7 +198,7 @@ function TatooineJabbasPalaceMobsScreenPlay:spawnMobiles()
 	end
 
 	for i,v in ipairs(self.gamorrean_guards) do
-		pMobile = spawnMobile("tatooine", v[1], v[2], v[3], v[4], v[5], v[6], v[7])
+		pMobile = spawnMobile("chandrila", v[1], v[2], v[3], v[4], v[5], v[6], v[7])
 		if (pMobile ~= nil) then
 			writeData(SceneObject(pMobile):getObjectID() .. ":currentLoc", 1)
 			writeStringData(SceneObject(pMobile):getObjectID() .. ":name", v[9])
