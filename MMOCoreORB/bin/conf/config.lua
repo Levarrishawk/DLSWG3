@@ -85,9 +85,9 @@ ZoneOnlineCharactersPerAccount = 2 --How many characters are allowed online from
 --To save on RAM and CPU usage, you should only enable the zones you need.
 --In order to disable a zone, all you have to do is comment it out.
 ZonesEnabled = {
-	"09",
-	"10",
-	"11",
+	--"09",
+	--"10",
+	--"11",
 	--"character_farm",
 	--"cinco_city_test_m5",
 	"corellia",
@@ -122,7 +122,7 @@ ZonesEnabled = {
 	--"space_tatooine",
 	--"space_tatooine_2",
 	--"space_yavin4",
-	"taanab",
+	--"taanab",
 	"talus",
 	"tatooine",
 	--"test_wearables",
@@ -139,7 +139,7 @@ TrePath = "/home/swgemu/Desktop/SWGEmu"
 
 TreFiles = {
 	"default_patch.tre",
-	"chandrila.tre",
+	--"chandrila.tre",   -- Commented because no longer in use, replace with new in-development tre when needed. - Lev
 	"patch_darklight_01.tre",
 	"patch_sku1_14_00.tre",
 	"patch_14_00.tre",
