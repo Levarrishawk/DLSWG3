@@ -75,15 +75,10 @@ public:
 		if (creatureTarget->hasBuff(buffcrc3) || creatureTarget->hasBuff(buffcrc2)) {
 			creatureTarget->setSpeedMultiplierMod(1.3);
 		}
-		
-		if (!creatureTarget->getSpeedMultiplierMod() == 1.3 || creature->getSpeedMultiplierMod() == 1.3) {
-			creature->setSpeedMultiplierMod(1.3);
-			creatureTarget->setSpeedMultiplierMod(1.3);
-		}
 
 		//last checks, if true... cast.
 		if (object->isCreatureObject() && creatureTarget->isAttackableBy(creature) && !creatureTarget->hasBuff(buffcrc)) {
-			buff->setSpeedMultiplierMod(0.5);
+			buff->setSpeedMultiplierMod(buff->getSpeedMultiplierMod() * 0.5);
 			creatureTarget->addBuff(buff);
 			creature->addBuff(buff2);
 			creatureTarget->addBuff(buff3);
