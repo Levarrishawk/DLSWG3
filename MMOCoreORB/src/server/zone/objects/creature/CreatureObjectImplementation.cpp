@@ -1587,7 +1587,7 @@ void CreatureObjectImplementation::setAccelerationMultiplierBase(
 }
 
 void CreatureObjectImplementation::setAccelerationMultiplierMod(float newMultiplierMod, bool notifyClient) {
-	float buffMod = getSkillMod("private_acceleration_multiplier") > 0 ? (float)getSkillMod("private_acceleration_multiplier") / 100.f : 1.4f;
+	float buffMod = getSkillMod("private_acceleration_multiplier") > 0 ? (float)getSkillMod("private_acceleration_multiplier") / 100.f : 1.3f;
 
 	if (accelerationMultiplierMod == newMultiplierMod * buffMod)
 		return;
@@ -1657,7 +1657,7 @@ void CreatureObjectImplementation::setSpeedMultiplierMod(float newMultiplierMod,
 	float buffMod = 1;
 
 	if (posture == CreaturePosture::UPRIGHT) {
-		buffMod = getSkillMod("private_speed_multiplier") > 0 ? (float)getSkillMod("private_speed_multiplier") / 100.f : 1.f;
+		buffMod = getSkillMod("private_speed_multiplier") > 0 ? (float)getSkillMod("private_speed_multiplier") / 100.f : 1.3f;
 	} else if(posture == CreaturePosture::PRONE && hasBuff(CreatureState::COVER)) {
 		if (hasSkill("combat_rifleman_speed_03")) {
 			buffMod = 0.5f;
