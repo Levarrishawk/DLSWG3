@@ -70,21 +70,21 @@ public:
 			creature->sendSystemMessage("You cannot snare this target due to immunity");
 			return 0;
 		}
-		
-		//Not snared, clear speed multiplier
-		if (creatureTarget->hasBuff(buffcrc3) || creatureTarget->hasBuff(buffcrc2)) {
-			creatureTarget->setSpeedMultiplierMod(1.3);
-		}
 
 		//last checks, if true... cast.
 		if (object->isCreatureObject() && creatureTarget->isAttackableBy(creature) && !creatureTarget->hasBuff(buffcrc)) {
-			buff->setSpeedMultiplierMod(buff->getSpeedMultiplierMod() * 0.5);
-			creatureTarget->addBuff(buff);
-			creature->addBuff(buff2);
-			creatureTarget->addBuff(buff3);
-			creature->sendSystemMessage("You snare your target!");
-			creatureTarget->sendSystemMessage("You've been snared!");
-			creatureTarget->playEffect("clienteffect/pl_force_resist_bleeding_self.cef", "");
+			if (creatureTarget->getSpeedMultiplierMod() >= 0.0f){
+				creatureTarget->setSpeedMultiplierMod(0.5);
+				//buff->setSpeedMultiplierMod(buff->getSpeedMultiplierMod() * 0.5);
+				creatureTarget->addBuff(buff);
+				creature->addBuff(buff2);
+				creatureTarget->addBuff(buff3);
+				creature->sendSystemMessage("You snare your target!");
+				creatureTarget->sendSystemMessage("You've been snared!");
+				creatureTarget->playEffect("clienteffect/pl_force_resist_bleeding_self.cef", "");
+			}
+		
+
 
 		}
 
