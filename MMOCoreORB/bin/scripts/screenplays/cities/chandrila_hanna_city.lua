@@ -108,7 +108,7 @@ function HannaCityScreenPlay:spawnMobiles()
   pNpc = spawnMobile("chandrila", "patron_quarren",60,17.1,-0.9,7.8,226,35791444)
   self:setMoodString(pNpc, "npc_sitting_chair")
   
-  spawnMobile("chandrila", "malakili", 60, -29.3, -0.9, 423.0, 139, 35791453)
+  spawnMobile("chandrila", "malakili", 60, -28.5, -0.9, 22.5, 46  , 35791453)
   spawnMobile("chandrila", "jabba_rancor", 60, -26.8, -0.9, 24.2, -160, 35791453)
   --
   
