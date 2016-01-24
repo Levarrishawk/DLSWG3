@@ -73,7 +73,7 @@ public:
 		
 		//Not snared, clear speed multiplier
 		if (creatureTarget->hasBuff(buffcrc3) || creatureTarget->hasBuff(buffcrc2)) {
-			creatureTarget->setSpeederMultiplierMod(1.3);
+			creatureTarget->setSpeedMultiplierMod(1.3);
 		}
 		
 		if (!creatureTarget->getSpeedMultiplierMod() == 1.3 || creature->getSpeedMultiplierMod() == 1.3) {
