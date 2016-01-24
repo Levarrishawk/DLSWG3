@@ -32,7 +32,7 @@ function HannaCityScreenPlay:spawnSceneObjects()
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_red_style_02_on.iff", -31.7, -0.9, 17.1, 35791453, math.rad(0) )
   spawnSceneObject("chandrila", "object/static/particle/pt_sparking_blast_md.iff", 24.5, 3, 9.5, 35791444, math.rad(0) )
   spawnSceneObject("chandrila", "object/static/particle/pt_flocking_glowzees.iff", 24.5, 0, 9.5, 35791444, math.rad(0) )
- 
+  spawnSceneObject("chandrila", "object/tangible/painting/painting_rodian_m.iff", 27.5, 0.6, -5.8, 35791444, math.rad(0) )
  
 
 	--Hotel
