@@ -72,10 +72,11 @@ public:
 		}
 
 		//last checks, if true... cast.
+		int badValue = -1;
 		if (object->isCreatureObject() && creatureTarget->isAttackableBy(creature) && !creatureTarget->hasBuff(buffcrc)) {
-			creatureTarget->setSpeedMultiplierMod(0);
+			creatureTarget->setSpeedMultiplierMod(creatureTarget->getSpeedMultiplier() * 0.0f);
 			if (creatureTarget->getSpeedMultiplierMod() >= 0.0f){
-				creatureTarget->setSpeedMultiplierMod(0.5);
+				creatureTarget->setSpeedMultiplierMod(0.5 * badValue);
 				//buff->setSpeedMultiplierMod(buff->getSpeedMultiplierMod() * 0.5);
 				creatureTarget->addBuff(buff);
 				creature->addBuff(buff2);
