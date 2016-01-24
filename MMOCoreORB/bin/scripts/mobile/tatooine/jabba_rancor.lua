@@ -1,5 +1,6 @@
 jabba_rancor = Creature:new {
 	objectName = "@mob/creature_names:jabbas_palace_rancor",
+	customName = "Malakili's Baby",
 	socialGroup = "jabba ",
 	faction = "",
 	level = 61,
@@ -18,6 +19,7 @@ jabba_rancor = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
+	scale = 0.1,
 	tamingChance = 0.000000,
 	ferocity = 0,
 	pvpBitmask = NONE,

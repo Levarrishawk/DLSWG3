@@ -554,14 +554,14 @@ npcMapJabba =
 			missions = ree_yees_missions
 		},
 		{
-			spawnData = { planetName = "tatooine", npcTemplate = "ephant_mon", x = -6, z = 5.85, y = 84, direction = 277.481, cellID = 1177469, position = STAND },
+			spawnData = { planetName = "chandrila", npcTemplate = "ephant_mon", x = -27.3, z = -0.5, y = 8.9, direction = 0, cellID = 35791454, position = STAND },
 			worldPosition = { x = -5924.4, y = -6242.4 },
 			npcNumber = 4,
 			stfFile = "@theme_park_jabba/ephant_mon",
 			missions = ephant_mon_missions
 		},
 		{
-			spawnData = { planetName = "tatooine", npcTemplate = "porcellus", x = -43, z = 3, y = 64, direction = 306.623, cellID = 1177477, position = STAND },
+			spawnData = { planetName = "chandrila", npcTemplate = "porcellus", x = -25.1, z = -0.9, y = 0.3, direction = 306.623, cellID = 35791452, position = STAND },
 			worldPosition = { x = -5963.5, y = -6226.9 },
 			npcNumber = 8,
 			stfFile = "@theme_park_jabba/porcellus",
