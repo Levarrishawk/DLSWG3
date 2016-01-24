@@ -73,6 +73,7 @@ public:
 
 		//last checks, if true... cast.
 		if (object->isCreatureObject() && creatureTarget->isAttackableBy(creature) && !creatureTarget->hasBuff(buffcrc)) {
+			creatureTarget->setSpeedMultiplierMod(0);
 			if (creatureTarget->getSpeedMultiplierMod() >= 0.0f){
 				creatureTarget->setSpeedMultiplierMod(0.5);
 				//buff->setSpeedMultiplierMod(buff->getSpeedMultiplierMod() * 0.5);
