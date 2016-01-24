@@ -16,7 +16,7 @@ end
 function HannaCityScreenPlay:spawnSceneObjects()
 
 	--Guild Hall regular
---	spawnSceneObject("corellia", "object/tangible/loot/simple_kit/paint_cartridge.iff", 5.3, 2.3, 10.2, 2365923, math.rad(-19) )
+	spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_green_style_01_on.iff", 27.1, -0.9, 12.0, 35791444, math.rad(0) )
 	--Hotel
 --	spawnSceneObject("corellia", "object/static/structure/general/droid_r4_powerdown.iff", 6.0, 1.0, 20.2, 2365805, math.rad(143) )
 

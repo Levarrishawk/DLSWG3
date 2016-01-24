@@ -540,7 +540,7 @@ g5po_missions =
 npcMapJabba =
 	{
 		{
-			spawnData = { planetName = "tatooine", npcTemplate = "reelo_baruk", x = -2, z = 0.199999, y = 113.01, direction = 53.9956, cellID = 1177466, position = STAND },
+			spawnData = { planetName = "chandrila", npcTemplate = "reelo_baruk", x = 8.6, z = -0.9, y = 0.4, direction = 80, cellID = 35791444, position = STAND },
 			worldPosition = { x = -5899.5, y = -6226.7 },
 			npcNumber = 1,
 			stfFile = "@theme_park_jabba/reelo_baruk",
