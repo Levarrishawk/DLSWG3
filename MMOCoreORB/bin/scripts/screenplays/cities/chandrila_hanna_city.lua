@@ -30,7 +30,10 @@ function HannaCityScreenPlay:spawnSceneObjects()
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_green_style_01_on.iff", 31.7, 0.1, -6.8, 35791443, math.rad(0) )
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_red_style_02_on.iff", -16.7, -0.9, 26.4, 35791453, math.rad(0) )
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_red_style_02_on.iff", -31.7, -0.9, 17.1, 35791453, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/particle/pt_sparking_blast_md.iff", 24.5, 4, 9.5, 35791444, math.rad(0) )
  
+ 
+
 	--Hotel
 --	spawnSceneObject("corellia", "object/static/structure/general/droid_r4_powerdown.iff", 6.0, 1.0, 20.2, 2365805, math.rad(143) )
 
