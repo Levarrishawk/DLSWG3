@@ -42,6 +42,7 @@ public:
 
 			player->setSpeedMultiplierBase(1.0f, true);
 			player->playEffect("clienteffect/pl_force_resist_bleeding_self.cef", "");
+			player->removeStateBuff(CreatureState::IMMOBILIZED);
 
 		} catch (Exception& e) {
 			player->error("unreported exception caught in ForceRunTask::activate");
