@@ -61,7 +61,7 @@ public:
 		ManagedReference<Buff*> buff = new Buff(creatureTarget, buffcrc, duration, BuffType::JEDI);
 
 		//target is currently snared/rooted
-		if (creatureTarget->hasBuf(buffcrc)) {
+		if (creatureTarget->hasBuff(buffcrc)) {
 			creature->sendSystemMessage("The target is already snared!");
 			return 0;
 		}
