@@ -40,7 +40,7 @@ public:
 		try {
 			Reference<setNormalTask*> snormalTask = player->getPendingTask("resetspeed").castTo<setNormalTask*>();
 
-			player->setSpeedMultiplierBase(1f, true);
+			player->setSpeedMultiplierBase(1.0f, true);
 			player->playEffect("clienteffect/pl_force_resist_bleeding_self.cef", "");
 
 		} catch (Exception& e) {
