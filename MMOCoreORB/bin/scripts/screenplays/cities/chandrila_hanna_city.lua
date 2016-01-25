@@ -81,6 +81,26 @@ function HannaCityScreenPlay:spawnMobiles()
   pNpc = spawnMobile("chandrila", "rebel_trooper",60,187.3,6.0,-3080.6,90,0)
   self:setMoodString(pNpc, "neutral")
   
+  -- Senate Building
+        -- Exterior
+  pNpc = spawnMobile("chandrila", "royal_imperial_guard",60,494.1,6.0,-2934.1,-90,0)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("chandrila", "royal_imperial_guard",60,494.1,6.0,-2940.1,-90,0)
+  self:setMoodString(pNpc, "neutral")
+        -- Interior
+  pNpc = spawnMobile("chandrila", "royal_imperial_guard",60,-3.3,-18.9,32.7,-5,35791743)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("chandrila", "royal_imperial_guard",60,3.2,-18.9,32.7,0,35791743)
+  self:setMoodString(pNpc, "neutral")
+  
+  pNpc = spawnMobile("chandrila", "royal_imperial_guard",60,1.8,-18.9,-28.6,0,35791740)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("chandrila", "royal_imperial_guard",60,-1.7,-18.9,-28.7,0,35791740)
+  self:setMoodString(pNpc, "neutral")
+  
+  pNpc = spawnMobile("chandrila", "mon_mothma",60,-0.0,-26.6,0.8,0,35791722)
+  self:setMoodString(pNpc, "neutral")
+  
   --Military Base
   pNpc = spawnMobile("chandrila", "rebel_major",60,8.4,7.0,10.5,-105,35791639)
   self:setMoodString(pNpc, "conversation")
