@@ -15,12 +15,11 @@ TatooineJabbasPalaceMobsScreenPlay = ScreenPlay:new {
 	--	{"gamorrean_guard", 60, -0.3, 5.8, 87.2, 93, 1177469, "Ortugg", "guard1"},
 	--	{"gamorrean_guard", 60, -11, 5.8, 88, 148, 1177469, "Rogua","guard2"},
 	
-		{"gamorrean_guard", 60, -8.3, -0.9, -6.2, 180, 35791444, "Gartogg","guard3"},
+		{"gamorrean_guard", 60, -8.3, 0.9, -6.2, 180, 35791444, "Gartogg","guard3"},
 		
-		{"gamorrean_guard", 60, 30, 0.1, 4.7, 153, 35791443, "Torrug","guard4"},
-	--	{"gamorrean_guard", 60, 20.1, -0.9, 9.4, 76, 35791444, "Grogur", "guard5"},
-		
-		{"rebel_trooper", 60, 449.9, 6.0, -2806.7, 178, 0, "a New Republic Trooper","guard6"},
+	--	{"gamorrean_guard", 60, -1, 5.8, 98, 180, 1177469, "Torrug","guard4"},
+	--	{"gamorrean_guard", 60, 10, 5.8, 71, 180, 1177470, "Grogur", "guard5"},
+	--	{"gamorrean_guard", 60, -30.78, 0.2, 82.64, 180, 1177476, "Urgott","guard6"},
 	--	{"gamorrean_guard", 60, -2.04, 0.2, 82.61, 180, 1177480, "Artogg","guard7"},
 	--	{"gamorrean_guard", 60, -13, 3, 59, 180, 1177474, "Ogtur","guard8"},
 	--	{"gamorrean_guard", 60, -37, 5, 46, 180, 1177486, "Rautog","guard9"},
@@ -33,7 +32,7 @@ TatooineJabbasPalaceMobsScreenPlay = ScreenPlay:new {
 	droid_spawns = {
 		--{"r2", 60, 19.73, 0.2, 90.51, 0, 1177479, "R2-E7", "droid1"},
 	--	{"eg6_power_droid", 60, 17.42, 0.2, 81.22, 0, 1177479, "EG6-M5","droid4"},
-	--	{"eg6_power_droid", 60, 43.29, 0.2, 7.14, 0, 1177499, "EG6-M9", "droid6"},
+		--{"eg6_power_droid", 60, 43.29, 0.2, 7.14, 0, 1177499, "EG6-M9", "droid6"},
 	},
 
 	jabba_band = {
@@ -299,25 +298,25 @@ function TatooineJabbasPalaceMobsScreenPlay:JabbaPatrol(pMobile)
 
 	if (name == "guard4") then
 		if (curLoc == 1) then
-		nextLoc = { 30.0, 0.1, 4.7, 35791443 }
+		nextLoc = { -4.8, .2, 134.3, 1177466 }
 		else
-		nextLoc = { 35.2, 0.1, -6.7, 35791443 }
+		nextLoc = { -1, 5.8, 98, 1177469 }
 		end
 	end
 
 	if (name == "guard5") then
 		if (curLoc == 1) then
-		nextLoc = { 20.1, -0.9, 9.4, 35791444}
+		nextLoc = { 10, 5.8, 71, 1177470 }
 		else
-		nextLoc = {-9.7, -0.9, 7.7, 35791444}
+		nextLoc = {-25, 3, 61, 1177474}
 		end
 	end
 
 	if (name == "guard6") then
 		if (curLoc == 1) then
-		nextLoc = {449.9, 6.0, -2806.7, 0}
+		nextLoc = {-25.9, 0.2, 82.1, 1177475}
 		else
-		nextLoc ={450, 6.0, -2927.2, 0}
+		nextLoc ={-50.89, 0.2, 82.37, 1177476}
 		end
 	end
 

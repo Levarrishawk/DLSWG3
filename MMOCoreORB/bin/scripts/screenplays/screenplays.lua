@@ -402,6 +402,7 @@ includeFile("record_keepers/record_keepers.lua")
 
 --Chandrila
 includeFile("cities/chandrila_hanna_city.lua")
+includeFile("cities/chandrila_hanna_city_mobs.lua")
 
 --Starter Quests
 includeFile("themepark/starter/starterquest.lua")
