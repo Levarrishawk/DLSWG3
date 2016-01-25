@@ -5,7 +5,7 @@ ChandrilaHannaCityMobsScreenPlay = ScreenPlay:new {
 
 	rebel_troopers = {
 		{"rebel_trooper", 60, 457.6, 6.0, -2929.5, 175, 0, "a New Republic Trooper","guard1"},
-		
+		{"rebel_trooper", 60, 415.4, 6.0, -2920.0, -129, 0, "a New Republic Trooper","guard2"},
 
 	},
 
@@ -62,7 +62,13 @@ function ChandrilaHannaCityMobsScreenPlay:HannaPatrol(pMobile)
 		nextLoc = { 457.6, 6, -2946.1, 0 }
 		end
 	end
-
+  if (name == "guard2") then
+    if (curLoc == 1) then
+    nextLoc = { 415.4, 6, -2920.6, 0 }
+    else
+    nextLoc = { 368.5, 6, -2969.4, 0 }
+    end
+  end
 
 	AiAgent(pMobile):stopWaiting()
 	AiAgent(pMobile):setWait(0)
