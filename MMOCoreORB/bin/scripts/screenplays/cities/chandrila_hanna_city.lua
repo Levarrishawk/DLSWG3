@@ -39,6 +39,18 @@ function HannaCityScreenPlay:spawnSceneObjects()
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 195.5, 6.0, -3075.5, 0, math.rad(0) )
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 195.5, 6.0, -3064.5, 0, math.rad(0) )
  
+--  Senate Building Static Objects
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", -8.4, -15.1, 25.8, 35791722, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", -25.8, -15.1, 8.4, 35791722, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", -25.8, -15.1, -8.4, 35791722, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", -15.9, -15.1, -22, 35791722, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", -0.1, -15.1, -27.2, 35791722, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 16.0, -15.1, -21.9, 35791722, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 25.8, -15.1, -8.4, 35791722, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 25.9, -15.1, 8.3, 35791722, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 16.0, -15.1, 21.9, 35791722, math.rad(0) )
+    
+
 
 	--Hotel
 --	spawnSceneObject("corellia", "object/static/structure/general/droid_r4_powerdown.iff", 6.0, 1.0, 20.2, 2365805, math.rad(143) )
@@ -92,11 +104,14 @@ function HannaCityScreenPlay:spawnMobiles()
   self:setMoodString(pNpc, "neutral")
   pNpc = spawnMobile("chandrila", "royal_imperial_guard",60,3.2,-18.9,32.7,0,35791743)
   self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("chandrila", "royal_imperial_guard",60,12.7,-19.3,36.3,-83,35791743)
+  self:setMoodString(pNpc, "neutral")
   
   pNpc = spawnMobile("chandrila", "royal_imperial_guard",60,1.8,-18.9,-28.6,0,35791740)
   self:setMoodString(pNpc, "neutral")
   pNpc = spawnMobile("chandrila", "royal_imperial_guard",60,-1.7,-18.9,-28.7,0,35791740)
   self:setMoodString(pNpc, "neutral")
+  
       -- Senate Chamber
   pNpc = spawnMobile("chandrila", "mon_mothma",60,-0.0,-26.6,0.8,0,35791722)
   self:setMoodString(pNpc, "conversation")
@@ -276,7 +291,7 @@ function HannaCityScreenPlay:spawnMobiles()
   self:setMoodString(pNpc, "npc_sitting_chair")
   pNpc = spawnMobile("chandrila", "senator",60,3.1,-22.9,14.8,-164,35791722)
   self:setMoodString(pNpc, "happy")
-  pNpc = spawnMobile("chandrila", "senator",60,-22.9,-22.9,15.3,-162,35791722)
+  pNpc = spawnMobile("chandrila", "senator",60,4.4,-22.9,15.3,-162,35791722)
   self:setMoodString(pNpc, "npc_sitting_chair")
   pNpc = spawnMobile("chandrila", "senator",60,5.7,-22.9,15,-159,35791722)
   self:setMoodString(pNpc, "npc_sitting_chair")
