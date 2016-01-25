@@ -80,6 +80,14 @@ public:
 
 		//last checks, if true... cast.
 		if (object->isCreatureObject() && creatureTarget->isAttackableBy(creature) && !creatureTarget->hasBuff(buffcrc)) {
+			//Remove movement boosts
+			if (creatureTarget->hasBuff(STRING_HASHCODE("burstrun")) || creature->hasBuff(STRING_HASHCODE("retreat")) || creatureTarget->hasBuff(STRING_HASHCODE("force_run"))) {
+				creatureTarget->removeBuff(STRING_HASHCODE("burstrun"));
+				creatureTarget->removeBuff(STRING_HASHCODE("retreat"));
+				creatureTarget->removeBuff(STRING_HASHCODE("force_run"));
+			}
+			
+			
 			//Start task to restore movement speed
 			Reference<setNormalTask*> snormalTask = new setNormalTask(creatureTarget);
 			creatureTarget->addPendingTask("resetspeed", snormalTask, 5100);
