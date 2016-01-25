@@ -18,7 +18,7 @@ TatooineJabbasPalaceMobsScreenPlay = ScreenPlay:new {
 		{"gamorrean_guard", 60, -8.3, -0.9, -6.2, 180, 35791444, "Gartogg","guard3"},
 		
 		{"gamorrean_guard", 60, 30, 0.1, 4.7, 153, 35791443, "Torrug","guard4"},
-		{"gamorrean_guard", 60, 20.1, -0.9, 9.4, 76, 35791444, "Grogur", "guard5"},
+	--	{"gamorrean_guard", 60, 20.1, -0.9, 9.4, 76, 35791444, "Grogur", "guard5"},
 		
 		{"rebel_trooper", 60, 449.9, 6.0, -2806.7, 178, 0, "a New Republic Trooper","guard6"},
 	--	{"gamorrean_guard", 60, -2.04, 0.2, 82.61, 180, 1177480, "Artogg","guard7"},
@@ -307,7 +307,7 @@ function TatooineJabbasPalaceMobsScreenPlay:JabbaPatrol(pMobile)
 
 	if (name == "guard5") then
 		if (curLoc == 1) then
-		nextLoc = { 20.1, -0.9, 9.4, 35791444 }
+		nextLoc = { 20.1, -0.9, 9.4, 35791444}
 		else
 		nextLoc = {-9.7, -0.9, 7.7, 35791444}
 		end
