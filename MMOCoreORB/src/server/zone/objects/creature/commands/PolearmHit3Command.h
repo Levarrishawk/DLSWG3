@@ -81,7 +81,7 @@ public:
 		//last checks, if true... cast.
 		if (object->isCreatureObject() && creatureTarget->isAttackableBy(creature) && !creatureTarget->hasBuff(buffcrc)) {
 			//Start task to restore movement speed
-			Reference<setNormalTask*> snormalTask = new setNormalTask(creature);
+			Reference<setNormalTask*> snormalTask = new setNormalTask(creatureTarget);
 			creatureTarget->addPendingTask("resetspeed", snormalTask, 5100);
 			//Snare
 			buff->setSpeedMultiplierMod(0.5);
