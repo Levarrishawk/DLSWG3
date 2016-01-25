@@ -89,6 +89,7 @@ public:
 			creatureTarget->addBuff(buff);
 			creature->addBuff(buff2);
 			creatureTarget->addBuff(buff3);
+			//creatureTarget->setImmobilizedState;
 			//Send messages, and effect
 			creature->sendSystemMessage("You snare your target!");
 			creatureTarget->sendSystemMessage("You've been snared!");
