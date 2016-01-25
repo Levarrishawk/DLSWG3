@@ -70,7 +70,7 @@ function ChandrilaHannaCityMobsScreenPlay:HannaPatrol(pMobile)
 	AiAgent(pMobile):executeBehavior()
 end
 
-function ChandrilaHannaCityMobsScreenPlay:jabbaPatrolDestReached(pMobile)
+function ChandrilaHannaCityMobsScreenPlay:hannaPatrolDestReached(pMobile)
 	if (pMobile == nil) then
 		return 0
 	end
