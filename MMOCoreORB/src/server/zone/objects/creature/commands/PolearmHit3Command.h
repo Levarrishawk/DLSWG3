@@ -9,6 +9,7 @@ Date: 23JAN2016
 #include "server/zone/objects/scene/SceneObject.h"
 #include "server/zone/managers/combat/CombatManager.h"
 #include "CombatQueueCommand.h"
+#include "server/zone/objects/player/events/setNormalTask.h"
 
 
 class PolearmHit3Command : public CombatQueueCommand {
@@ -59,6 +60,12 @@ public:
 		ManagedReference<Buff*> buff3 = new Buff(creatureTarget, buffcrc3, duration3, BuffType::JEDI);
 		ManagedReference<Buff*> buff = new Buff(creatureTarget, buffcrc, duration, BuffType::JEDI);
 
+		//target is currently snared/rooted
+		if (creatureTarget->hasBuf(buffcrc)) {
+			creature->sendSystemMessage("The target is already snared!");
+			return 0;
+		}
+
 		//caster on cd
 		if(creature->hasBuff(buffcrc2)) {
 			creature->sendSystemMessage("You cannot snare at this time.");
@@ -72,24 +79,22 @@ public:
 		}
 
 		//last checks, if true... cast.
-		int badValue = -1;
 		if (object->isCreatureObject() && creatureTarget->isAttackableBy(creature) && !creatureTarget->hasBuff(buffcrc)) {
-			//creatureTarget->setSpeedMultiplierMod(creatureTarget->getSpeedMultiplier() * 0.0f);
-			if (creatureTarget->getSpeedMultiplierMod() >= 0.0f){
-				creatureTarget->setSpeedMultiplierMod(0.5 * badValue);
-				//buff->setSpeedMultiplierMod(buff->getSpeedMultiplierMod() * 0.5);
-				creatureTarget->addBuff(buff);
-				creature->addBuff(buff2);
-				creatureTarget->addBuff(buff3);
-				creature->sendSystemMessage("You snare your target!");
-				creatureTarget->sendSystemMessage("You've been snared!");
-				creatureTarget->playEffect("clienteffect/pl_force_resist_bleeding_self.cef", "");
-			}
-		
-
+			//Start task to restore movement speed
+			Reference<setNormalTask*> snormalTask = new setNormalTask(creature);
+			creature->addPendingTask("resetspeed", snormalTask, 5100);
+			//Snare
+			buff->setSpeedMultiplierMod(0.5);
+			//Appy buffs / debuffs
+			creatureTarget->addBuff(buff);
+			creature->addBuff(buff2);
+			creatureTarget->addBuff(buff3);
+			//Send messages, and effect
+			creature->sendSystemMessage("You snare your target!");
+			creatureTarget->sendSystemMessage("You've been snared!");
+			creatureTarget->playEffect("clienteffect/pl_force_resist_bleeding_self.cef", "");
 
 		}
-
 		return doCombatAction(creature, target);
 	}
 
