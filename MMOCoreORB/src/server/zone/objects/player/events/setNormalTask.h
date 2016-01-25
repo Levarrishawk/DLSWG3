@@ -1,0 +1,55 @@
+/*
+
+ Author: Skyyyr
+ Date: 24JAN2016
+ 
+ */
+
+
+#ifndef setNormalTask_H_
+#define setNormalTask_H_
+
+#include "engine/engine.h"
+#include "server/zone/managers/objectcontroller/ObjectController.h"
+#include "server/zone/packets/chat/ChatSystemMessage.h"
+#include "server/chat/StringIdChatParameter.h"
+#include "server/zone/objects/player/PlayerObject.h"
+#include "server/zone/objects/creature/CreatureObject.h"
+#include "server/zone/objects/creature/CreatureAttribute.h"
+
+class setNormalTask: public Task {
+	ManagedReference<CreatureObject*> player;
+	String moodString;
+
+public:
+	setNormalTask(CreatureObject* pl) {
+		player = pl;
+	}
+
+	void setMoodString(const String& ms) {
+		moodString = ms;
+	}
+
+	String getMoodString() {
+		return moodString;
+	}
+
+	void run() {
+		Locker playerLocker(player);
+
+		try {
+			Reference<setNormalTask*> snormalTask = player->getPendingTask("resetspeed").castTo<setNormalTask*>();
+
+			//if (fmeditateTask != NULL)
+				//fmeditateTask->reschedule(5000);
+			player->setSpeedMultiplierBase(1.3f, true);
+			player->playEffect("clienteffect/pl_force_resist_bleeding_self.cef", "");
+
+		} catch (Exception& e) {
+			player->error("unreported exception caught in ForceRunTask::activate");
+		}
+	}
+
+};
+
+#endif /* setNormalTask_H_ */
