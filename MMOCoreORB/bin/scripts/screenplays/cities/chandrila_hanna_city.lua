@@ -93,8 +93,35 @@ function HannaCityScreenPlay:spawnMobiles()
   pNpc = spawnMobile("chandrila", "rebel_trooper",60,187.3,6.0,-3080.6,90,0)
   self:setMoodString(pNpc, "neutral")
   
+  pNpc = spawnMobile("chandrila", "commoner",60,403.7,6.0,-2927.8,-141,0)
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile("chandrila", "commoner",60,401.1,6.0,-2930.8,34,0)
+  self:setMoodString(pNpc, "conversation")
+  
+  -- Squalls
+  spawnMobile("chandrila", "squall",60,350.5,6.0,-2965.1,34,0)
+  spawnMobile("chandrila", "squall",60,352.0,7.0,-2947.7,9,0)
+  spawnMobile("chandrila", "squall",60,356.5,7.0,-2935.7,34,0)
+  spawnMobile("chandrila", "squall",60,359.5,7.0,-2937.6,-50,0)
+  spawnMobile("chandrila", "squall",60,361.7,7.0,-2934.0,34,0)
+  spawnMobile("chandrila", "squall",60,363.9,7.0,-2928.2,19,0)
+  spawnMobile("chandrila", "squall",60,387.6,7.0,-2884.3,-165,0)
+  spawnMobile("chandrila", "squall",60,463.1,7.0,-2915.1,11,0)
+  spawnMobile("chandrila", "squall",60,402.6,7.0,-3108.0,156,0)
+  spawnMobile("chandrila", "squall",60,464.1,7.1,-3169.6,62,0)
+  spawnMobile("chandrila", "squall",60,468.1,7.1,-3167.2,-133,0)
+  spawnMobile("chandrila", "squall",60,614.6,7.0,-3065.1,146,0)
+  spawnMobile("chandrila", "squall",60,532.3,7.0,-2969.3,-172,0)
+  spawnMobile("chandrila", "squall",60,534.3,7.0,-2970.2,-84,0)
+  spawnMobile("chandrila", "squall",60,531.4,7.0,-2897.7,166,0)
+  
+  
   -- Senate Building
         -- Exterior
+  pNpc = spawnMobile("chandrila", "rebel_commando",60,458.2,6.0,-2930.6,-90,0)
+  self:setMoodString(pNpc, "angry") 
+  pNpc = spawnMobile("chandrila", "rebel_commando",60,458.2,6.0,-2945.6,-90,0)
+  self:setMoodString(pNpc, "happy")      
   pNpc = spawnMobile("chandrila", "royal_imperial_guard",60,494.1,6.0,-2934.1,-90,0)
   self:setMoodString(pNpc, "neutral")
   pNpc = spawnMobile("chandrila", "royal_imperial_guard",60,494.1,6.0,-2940.1,-90,0)
