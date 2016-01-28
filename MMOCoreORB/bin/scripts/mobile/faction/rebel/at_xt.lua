@@ -26,7 +26,7 @@ at_xt = Creature:new {
 	optionsBitmask = 128,
 	diet = NONE,
 
-	templates = {"object/mobile/atst.iff"},
+	templates = {"object/mobile/atxt.iff"},
 	lootGroups = {},
 	conversationTemplate = "",
 	defaultAttack = "defaultdroidattack",
