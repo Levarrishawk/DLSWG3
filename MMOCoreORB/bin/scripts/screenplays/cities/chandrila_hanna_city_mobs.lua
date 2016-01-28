@@ -5,8 +5,6 @@ ChandrilaHannaCityMobsScreenPlay = ScreenPlay:new {
 
 	rebel_troopers = {
 		{"rebel_trooper", 60, 457.6, 6.0, -2929.5, 175, 0, "a New Republic Trooper","guard1"},
-		{"rebel_trooper", 60, 415.4, 6.0, -2920.0, -129, 0, "a New Republic Trooper","guard2"},
-
 	},
 
 }

@@ -248,6 +248,6 @@ chandrila_regions = {
 }
 
 chandrila_static_spawns = {
-	--{"imperial_recruiter",1,-2192,0,2269,-50,0, "", "", "stationary"},
+	{"rebel_recruiter",1,191.3,6,-3046.8,43,0, "", "", "stationary"},
 
 }
