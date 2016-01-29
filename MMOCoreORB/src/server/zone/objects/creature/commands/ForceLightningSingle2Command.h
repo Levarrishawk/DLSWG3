@@ -65,13 +65,13 @@ public:
 				}
 
 				//caster on cd
-				if(creature->hasBuff(buffcrc2)) {
+				else if(creature->hasBuff(buffcrc2)) {
 					creature->sendSystemMessage("You cannot snare at this time.");
 					return 0;
 				}
 
 				//target on cd
-				if (creatureTarget->hasBuff(buffcrc3)) {
+				else if (creatureTarget->hasBuff(buffcrc3)) {
 					creature->sendSystemMessage("You cannot snare this target due to immunity");
 					return 0;
 				}
