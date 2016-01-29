@@ -101,7 +101,7 @@ object_weapon_ranged_carbine_carbine_dh17_black = object_weapon_ranged_carbine_s
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
 	healthAttackCost = 0,
-	actionAttackCost = 150,
+	actionAttackCost = 300,
 	mindAttackCost = 0,
 	forceCost = 0,
 
@@ -115,9 +115,9 @@ object_weapon_ranged_carbine_carbine_dh17_black = object_weapon_ranged_carbine_s
 	maxRangeAccuracy = -60,
 
 	minDamage = 40,
-	maxDamage = 115,
+	maxDamage = 315,
 
-	attackSpeed = 3.5,
+	attackSpeed = 1,
 
 	woundsRatio = 9
 }
