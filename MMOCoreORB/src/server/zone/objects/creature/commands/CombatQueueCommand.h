@@ -199,7 +199,7 @@ public:
 			case -1:
 				return INVALIDTARGET;
 			case -2:
-				creature->sendSystemMessage("Insufficient action points.");
+				creature->sendSystemMessage("You don't have enough action to use that ability yet.");
 				return INSUFFICIENTHAM;
 			case -3:
 				return GENERALERROR;
