@@ -61,19 +61,19 @@ public:
 				//target is currently snared/rooted
 				if (creatureTarget->hasBuff(buffcrc)) {
 					creature->sendSystemMessage("The target is already snared!");
-					return 0;
+					return doCombatAction(creature, target);
 				}
 
 				//caster on cd
-				else if(creature->hasBuff(buffcrc2)) {
+				if(creature->hasBuff(buffcrc2)) {
 					creature->sendSystemMessage("You cannot snare at this time.");
-					return 0;
+					return doCombatAction(creature, target);
 				}
 
 				//target on cd
-				else if (creatureTarget->hasBuff(buffcrc3)) {
+				if (creatureTarget->hasBuff(buffcrc3)) {
 					creature->sendSystemMessage("You cannot snare this target due to immunity");
-					return 0;
+					return doCombatAction(creature, target);
 				}
 
 				//last checks, if true... cast.
