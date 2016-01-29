@@ -44,10 +44,10 @@
 ActionShot2Command = {
         name = "actionshot2",
 
-	damageMultiplier = 2.0,
+	damageMultiplier = 1.0,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 1,
+  actionCostMultiplier = 1.5,
   mindCostMultiplier = 0,
 
 
@@ -65,7 +65,7 @@ ActionShot2Command = {
 		{ "resistance_bleeding", "bleed_resist" },
 		ACTION,
 		true,
-		125,
+		300,
 		100,
 		100, 
 		100

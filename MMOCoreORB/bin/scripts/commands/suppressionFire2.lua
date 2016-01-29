@@ -44,13 +44,16 @@
 SuppressionFire2Command = {
         name = "suppressionfire2",
 
-	damageMultiplier = 3,
+	damageMultiplier = 1.5,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 1,
+  actionCostMultiplier = 3,
   mindCostMultiplier = 0,
 	accuracyBonus = 25,
-
+	
+	coneAngle = 180,
+  coneAction = true,
+  
 	stateEffects = {
 	  StateEffect( 
 		POSTUREDOWN_EFFECT, 
