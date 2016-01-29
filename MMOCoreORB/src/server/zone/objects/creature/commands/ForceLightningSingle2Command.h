@@ -43,7 +43,7 @@ public:
 				}
 
 				//Check range
-				if (creature->getDistanceTo(object) > 10.f){
+				if (creature->getDistanceTo(object) > 32.f){
 					creature->sendSystemMessage("You are out of range.");
 					return GENERALERROR;
 				}
