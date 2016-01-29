@@ -47,7 +47,7 @@ ActionShot2Command = {
 	damageMultiplier = 1.0,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 1.5,
+  actionCostMultiplier = 1,
   mindCostMultiplier = 0,
 
 

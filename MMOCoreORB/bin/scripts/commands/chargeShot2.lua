@@ -47,7 +47,7 @@ ChargeShot2Command = {
 	damageMultiplier = 1.5,
 	speedMultiplier = 1,
 	healthCostMultiplier = 0,
-  actionCostMultiplier = 2.5,
+  actionCostMultiplier = 1,
   mindCostMultiplier = 0,
 	accuracyBonus = 25,
 

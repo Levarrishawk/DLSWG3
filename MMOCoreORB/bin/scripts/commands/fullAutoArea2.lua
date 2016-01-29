@@ -47,7 +47,7 @@ FullAutoArea2Command = {
 	damageMultiplier = 3,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 3,
+  actionCostMultiplier = 1.5,
   mindCostMultiplier = 0,
 	accuracyBonus = 25,
 
