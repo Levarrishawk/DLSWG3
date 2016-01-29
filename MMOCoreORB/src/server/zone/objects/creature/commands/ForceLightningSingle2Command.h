@@ -8,6 +8,7 @@
 #include "server/zone/objects/scene/SceneObject.h"
 #include "server/zone/managers/combat/CombatManager.h"
 #include "ForcePowersQueueCommand.h"
+#include "server/zone/objects/player/events/setNormalTask.h"
 
 class ForceLightningSingle2Command : public ForcePowersQueueCommand {
 public:
