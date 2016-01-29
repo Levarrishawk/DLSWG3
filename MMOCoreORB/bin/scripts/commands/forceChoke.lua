@@ -44,9 +44,9 @@
 ForceChokeCommand = {
 	name = "forcechoke",
 
-	minDamage = 700,
-	maxDamage = 1000,
-	speed = 2.0,
+	minDamage = 1100,
+	maxDamage = 1500,
+	speed = 1.0,
 	forceCost = 25,
 	attackType = FORCEATTACK,
 	accuracySkillMod = "forcechoke_accuracy";
@@ -67,9 +67,9 @@ ForceChokeCommand = {
 		0,
 		false,
 		-1,
-		200,
-		10, 
-		0
+		100,
+		500, 
+		35
 	  )
 	},
 }

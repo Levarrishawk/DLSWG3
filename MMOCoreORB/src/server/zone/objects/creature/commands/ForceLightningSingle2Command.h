@@ -48,7 +48,7 @@ public:
 					return GENERALERROR;
 				}
 
-				int duration = 5; //duration of snare on target
+				int duration = 10; //duration of snare on target
 				int duration2 = 15; //duration of cd on caster
 				int duration3 = 20; //duration of immunity on target
 				uint32 buffcrc = BuffCRC::FORCE_RANK_SUFFERING;

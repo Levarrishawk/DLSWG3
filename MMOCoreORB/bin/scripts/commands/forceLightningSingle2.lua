@@ -44,9 +44,9 @@
 ForceLightningSingle2Command = {
 	name = "forcelightningsingle2",
 
-	minDamage = 850,
-	maxDamage = 1200,
-	speed = 2.0,
+	minDamage = 1550,
+	maxDamage = 1800,
+	speed = 1.0,
 	forceCost = 50,
 	
 	accuracySkillMod = "forcelightning_accuracy";
@@ -66,7 +66,7 @@ ForceLightningSingle2Command = {
     { "knockdownRecovery", "lastKnockdown" }, 
     { "force_defense" }, 
     {}, 
-    65, 
+    25, 
     0, 
     0 
     )
