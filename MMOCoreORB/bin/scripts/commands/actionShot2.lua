@@ -57,17 +57,7 @@ ActionShot2Command = {
 
 	combatSpam = "sapblast",
 	    
-	stateEffects = {
-	  StateEffect( 
-		POSTUREDOWN_EFFECT, 
-		{ "postureDownRecovery" }, 
-		{ "posture_change_down_defense" }, 
-		{}, 
-		100, 
-		0, 
-		0 
-	  )
-	},	
+
 
 	dotEffects = {
 	  DotEffect( 
@@ -77,8 +67,8 @@ ActionShot2Command = {
 		true,
 		125,
 		100,
-		60, 
-		60
+		100, 
+		100
 	  )
 	},
 	

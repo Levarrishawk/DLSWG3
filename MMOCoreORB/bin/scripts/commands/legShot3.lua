@@ -51,8 +51,7 @@ LegShot3Command = {
   mindCostMultiplier = 0,
 	accuracyBonus = 25,
 	
-	coneAngle = 180,
-  coneAction = true,
+
 
 	stateEffects = {
 	  StateEffect( 
@@ -63,16 +62,7 @@ LegShot3Command = {
 		100, 
 		0, 
 		30 
-	  ),
-	  StateEffect( 
-    KNOCKDOWN_EFFECT, 
-    { "knockdownRecovery", "lastKnockdown" }, 
-    { "knockdown_defense" }, 
-    {}, 
-    100, 
-    0, 
-    0
-    ) 
+	  )
 	},
 
 	poolsToDamage = HEALTH_ATTRIBUTE,

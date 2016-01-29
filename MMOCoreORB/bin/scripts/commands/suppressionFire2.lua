@@ -57,8 +57,8 @@ SuppressionFire2Command = {
 		{ "postureDownRecovery" }, 
 		{ "posture_change_down_defense" }, 
 		{}, 
-		100, 
-		0, 
+		125, 
+		60, 
 		0 
 	  )
 	},

@@ -64,9 +64,9 @@ FullAutoArea2Command = {
 		{}, 
 		{ "dizzy_defense", "resistance_states" }, 
 		{ "jedi_state_defense" }, 
-		20, 
+		100, 
 		40, 
-		4 
+		7 
 	  ),
 	  StateEffect( 
 		BLIND_EFFECT, 
