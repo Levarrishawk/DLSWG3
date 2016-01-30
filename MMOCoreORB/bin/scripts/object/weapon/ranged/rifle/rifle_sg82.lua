@@ -72,7 +72,7 @@ object_weapon_ranged_rifle_rifle_sg82 = object_weapon_ranged_rifle_shared_rifle_
 	damageType = COLD,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
-	armorPiercing = NONE,
+	armorPiercing = HEAVY,
 
 	-- combat_rangedspecialize_bactarifle, combat_rangedspecialize_rifle, combat_rangedspecialize_pistol, combat_rangedspecialize_heavy, combat_rangedspecialize_carbine
 	-- combat_meleespecialize_unarmed, combat_meleespecialize_twohand, combat_meleespecialize_polearm, combat_meleespecialize_onehand, combat_general,
@@ -126,8 +126,8 @@ object_weapon_ranged_rifle_rifle_sg82 = object_weapon_ranged_rifle_shared_rifle_
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "expEffeciency", "exp_durability", "null", "null", "null", "expRange", "null", "null", "null"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "roundsused", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 70, 115, 7.5, 10, 30, 750, -50, -50, 35, 11, 0, 150, 0},
-	experimentalMax = {0, 0, 110, 169, 5.2, 18, 65, 1500, -50, -50, 35, 21, 0, 150, 0},
+	experimentalMin = {0, 0, 70, 115, 1, 10, 30, 750, -50, -50, 35, 11, 0, 300, 0},
+	experimentalMax = {0, 0, 110, 269, 1, 18, 65, 1500, -50, -50, 35, 21, 0, 300, 0},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }

@@ -101,7 +101,7 @@ object_weapon_ranged_rifle_rifle_ewok_crossbow = object_weapon_ranged_rifle_shar
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
 	healthAttackCost = 0,
-	actionAttackCost = 150,
+	actionAttackCost = 300,
 	mindAttackCost = 0,
 	forceCost = 0,
 
@@ -112,12 +112,12 @@ object_weapon_ranged_rifle_rifle_ewok_crossbow = object_weapon_ranged_rifle_shar
 	idealAccuracy = 0,
 	
 	minDamage = 77,
-	maxDamage = 131,
+	maxDamage = 231,
 
 	maxRange = 65,
 	maxRangeAccuracy = -60,
 		
-	attackSpeed = 8,
+	attackSpeed = 1,
 
 	woundsRatio = 11
 
