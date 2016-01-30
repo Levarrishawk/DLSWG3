@@ -45,7 +45,7 @@ StrafeShot2Command = {
         name = "strafeshot2",
 
 	damageMultiplier = 4,
-  speedMultiplier = 3.45,
+  speedMultiplier = 1,
   healthCostMultiplier = 0,
   actionCostMultiplier = 3.75,
   mindCostMultiplier = 0,
@@ -73,7 +73,7 @@ StrafeShot2Command = {
 	
 	weaponType = RIFLEWEAPON,
 
-	range = -1
+	range = 65
 }
 
 AddCommand(StrafeShot2Command)

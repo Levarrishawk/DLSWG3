@@ -45,7 +45,7 @@ StartleShot2Command = {
         name = "startleshot2",
 
 	damageMultiplier = 4.0,
-	speedMultiplier = 2.0,
+	speedMultiplier = 1.0,
 	healthCostMultiplier = 0.5,
 	actionCostMultiplier = 0.5,
 	mindCostMultiplier = 2.0,
@@ -74,7 +74,7 @@ StartleShot2Command = {
 	
 	weaponType = RIFLEWEAPON,
 
-	range = -1
+	range = 65
 }
 
 AddCommand(StartleShot2Command)

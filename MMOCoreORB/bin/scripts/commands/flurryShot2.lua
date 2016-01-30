@@ -45,13 +45,13 @@ FlurryShot2Command = {
         name = "flurryshot2",
 
 	damageMultiplier = 2.5,
-	speedMultiplier = 2.0,
+	speedMultiplier = 1.0,
 	healthCostMultiplier = 0,
 	actionCostMultiplier = 4.5,
 	mindCostMultiplier = 0,
 	accuracyBonus = 5,
 
-	coneAngle = 15,
+	coneAngle = 45,
 	coneAction = true,
 
 	stateEffects = {
@@ -74,7 +74,7 @@ FlurryShot2Command = {
 	
 	weaponType = RIFLEWEAPON,
 
-	range = -1
+	range = 65
 }
 
 AddCommand(FlurryShot2Command)

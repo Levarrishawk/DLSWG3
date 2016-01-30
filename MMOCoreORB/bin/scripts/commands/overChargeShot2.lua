@@ -45,7 +45,7 @@ OverChargeShot2Command = {
 	name = "overchargeshot2",
 
 	damageMultiplier = 3.75,
-	speedMultiplier = 2,
+	speedMultiplier = 1,
 	healthCostMultiplier = 0,
 	actionCostMultiplier = 3,
 	mindCostMultiplier = 0,
@@ -59,7 +59,7 @@ OverChargeShot2Command = {
 	
 	weaponType = RANGEDWEAPON,
 
-	range = -1
+	range = 65
 
 }
 
