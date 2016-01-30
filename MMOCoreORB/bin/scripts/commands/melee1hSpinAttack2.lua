@@ -44,7 +44,7 @@
 Melee1hSpinAttack2Command = {
         name = "melee1hspinattack2",
 
-	damageMultiplier = 3.25,
+	damageMultiplier = 2,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
   actionCostMultiplier = 1,
@@ -56,7 +56,7 @@ Melee1hSpinAttack2Command = {
 	combatSpam = "blindspin",
 
 	areaAction = true,
-	areaRange = 7,
+	areaRange = 16,
   poolsToDamage = HEALTH_ATTRIBUTE,
   
 	stateEffects = {
@@ -68,12 +68,21 @@ Melee1hSpinAttack2Command = {
 		40, 
 		0, 
 		30 
-	  )
+	  ),
+	  StateEffect( 
+    KNOCKDOWN_EFFECT, 
+    { "knockdownRecovery", "lastKnockdown" }, 
+    { "knockdown_defense" }, 
+    {}, 
+    40, 
+    60, 
+    0 
+    )
 	},
 	
 	weaponType = ONEHANDMELEEWEAPON,
 
-	range = -1
+	range = 10
 }
 
 AddCommand(Melee1hSpinAttack2Command)

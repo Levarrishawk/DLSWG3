@@ -59,7 +59,7 @@ Melee1hHit1Command = {
 	
 	weaponType = ONEHANDMELEEWEAPON,
 
-	range = -1
+	range = 10
 }
 
 AddCommand(Melee1hHit1Command)
