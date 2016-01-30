@@ -93,7 +93,7 @@ public:
 		int medicineUse = creature->getSkillMod("healing_ability");
 		int combatMedicineUse = creature->getSkillMod("combat_healing_ability");
 
-		bool melee = range <= 5.0f;
+		bool melee = range <= 0.01f;
 
 		for (int i = 0; i < inventory->getContainerObjectsSize(); ++i) {
 			SceneObject* item = inventory->getContainerObject(i);
