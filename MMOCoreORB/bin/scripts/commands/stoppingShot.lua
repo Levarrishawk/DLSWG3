@@ -44,10 +44,10 @@
 StoppingShotCommand = {
         name = "stoppingshot",
 
-	damageMultiplier = 5,
-  speedMultiplier = 1.5,
+	damageMultiplier = 1,
+  speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 3,
+  actionCostMultiplier = 2,
   mindCostMultiplier = 0,
   --accuracyBonus = 50,
 
