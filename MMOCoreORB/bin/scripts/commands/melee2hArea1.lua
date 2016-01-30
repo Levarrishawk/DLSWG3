@@ -44,9 +44,9 @@
 Melee2hArea1Command = {
         name = "melee2harea1",
 	damageMultiplier = 1.9,
-  speedMultiplier = 1.3,
+  speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 3.25,
+  actionCostMultiplier = 2,
   mindCostMultiplier = 0,
 
   areaRange = 7,
@@ -71,7 +71,7 @@ Melee2hArea1Command = {
 	
 	weaponType = TWOHANDMELEEWEAPON,
 
-	range = -1
+	range = 10
 }
 
 AddCommand(Melee2hArea1Command)

@@ -47,9 +47,21 @@ Melee2hHeadHit2Command = {
 	damageMultiplier = 3.75,
   speedMultiplier = 2.25,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 3.75,
+  actionCostMultiplier = 1.5,
   mindCostMultiplier = 0,
         accuracyBonus = 10,
+        
+  stateEffects = {
+    StateEffect( 
+    POSTUREDOWN_EFFECT, 
+    { "postureDownRecovery" }, 
+    { "posture_change_down_defense" }, 
+    {}, 
+    100, 
+    0, 
+    0 
+    )
+  },
 
 	poolsToDamage = HEALTH_ATTRIBUTE,
 	
@@ -59,7 +71,7 @@ Melee2hHeadHit2Command = {
 
 	combatSpam = "scalpstrike",
 
-	range = -1
+	range = 10
 }
 
 AddCommand(Melee2hHeadHit2Command)

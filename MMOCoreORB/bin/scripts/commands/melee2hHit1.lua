@@ -44,10 +44,10 @@
 Melee2hHit1Command = {
 	name = "melee2hhit1",
 
-	damageMultiplier = 1.75,
+	damageMultiplier = 2,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 2.75,
+  actionCostMultiplier = 1,
   mindCostMultiplier = 0,
   
   poolsToDamage = HEALTH_ATTRIBUTE,
@@ -58,7 +58,7 @@ Melee2hHit1Command = {
 
 	combatSpam = "terriblestrike",
 
-	range = -1
+	range = 10
 }
 
 AddCommand(Melee2hHit1Command)
