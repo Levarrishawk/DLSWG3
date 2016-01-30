@@ -26,7 +26,7 @@ public:
 	HealDamageCommand(const String& name, ZoneProcessServer* server)
 		: QueueCommand(name, server) {
 
-		range = 5;
+		range = 0.01;
 		mindCost = 50;
 	}
 
