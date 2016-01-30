@@ -47,7 +47,7 @@ ConfusionShotCommand = {
 	damageMultiplier = 1,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 1,
+  actionCostMultiplier = 2,
   mindCostMultiplier = 0,
 
   stateEffects = {

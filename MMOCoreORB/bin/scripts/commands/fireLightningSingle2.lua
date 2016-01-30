@@ -47,7 +47,7 @@ FireLightningSingle2Command = {
 	damageMultiplier = 2.0,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 1,
+  actionCostMultiplier = 2,
   mindCostMultiplier = 0,
   
   stateEffects = {

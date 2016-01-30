@@ -47,7 +47,7 @@ FireLightningCone2Command = {
 	damageMultiplier = 1.5,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 1,
+  actionCostMultiplier = 2,
   mindCostMultiplier = 0,
 
   animationCRC = hashCode("fire_area_medium"),
