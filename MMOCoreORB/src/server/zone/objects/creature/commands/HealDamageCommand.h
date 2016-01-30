@@ -384,7 +384,7 @@ public:
 		if (!canPerformSkill(creature, targetCreature, stimPack, mindCostNew))
 			return GENERALERROR;
 
-		float rangeToCheck = 7;
+		float rangeToCheck = 0.01;
 
 		if (stimPack->isRangedStimPack())
 			rangeToCheck = (cast<RangedStimPack*>(stimPack.get()))->getRange();
