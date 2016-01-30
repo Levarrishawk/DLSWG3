@@ -44,7 +44,7 @@
 FullAutoArea1Command = {
         name = "fullautoarea1",
 
-	damageMultiplier = 1.85,
+	damageMultiplier = 1.7,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
   actionCostMultiplier = 1,
@@ -92,7 +92,7 @@ FullAutoArea1Command = {
 	
 	weaponType = SPECIALHEAVYWEAPON,
 
-	range = -1
+	range = 64
 }
 
 AddCommand(FullAutoArea1Command)

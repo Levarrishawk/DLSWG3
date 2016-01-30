@@ -44,7 +44,7 @@
 ConfusionShotCommand = {
         name = "confusionshot",
 
-	damageMultiplier = 2.0,
+	damageMultiplier = 1,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
   actionCostMultiplier = 1,
@@ -79,7 +79,7 @@ ConfusionShotCommand = {
 	
 	weaponType = SPECIALHEAVYWEAPON,
 
-	range = -1
+	range = 64
 }
 
 AddCommand(ConfusionShotCommand)
