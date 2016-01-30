@@ -32,7 +32,7 @@ public:
 			return INVALIDWEAPON;
 		}
 
-		Reference<SceneObject*> object = server->getZoneServer()->getObject(target);
+		/*Reference<SceneObject*> object = server->getZoneServer()->getObject(target);
 		ManagedReference<CreatureObject*> creatureTarget = cast<CreatureObject*>( object.get());
 
 		if (creatureTarget == NULL)
@@ -101,7 +101,7 @@ public:
 			creatureTarget->sendSystemMessage("You've been snared!");
 			creatureTarget->playEffect("clienteffect/pl_force_resist_bleeding_self.cef", "");
 
-		}
+		}*/
 		return doCombatAction(creature, target);
 	}
 

@@ -100,9 +100,9 @@ object_weapon_ranged_pistol_pistol_dl44_metal = object_weapon_ranged_pistol_shar
 
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 10,
-	actionAttackCost = 29,
-	mindAttackCost = 10,
+	healthAttackCost = 0,
+	actionAttackCost = 300,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankRange = 0,
@@ -115,9 +115,9 @@ object_weapon_ranged_pistol_pistol_dl44_metal = object_weapon_ranged_pistol_shar
 	maxRangeAccuracy = -80,
 
 	minDamage = 20,
-	maxDamage = 100,
+	maxDamage = 200,
 
-	attackSpeed = 3.4,
+	attackSpeed = 1,
 
 	woundsRatio = 7,
 
@@ -126,8 +126,8 @@ object_weapon_ranged_pistol_pistol_dl44_metal = object_weapon_ranged_pistol_shar
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "expEffeciency", "exp_durability", "null", "null", "null", "expRange", "null", "null", "null"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "roundsused", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 14, 70, 4.4, 5, 10, 750, -12, -80, 8, 11, 0, 150, 0},
-	experimentalMax = {0, 0, 26, 130, 3.1, 9, 50, 1500, -12, -80, 8, 21, 0, 150, 0},
+	experimentalMin = {0, 0, 14, 170, 1, 5, 10, 750, -12, -80, 8, 11, 0, 300, 0},
+	experimentalMax = {0, 0, 26, 355, 1, 9, 50, 1500, -12, -80, 8, 21, 0, 300, 0},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }
