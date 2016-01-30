@@ -47,7 +47,7 @@ UnarmedDizzy1Command = {
 	damageMultiplier = 2,
   speedMultiplier = 1.0,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 3.5,
+  actionCostMultiplier = 1.5,
   mindCostMultiplier = 0,
 
   poolsToDamage = HEALTH_ATTRIBUTE,

@@ -47,7 +47,7 @@ UnarmedHit3Command = {
 	damageMultiplier = 5.5,
   speedMultiplier = 3.5,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 3.5,
+  actionCostMultiplier = 1.5,
   mindCostMultiplier = 0,
         --accuracyBonus = 15,
 
