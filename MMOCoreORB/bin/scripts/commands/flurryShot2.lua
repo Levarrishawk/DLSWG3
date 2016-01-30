@@ -47,7 +47,7 @@ FlurryShot2Command = {
 	damageMultiplier = 2.5,
 	speedMultiplier = 1.0,
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 4.5,
+	actionCostMultiplier = 2,
 	mindCostMultiplier = 0,
 	accuracyBonus = 5,
 

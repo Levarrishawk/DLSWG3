@@ -47,7 +47,7 @@ OverChargeShot2Command = {
 	damageMultiplier = 3.75,
 	speedMultiplier = 1,
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 3,
+	actionCostMultiplier = 1,
 	mindCostMultiplier = 0,
 	accuracyBonus = 15,
 
