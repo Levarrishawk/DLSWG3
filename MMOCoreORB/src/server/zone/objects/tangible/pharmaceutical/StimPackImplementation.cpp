@@ -25,24 +25,6 @@ bool StimPackImplementation::isClassD() {
 bool StimPackImplementation::isClassE() {
 	return getMedicineClass() == StimPackTemplate::STIM_E;
 }
-
-void StimPackImplementation::fillAttributeList(AttributeListMessage msg, CreatureObject object) {
-		super.fillAttributeList(msg, object);
-
-		if (!isRangedStimPack() && !isDroidRepairKit()) {
-			msg.insertAttribute("examine_heal_damage_health", Math.getPrecision(effectiveness, 0));
-		//	msg.insertAttribute("examine_heal_damage_action", Math.getPrecision(effectiveness, 0));
-
-			if (isPetStimPack()) {
-				msg.insertAttribute("examine_heal_damage_mind", Math.getPrecision(effectiveness, 0));
-			} else {
-				msg.insertAttribute("healing_ability", super.medicineUseRequired);
-			}
-		} else if (isDroidRepairKit()) {
-			msg.insertAttribute("examine_repair_energy", Math.getPrecision(effectiveness, 0));
-		}
-	}
-
 StimPack* StimPackImplementation::split(int charges) {
 
 	Locker locker(_this.getReferenceUnsafeStaticCast());
@@ -60,6 +42,5 @@ StimPack* StimPackImplementation::split(int charges) {
 		setUseCount(getUseCount() - charges);
 		return protoclone;
 	}
-
 	return NULL;
 }
