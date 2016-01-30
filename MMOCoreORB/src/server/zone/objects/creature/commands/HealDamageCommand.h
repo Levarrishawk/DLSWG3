@@ -378,9 +378,9 @@ public:
 			}
 		}
 
-		int mindCostNew = creature->calculateCostAdjustment(CreatureAttribute::FOCUS, mindCost);
+		int actionCostNew = creature->calculateCostAdjustment(CreatureAttribute::ACTION, actionCost);
 
-		if (!canPerformSkill(creature, targetCreature, stimPack, mindCostNew))
+		if (!canPerformSkill(creature, targetCreature, stimPack, actionCostNew))
 			return GENERALERROR;
 
 		float rangeToCheck = 7;
@@ -399,22 +399,22 @@ public:
 		uint32 stimPower = stimPack->calculatePower(creature, targetCreature);
 
 		uint32 healthHealed = targetCreature->healDamage(creature, CreatureAttribute::HEALTH, stimPower);
-		uint32 actionHealed = targetCreature->healDamage(creature, CreatureAttribute::ACTION, stimPower, true, false);
+		//uint32 actionHealed = targetCreature->healDamage(creature, CreatureAttribute::ACTION, stimPower, true, false);
 
 		if (creature->isPlayerCreature()) {
 			PlayerManager* playerManager = server->getPlayerManager();
 			playerManager->sendBattleFatigueMessage(creature, targetCreature);
 		}
 
-		sendHealMessage(creature, targetCreature, healthHealed, actionHealed);
+		sendHealMessage(creature, targetCreature, healthHealed);
 
-		creature->inflictDamage(creature, CreatureAttribute::MIND, mindCostNew, false);
+		creature->inflictDamage(creature, CreatureAttribute::ACTION, actionCostNew, false);
 
 		Locker locker(stimPack);
 		stimPack->decreaseUseCount();
 
 		if (targetCreature != creature && !targetCreature->isPet())
-			awardXp(creature, "medical", (healthHealed + actionHealed)); //No experience for healing yourself.
+			awardXp(creature, "medical", (healthHealed)); //No experience for healing yourself.
 
 		if (targetCreature != creature)
 			clocker.release();
