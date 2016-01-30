@@ -264,7 +264,7 @@ public:
 			sendHealMessage(creature, targetCreature, healthHealed, actionHealed);
 
 			if (targetCreature != creature && !targetCreature->isPet())
-				awardXp(creature, "medical", (healthHealed + actionHealed)); //No experience for healing yourself or pets.
+				awardXp(creature, "combat_general", (healthHealed + actionHealed)); //No experience for healing yourself or pets.
 
 			checkForTef(creature, targetCreature);
 		}
