@@ -26,7 +26,7 @@ public:
 	HealDamageCommand(const String& name, ZoneProcessServer* server)
 		: QueueCommand(name, server) {
 
-		range = 0.01;
+		range = 0.0;
 		mindCost = 50;
 	}
 
@@ -93,7 +93,7 @@ public:
 		int medicineUse = creature->getSkillMod("healing_ability");
 		int combatMedicineUse = creature->getSkillMod("combat_healing_ability");
 
-		bool melee = range <= 0.01f;
+		bool melee = range <= 0.0f;
 
 		for (int i = 0; i < inventory->getContainerObjectsSize(); ++i) {
 			SceneObject* item = inventory->getContainerObject(i);
@@ -384,7 +384,7 @@ public:
 		if (!canPerformSkill(creature, targetCreature, stimPack, mindCostNew))
 			return GENERALERROR;
 
-		float rangeToCheck = 0.01;
+		float rangeToCheck = 0.0;
 
 		if (stimPack->isRangedStimPack())
 			rangeToCheck = (cast<RangedStimPack*>(stimPack.get()))->getRange();
