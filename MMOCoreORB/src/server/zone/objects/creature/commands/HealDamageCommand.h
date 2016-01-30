@@ -26,7 +26,7 @@ public:
 	HealDamageCommand(const String& name, ZoneProcessServer* server)
 		: QueueCommand(name, server) {
 
-		range = 0;
+		range = 5;
 		mindCost = 50;
 	}
 
@@ -126,7 +126,7 @@ public:
 	}
 
 	bool checkTarget(CreatureObject* creature, CreatureObject* creatureTarget) const {
-		if (!creatureTarget->hasDamage(CreatureAttribute::HEALTH)) {// && !creatureTarget->hasDamage(CreatureAttribute::ACTION)) {
+		if (!creatureTarget->hasDamage(CreatureAttribute::HEALTH) && !creatureTarget->hasDamage(CreatureAttribute::ACTION)) {
 			return false;
 		}
 
@@ -163,7 +163,7 @@ public:
 			return false;
 		}
 
-		if (!creatureTarget->hasDamage(CreatureAttribute::HEALTH)) {// && !creatureTarget->hasDamage(CreatureAttribute::ACTION)) {
+		if (!creatureTarget->hasDamage(CreatureAttribute::HEALTH) && !creatureTarget->hasDamage(CreatureAttribute::ACTION)) {
 			if (creatureTarget == creature) {
 				creature->sendSystemMessage("@healing_response:healing_response_61"); //You have no damage to heal.
 			} else if (creatureTarget->isPlayerCreature()) {
@@ -253,17 +253,17 @@ public:
 			uint32 stimPower = rangeStim->calculatePower(creature, targetCreature);
 
 			uint32 healthHealed = targetCreature->healDamage(creature, CreatureAttribute::HEALTH, stimPower);
-			//uint32 actionHealed = targetCreature->healDamage(creature, CreatureAttribute::ACTION, stimPower);
+			uint32 actionHealed = targetCreature->healDamage(creature, CreatureAttribute::ACTION, stimPower);
 
 			if (creature->isPlayerCreature()) {
 				PlayerManager* playerManager = server->getZoneServer()->getPlayerManager();
 				playerManager->sendBattleFatigueMessage(creature, targetCreature);
 			}
 
-			sendHealMessage(creature, targetCreature, healthHealed);
+			sendHealMessage(creature, targetCreature, healthHealed, actionHealed);
 
 			if (targetCreature != creature && !targetCreature->isPet())
-				awardXp(creature, "medical", (healthHealed)); //No experience for healing yourself or pets.
+				awardXp(creature, "medical", (healthHealed + actionHealed)); //No experience for healing yourself or pets.
 
 			checkForTef(creature, targetCreature);
 		}
@@ -378,7 +378,7 @@ public:
 			}
 		}
 
-		int mindCostNew = creature->calculateCostAdjustment(CreatureAttribute::ACTION, mindCost);
+		int mindCostNew = creature->calculateCostAdjustment(CreatureAttribute::FOCUS, mindCost);
 
 		if (!canPerformSkill(creature, targetCreature, stimPack, mindCostNew))
 			return GENERALERROR;
@@ -399,22 +399,22 @@ public:
 		uint32 stimPower = stimPack->calculatePower(creature, targetCreature);
 
 		uint32 healthHealed = targetCreature->healDamage(creature, CreatureAttribute::HEALTH, stimPower);
-		//uint32 actionHealed = targetCreature->healDamage(creature, CreatureAttribute::ACTION, stimPower, true, false);
+		uint32 actionHealed = targetCreature->healDamage(creature, CreatureAttribute::ACTION, stimPower, true, false);
 
 		if (creature->isPlayerCreature()) {
 			PlayerManager* playerManager = server->getPlayerManager();
 			playerManager->sendBattleFatigueMessage(creature, targetCreature);
 		}
 
-		sendHealMessage(creature, targetCreature);
+		sendHealMessage(creature, targetCreature, healthHealed, actionHealed);
 
-		creature->inflictDamage(creature, CreatureAttribute::ACTION, mindCostNew, false);
+		creature->inflictDamage(creature, CreatureAttribute::MIND, mindCostNew, false);
 
 		Locker locker(stimPack);
 		stimPack->decreaseUseCount();
 
 		if (targetCreature != creature && !targetCreature->isPet())
-			awardXp(creature, "combat_general", (healthHealed)); //No experience for healing yourself.
+			awardXp(creature, "medical", (healthHealed + actionHealed)); //No experience for healing yourself.
 
 		if (targetCreature != creature)
 			clocker.release();
