@@ -20,14 +20,14 @@
 
 class HealDamageCommand : public QueueCommand {
 	float range;
-	float actionCost;
+	float mindCost;
 
 public:
 	HealDamageCommand(const String& name, ZoneProcessServer* server)
 		: QueueCommand(name, server) {
 
-		range = 5;
-		actionCost = 50;
+		range = 0;
+		mindCost = 50;
 	}
 
 	void deactivateInjuryTreatment(CreatureObject* creature, bool isRangedStim) const {
@@ -126,7 +126,7 @@ public:
 	}
 
 	bool checkTarget(CreatureObject* creature, CreatureObject* creatureTarget) const {
-		if (!creatureTarget->hasDamage(CreatureAttribute::HEALTH)) { // && !creatureTarget->hasDamage(CreatureAttribute::ACTION)) {
+		if (!creatureTarget->hasDamage(CreatureAttribute::HEALTH)) {// && !creatureTarget->hasDamage(CreatureAttribute::ACTION)) {
 			return false;
 		}
 
@@ -142,7 +142,7 @@ public:
 		return true;
 	}
 
-	bool canPerformSkill(CreatureObject* creature, CreatureObject* creatureTarget, StimPack* stimPack, int actionCostNew) const {
+	bool canPerformSkill(CreatureObject* creature, CreatureObject* creatureTarget, StimPack* stimPack, int mindCostNew) const {
 		if (!creature->canTreatInjuries()) {
 			creature->sendSystemMessage("@healing_response:healing_must_wait"); //You must wait before you can do that.
 			return false;
@@ -153,7 +153,7 @@ public:
 			return false;
 		}
 
-		if (creature->getHAM(CreatureAttribute::ACTION) < actionCostNew) {
+		if (creature->getHAM(CreatureAttribute::MIND) < mindCostNew) {
 			creature->sendSystemMessage("@healing_response:not_enough_mind"); //You do not have enough mind to do that.
 			return false;
 		}
@@ -163,7 +163,7 @@ public:
 			return false;
 		}
 
-		if (!creatureTarget->hasDamage(CreatureAttribute::HEALTH)){// && !creatureTarget->hasDamage(CreatureAttribute::ACTION)) {
+		if (!creatureTarget->hasDamage(CreatureAttribute::HEALTH)) {// && !creatureTarget->hasDamage(CreatureAttribute::ACTION)) {
 			if (creatureTarget == creature) {
 				creature->sendSystemMessage("@healing_response:healing_response_61"); //You have no damage to heal.
 			} else if (creatureTarget->isPlayerCreature()) {
@@ -201,13 +201,13 @@ public:
 
 		StringBuffer msgPlayer, msgTarget, msgBody, msgTail;
 
-		if (healthDamage > 0) {
-			msgBody << healthDamage << " health";
-		} /*else if (healthDamage > 0) {
+		if (healthDamage > 0 && actionDamage > 0) {
+			msgBody << healthDamage << " health and " << actionDamage << " action";
+		} else if (healthDamage > 0) {
 			msgBody << healthDamage << " health";
 		} else if (actionDamage > 0) {
 			msgBody << actionDamage << " action";
-		}*/ else {
+		} else {
 			return; //No damage to heal.
 		}
 
@@ -378,9 +378,9 @@ public:
 			}
 		}
 
-		int actionCostNew = creature->calculateCostAdjustment(CreatureAttribute::ACTION, actionCost);
+		int mindCostNew = creature->calculateCostAdjustment(CreatureAttribute::ACTION, mindCost);
 
-		if (!canPerformSkill(creature, targetCreature, stimPack, actionCostNew))
+		if (!canPerformSkill(creature, targetCreature, stimPack, mindCostNew))
 			return GENERALERROR;
 
 		float rangeToCheck = 7;
@@ -406,15 +406,15 @@ public:
 			playerManager->sendBattleFatigueMessage(creature, targetCreature);
 		}
 
-		sendHealMessage(creature, targetCreature, healthHealed);
+		sendHealMessage(creature, targetCreature);
 
-		creature->inflictDamage(creature, CreatureAttribute::ACTION, actionCostNew, false);
+		creature->inflictDamage(creature, CreatureAttribute::ACTION, mindCostNew, false);
 
 		Locker locker(stimPack);
 		stimPack->decreaseUseCount();
 
 		if (targetCreature != creature && !targetCreature->isPet())
-			awardXp(creature, "medical", (healthHealed)); //No experience for healing yourself.
+			awardXp(creature, "combat_general", (healthHealed)); //No experience for healing yourself.
 
 		if (targetCreature != creature)
 			clocker.release();
