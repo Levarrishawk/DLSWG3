@@ -57,7 +57,7 @@ class RangedStimPack extends StimPack {
 		super.fillAttributeList(msg, object);
 	
 		msg.insertAttribute("examine_heal_damage_health", Math.getPrecision(super.effectiveness, 0));
-		msg.insertAttribute("examine_heal_damage_action", Math.getPrecision(super.effectiveness, 0));
+		//msg.insertAttribute("examine_heal_damage_action", Math.getPrecision(super.effectiveness, 0));
 		msg.insertAttribute("examine_heal_range", Math.getPrecision(range, 0));
 		
 		if (isArea()) {
