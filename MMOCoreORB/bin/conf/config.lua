@@ -55,7 +55,7 @@ DBPort = 3306
 DBName = "swgemu"
 DBUser = "swgemu"
 DBPass = "123456"
-DBSecret = "swgemus3cr37!" -- Change this! This value should be unique and of reasonable length.
+DBSecret = "0nc3up0n@t!m3" -- Change this! This value should be unique and of reasonable length.
 
 LoginPort = 44453
 LoginProcessingThreads = 1
@@ -69,7 +69,7 @@ MantisUser = "swgemu"
 MantisPass = "123456"
 MantisPrfx = "mantis_" -- The prefix for your mantis tables.
 
-AutoReg = 0
+AutoReg = 1
 
 ProgressMonitors = "true"
 
