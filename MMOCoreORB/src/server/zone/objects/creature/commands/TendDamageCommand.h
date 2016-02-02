@@ -23,8 +23,8 @@ public:
 
 	}
 		int doQueueCommand(CreatureObject* creature, const uint64& target, const UnicodeString& arguments) const {
-		int duration = 10;
-		int healthHealed = 950;
+		int duration = 45;
+		int healthHealed = 450;
 		int actionCost = 900;
 		
 		uint32 buffcrc = BuffCRC::JEDI_RESIST_BLEEDING; //This is the temp. buff icon.

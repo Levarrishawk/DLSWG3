@@ -2667,7 +2667,7 @@ void PlayerManagerImplementation::updateSwimmingState(CreatureObject* player, fl
 	//Terrain is above water level.
 	player->clearState(CreatureState::SWIMMING, true);
 }
-
+/*
 int PlayerManagerImplementation::checkSpeedHackFirstTest(CreatureObject* player, float parsedSpeed, ValidatedPosition& teleportPosition, float errorMultiplier) {
 	float allowedSpeedMod = player->getSpeedMultiplierMod();
 	float allowedSpeedBase = player->getRunSpeed();
@@ -2753,7 +2753,8 @@ int PlayerManagerImplementation::checkSpeedHackFirstTest(CreatureObject* player,
 
 	return 0;
 }
-
+*/
+/*
 int PlayerManagerImplementation::checkSpeedHackSecondTest(CreatureObject* player, float newX, float newZ, float newY, uint32 newStamp, SceneObject* newParent) {
 	PlayerObject* ghost = player->getPlayerObject();
 
@@ -2849,7 +2850,7 @@ int PlayerManagerImplementation::checkSpeedHackSecondTest(CreatureObject* player
 
 	//return 0;
 }
-
+*/
 void PlayerManagerImplementation::lootAll(CreatureObject* player, CreatureObject* ai) {
 	Locker locker(ai, player);
 

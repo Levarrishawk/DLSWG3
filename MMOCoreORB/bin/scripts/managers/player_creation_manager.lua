@@ -62,20 +62,22 @@ jediTool = "object/tangible/crafting/station/jedi_tool.iff"
 
 jediCrystal = "object/tangible/component/weapon/lightsaber/lightsaber_module_force_crystal.iff"
 
+gasTool = "object/tangible/survey_tool/survey_tool_gas.iff"
+
 professionSpecificItems = { 
   combat_marksman = { marksmanPistol, marksmanCarbine, marksmanRifle },
   combat_commando = { marksmanPistol, marksmanCarbine, marksmanRifle },
   combat_rifleman = { marksmanPistol, marksmanCarbine, marksmanRifle },
   combat_pistol = { marksmanPistol, marksmanCarbine, marksmanRifle },
-  jedi_pad = { genericTool, mineralTool, chemicalTool, jediTool, jediCrystal },
-  outdoors_squadleader = { genericTool },
-  outdoors_creaturehandler = { genericTool },
-  science_medic = { foodTool },
-  crafting_architect = { genericTool, mineralTool, chemicalTool },
-  crafting_armorsmith = { genericTool, mineralTool, chemicalTool }, 
-  crafting_droidengineer = { genericTool, mineralTool, chemicalTool }, 
-  crafting_chef = { genericTool, mineralTool, chemicalTool, foodTool },
-  science_combatmedic = { genericTool, mineralTool, chemicalTool, foodTool },     
+  jedi_pad = { genericTool, mineralTool, chemicalTool, gasTool, jediTool, jediCrystal },
+  outdoors_squadleader = { genericTool, marksmanPistol, marksmanCarbine, marksmanRifle  },
+  outdoors_creaturehandler = { genericTool, marksmanRifle, brawlerPolearm  },
+  science_medic = { foodTool, marksmanPistol, brawlerPolearm },
+  crafting_architect = { genericTool, mineralTool, chemicalTool, gasTool },
+  crafting_armorsmith = { genericTool, mineralTool, chemicalTool, gasTool}, 
+  crafting_droidengineer = { genericTool, mineralTool, chemicalTool, gasTool }, 
+  crafting_chef = { genericTool, mineralTool, chemicalTool, foodTool, gasTool },
+  science_combatmedic = { genericTool, mineralTool, chemicalTool, foodTool, gasTool },     
 --  social_entertainer = { slitherhorn }
 }
 
