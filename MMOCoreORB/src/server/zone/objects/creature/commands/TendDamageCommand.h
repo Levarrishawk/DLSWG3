@@ -55,7 +55,7 @@ public:
 			buff->setEndMessage(endStringId);
 			creature->healDamage(creature, CreatureAttribute::HEALTH, healthHealed);
 			creature->inflictDamage(creature, CreatureAttribute::ACTION, actionCost, false);
-			creature->playEffect("clienteffect/medic_heal.cef", "");
+			creature->playEffect("clienteffect/bacta_bomb.cef", "");
 		} else {
 			creature->sendSystemMessage("You're Still on cooldown");
 		}
