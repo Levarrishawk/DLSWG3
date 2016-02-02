@@ -2777,7 +2777,7 @@ int PlayerManagerImplementation::checkSpeedHackSecondTest(CreatureObject* player
 	/*StringBuffer newWorldPosMsg;
 	newWorldPosMsg << "x:" << newWorldPosition.getX() << " z:" << newWorldPosition.getZ() << " y:" << newWorldPosition.getY();
 	player->info(newWorldPosMsg.toString(), true);*/
-
+/*
 	if (newParent != NULL) {
 		ManagedReference<SceneObject*> root = newParent->getRootParent();
 
@@ -2793,7 +2793,7 @@ int PlayerManagerImplementation::checkSpeedHackSecondTest(CreatureObject* player
 	/*newWorldPosMsg.deleteAll();
 	newWorldPosMsg << "x:" << newWorldPosition.getX() << " z:" << newWorldPosition.getZ() << " y:" << newWorldPosition.getY();
 	player->info(newWorldPosMsg.toString(), true);*/
-
+/*
 	ValidatedPosition* lastValidatedPosition = ghost->getLastValidatedPosition();
 
 	Vector3 lastValidatedWorldPosition = lastValidatedPosition->getWorldPosition(server);
@@ -2829,7 +2829,7 @@ int PlayerManagerImplementation::checkSpeedHackSecondTest(CreatureObject* player
 	/*StringBuffer msg;
 	msg << "distancia recorreguda " << dist << " a una velocitat " << speed;
 	info(msg, true);*/
-
+/*
 	int ret = checkSpeedHackFirstTest(player, speed, *lastValidatedPosition, 1.5f);
 
 	if (ret == 0) {
