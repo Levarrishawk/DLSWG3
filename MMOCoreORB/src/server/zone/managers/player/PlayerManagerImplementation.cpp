@@ -2667,7 +2667,7 @@ void PlayerManagerImplementation::updateSwimmingState(CreatureObject* player, fl
 	//Terrain is above water level.
 	player->clearState(CreatureState::SWIMMING, true);
 }
-/*
+
 int PlayerManagerImplementation::checkSpeedHackFirstTest(CreatureObject* player, float parsedSpeed, ValidatedPosition& teleportPosition, float errorMultiplier) {
 	float allowedSpeedMod = player->getSpeedMultiplierMod();
 	float allowedSpeedBase = player->getRunSpeed();
@@ -2753,8 +2753,7 @@ int PlayerManagerImplementation::checkSpeedHackFirstTest(CreatureObject* player,
 
 	return 0;
 }
-*/
-/*
+
 int PlayerManagerImplementation::checkSpeedHackSecondTest(CreatureObject* player, float newX, float newZ, float newY, uint32 newStamp, SceneObject* newParent) {
 	PlayerObject* ghost = player->getPlayerObject();
 
@@ -2774,9 +2773,9 @@ int PlayerManagerImplementation::checkSpeedHackSecondTest(CreatureObject* player
 
 	Vector3 newWorldPosition(newX, newY, newZ);
 
-	StringBuffer newWorldPosMsg;
+	/*StringBuffer newWorldPosMsg;
 	newWorldPosMsg << "x:" << newWorldPosition.getX() << " z:" << newWorldPosition.getZ() << " y:" << newWorldPosition.getY();
-	player->info(newWorldPosMsg.toString(), true);
+	player->info(newWorldPosMsg.toString(), true);*/
 
 	if (newParent != NULL) {
 		ManagedReference<SceneObject*> root = newParent->getRootParent();
@@ -2790,9 +2789,9 @@ int PlayerManagerImplementation::checkSpeedHackSecondTest(CreatureObject* player
 		newWorldPosition.set(root->getPositionX() + (sin(angle) * length), root->getPositionZ() + newZ, root->getPositionY() + (cos(angle) * length));
 	}
 
-	newWorldPosMsg.deleteAll();
+	/*newWorldPosMsg.deleteAll();
 	newWorldPosMsg << "x:" << newWorldPosition.getX() << " z:" << newWorldPosition.getZ() << " y:" << newWorldPosition.getY();
-	player->info(newWorldPosMsg.toString(), true);
+	player->info(newWorldPosMsg.toString(), true);*/
 
 	ValidatedPosition* lastValidatedPosition = ghost->getLastValidatedPosition();
 
@@ -2814,7 +2813,7 @@ int PlayerManagerImplementation::checkSpeedHackSecondTest(CreatureObject* player
 
 	float speed = dist / (float) deltaTime * 1000;
 
-	if (oldNewPosZ > oldValidZ) {
+	/*if (oldNewPosZ > oldValidZ) {
 		float heightDist = oldNewPosZ - oldValidZ;
 
 		//if (heightDist > speed) {
@@ -2822,13 +2821,13 @@ int PlayerManagerImplementation::checkSpeedHackSecondTest(CreatureObject* player
 			msg << " heightDist:" << heightDist << " speed:" << speed << " terrain neg:" << player->getSlopeModPercent();
 			player->info(msg.toString(), true);
 		//}
-	}
+	}*/
 
 	//lastValidatedPosition->set(newWorldPosition.getX(), oldNewPosZ, newWorldPosition.getY());
 
-	StringBuffer msg;
+	/*StringBuffer msg;
 	msg << "distancia recorreguda " << dist << " a una velocitat " << speed;
-	info(msg, true);
+	info(msg, true);*/
 
 	int ret = checkSpeedHackFirstTest(player, speed, *lastValidatedPosition, 1.5f);
 
@@ -2850,7 +2849,7 @@ int PlayerManagerImplementation::checkSpeedHackSecondTest(CreatureObject* player
 
 	//return 0;
 }
-*/
+
 void PlayerManagerImplementation::lootAll(CreatureObject* player, CreatureObject* ai) {
 	Locker locker(ai, player);
 
