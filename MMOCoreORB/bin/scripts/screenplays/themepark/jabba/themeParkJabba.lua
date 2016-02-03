@@ -31,13 +31,13 @@ reelo_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" }
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Valarian Thug" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Valarian Thug" }
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" }
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Valarian Thug" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Valarian Thug" }
 			},
 			itemSpawns = {},
 			rewards =
