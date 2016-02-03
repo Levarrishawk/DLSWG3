@@ -50,7 +50,14 @@ reelo_missions =
 			primarySpawns =
 			{
 				{ npcTemplate = "entertainer", planetName = "chandrila", npcName = "random" }
-			},			
+			},
+			secondarySpawns =
+			{
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Hired Thug" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Hired Thug" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Hired Thug" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Hired Thug" },
+			},
 			itemSpawns = {},
 			rewards =
 			{
