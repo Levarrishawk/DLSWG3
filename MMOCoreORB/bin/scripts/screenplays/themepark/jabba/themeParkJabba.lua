@@ -49,7 +49,7 @@ reelo_missions =
 			missionType = "escort",
 			primarySpawns =
 			{
-				{ npcTemplate = "entertainer", planetName = "chandrila", npcName = "random" }
+				{ npcTemplate = "theme_park_jabba_escort", planetName = "chandrila", npcName = "random" }
 			},
 			secondarySpawns =
 			{
