@@ -201,22 +201,22 @@ ephant_mon_missions =
 porcellus_missions =
 	{
 		{
-			missionType = "confiscate",
+			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_jabba_kaadu", planetName = "tatooine", npcName = "Kaadu" }
+				{ npcTemplate = "leviasquall", planetName = "chandrila", npcName = "a Plump Squall" }
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "mercenary_aggro", planetName = "tatooine", npcName = "a Mercenary" },
-				{ npcTemplate = "mercenary_aggro", planetName = "tatooine", npcName = "a Mercenary" },
+				{ npcTemplate = "leviasquall", planetName = "chandrila", npcName = "a Mercenary" },
+				{ npcTemplate = "leviasquall", planetName = "chandrila", npcName = "a Mercenary" },
 			},
 			itemSpawns = {
-				{ itemTemplate = "object/tangible/loot/misc/petrified_avian_egg.iff", itemName = "Petrified Avian Egg" }
+				{}
 			},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 650 }
+				{ rewardType = "credits", amount = 16650 }
 			}
 		},
 		{
