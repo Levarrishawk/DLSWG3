@@ -14,17 +14,17 @@ reelo_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "tusken_raider", planetName = "tatooine", npcName = "Tusken Leader" }
+				{ npcTemplate = "pirate", planetName = "chandrila", npcName = "a Spice Dealer" }
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "tusken_commoner", planetName = "tatooine", npcName = "Tusken Commoner" },
-				{ npcTemplate = "tusken_commoner", planetName = "tatooine", npcName = "Tusken Commoner" }
+				{ npcTemplate = "pirate", planetName = "chandrila", npcName = "a Hired Thug" },
+				{ npcTemplate = "pirate", planetName = "chandrila", npcName = "T=a Hired Thug" }
 			},
 			itemSpawns = {},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 50 }
+				{ rewardType = "credits", amount = 5000 }
 			}
 		},
 		{
@@ -42,7 +42,7 @@ reelo_missions =
 			itemSpawns = {},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 150 }
+				{ rewardType = "credits", amount = 15000 }
 			}
 		},
 		{
