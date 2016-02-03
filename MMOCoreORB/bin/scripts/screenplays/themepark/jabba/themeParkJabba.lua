@@ -157,7 +157,7 @@ ephant_mon_missions =
 			}
 		},
 		{
-			missionType = "confiscate",
+			missionType = "assassinate",
 			primarySpawns =
 			{
 				{ npcTemplate = "valarian_courier", planetName = "chandrila", npcName = "Mandalorian Courier" }
@@ -179,7 +179,7 @@ ephant_mon_missions =
 			}
 		},
 		{
-			missionType = "deliver",
+			missionType = "assassinate",
 			primarySpawns =
 			{
 				{ npcTemplate = "theme_park_jabba_sirad_far", planetName = "tatooine", npcName = "Sirad Far" }
