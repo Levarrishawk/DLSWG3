@@ -49,19 +49,14 @@ reelo_missions =
 			missionType = "escort",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_jabba_escort", planetName = "tatooine", npcName = "random" }
-			},
-			secondarySpawns =
-			{
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-			},
+				{ npcTemplate = "entertainer", planetName = "chandrila", npcName = "random" }
+			},			
 			itemSpawns = {},
 			rewards =
 			{
 				{ rewardType = "loot", lootGroup = "jabba_theme_park_reelo" },
+				{ rewardType = "loot", lootGroup = "jabba_theme_park_ree_yees" },
+        { rewardType = "permission", permissionGroup = "jabba_palace1" },
 				{ rewardType = "faction", faction = "jabba", amount = 25 }
 			}
 		}
