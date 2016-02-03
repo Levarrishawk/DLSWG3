@@ -558,14 +558,14 @@ npcMapJabba =
 		{
 			spawnData = { planetName = "chandrila", npcTemplate = "ephant_mon", x = -27.3, z = -0.5, y = 8.9, direction = 0, cellID = 35791454, position = STAND },
 			worldPosition = { x = -5924.4, y = -6242.4 },
-			npcNumber = 4,
+			npcNumber = 2,
 			stfFile = "@theme_park_jabba/ephant_mon",
 			missions = ephant_mon_missions
 		},
 		{
 			spawnData = { planetName = "chandrila", npcTemplate = "porcellus", x = -25.1, z = -0.9, y = 0.3, direction = 306.623, cellID = 35791452, position = STAND },
 			worldPosition = { x = -5963.5, y = -6226.9 },
-			npcNumber = 8,
+			npcNumber = 4,
 			stfFile = "@theme_park_jabba/porcellus",
 			missions = porcellus_missions
 		},
