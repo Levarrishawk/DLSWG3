@@ -160,22 +160,22 @@ ephant_mon_missions =
 			missionType = "confiscate",
 			primarySpawns =
 			{
-				{ npcTemplate = "valarian_courier", planetName = "tatooine", npcName = "Valarian Courier" }
+				{ npcTemplate = "death_watch_bloodguard", planetName = "chandrila", npcName = "Mandalorian Courier" }
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
+				{ npcTemplate = "death_watch_battle_droid", planetName = "chandrila", npcName = "Battle Droid" },
+				{ npcTemplate = "death_watch_battle_droid", planetName = "chandrila", npcName = "Battle Droid" },
+				{ npcTemplate = "death_watch_battle_droid", planetName = "chandrila", npcName = "Battle Droid" },
+				{ npcTemplate = "death_watch_battle_droid", planetName = "chandrila", npcName = "Battle Droid" },
 			},
 			itemSpawns =
 			{
-				{ itemTemplate = "object/tangible/loot/misc/ledger_s01.iff", itemName = "Ledger" }
+				{ itemTemplate = "object/tangible/loot/misc/ledger_s01.iff", itemName = "Schematics" }
 			},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 550 },
+				{ rewardType = "credits", amount = 25550 },
 			}
 		},
 		{
@@ -187,7 +187,7 @@ ephant_mon_missions =
 			secondarySpawns = {},
 			itemSpawns =
 			{
-				{ itemTemplate = "object/tangible/loot/misc/ledger_s01.iff", itemName = "Ledger" }
+				{ itemTemplate = "object/tangible/loot/misc/ledger_s01.iff", itemName = "Schematics" }
 			},
 			rewards =
 			{
