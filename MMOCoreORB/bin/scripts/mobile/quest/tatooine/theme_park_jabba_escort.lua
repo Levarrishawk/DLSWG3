@@ -21,9 +21,9 @@ theme_park_jabba_escort = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE,
+	pvpBitmask = NONE,
 	creatureBitmask = NONE,
-	optionsBitmask = 264,
+	optionsBitmask = 128,
 	diet = HERBIVORE,
 
 	templates = {
