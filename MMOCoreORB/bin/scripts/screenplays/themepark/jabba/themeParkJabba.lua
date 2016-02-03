@@ -19,7 +19,7 @@ reelo_missions =
 			secondarySpawns =
 			{
 				{ npcTemplate = "pirate", planetName = "chandrila", npcName = "a Hired Thug" },
-				{ npcTemplate = "pirate", planetName = "chandrila", npcName = "T=a Hired Thug" }
+				{ npcTemplate = "pirate", planetName = "chandrila", npcName = "a Hired Thug" }
 			},
 			itemSpawns = {},
 			rewards =
@@ -541,7 +541,7 @@ npcMapJabba =
 	{
 		{
 			spawnData = { planetName = "chandrila", npcTemplate = "reelo_baruk", x = 8.6, z = -0.9, y = 0.4, direction = 80, cellID = 35791444, position = STAND },
-			worldPosition = { x = -5899.5, y = -6226.7 },
+			worldPosition = { x = 400.6, y = -2810.6 },
 			npcNumber = 1,
 			stfFile = "@theme_park_jabba/reelo_baruk",
 			missions = reelo_missions
@@ -587,13 +587,13 @@ npcMapJabba =
 			npcNumber = 64,
 			stfFile = "@theme_park_jabba/g5po",
 			missions = g5po_missions
-		},
+		},--]]
 		{
-			spawnData = { planetName = "tatooine", npcTemplate = "record_keeper_jabba", x =6.56792, z =0.299999, y = 128.257, direction = 353.004, cellID = 1177466, position = STAND },
+			spawnData = { planetName = "chandrila", npcTemplate = "record_keeper_jabba", x =27.0, z =-0.9, y = -3.1, direction = -90, cellID = 35791444, position = STAND },
 			npcNumber = -1,
 			stfFile = "",
 			missions = {}
-		},--]]
+		},
 
 	}
 
