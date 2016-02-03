@@ -546,13 +546,13 @@ npcMapJabba =
 			stfFile = "@theme_park_jabba/reelo_baruk",
 			missions = reelo_missions
 		},
-		{
+	--[[	{
 			spawnData = { planetName = "tatooine", npcTemplate = "ree_yees", x = 5.97, z = 0.299998, y = 116.1, direction = 248.813, cellID = 1177466, position = STAND },
 			worldPosition = { x = -5892.3, y = -6230.8 },
 			npcNumber = 2,
 			stfFile = "@theme_park_jabba/ree_yees",
 			missions = ree_yees_missions
-		},
+		},--]]
 		{
 			spawnData = { planetName = "chandrila", npcTemplate = "ephant_mon", x = -27.3, z = -0.5, y = 8.9, direction = 0, cellID = 35791454, position = STAND },
 			worldPosition = { x = -5924.4, y = -6242.4 },
@@ -567,7 +567,7 @@ npcMapJabba =
 			stfFile = "@theme_park_jabba/porcellus",
 			missions = porcellus_missions
 		},
-		{
+	--[[	{
 			spawnData = { planetName = "tatooine", npcTemplate = "barada", x = 30.57, z = 0.199999, y = -1.05, direction = 164.173, cellID = 1177499, position = STAND },
 			worldPosition = { x = -5965.8, y = -6325.1 },
 			npcNumber = 16,
@@ -593,7 +593,7 @@ npcMapJabba =
 			npcNumber = -1,
 			stfFile = "",
 			missions = {}
-		},
+		},--]]
 
 	}
 
