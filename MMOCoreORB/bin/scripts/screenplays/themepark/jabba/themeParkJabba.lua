@@ -69,7 +69,7 @@ reelo_missions =
 		}
 	}
 
-ree_yees_missions =
+--[[ree_yees_missions =
 	{
 		{
 			missionType = "assassinate",
@@ -133,7 +133,7 @@ ree_yees_missions =
 				{ rewardType = "faction", faction = "jabba", amount = 50 }
 			}
 		}
-	}
+	} --]]
 
 ephant_mon_missions =
 	{
@@ -616,14 +616,14 @@ permissionMapJabba = {
 				cells = {1177470, 1177474, 1177475, 1177476, 1177477, 1177478, 1177479, 1177480, 1177481, 1177488 },
 				conditions =
 				{
-					{ permissionType = "missionState", mission = "theme_park_jabba", missionState = 4 }
+					{ permissionType = "missionState", mission = "theme_park_jabba", missionState = 2}
 				}
 			},
 			{
 				cells = { 1177471, 1177472, 1177473, 1177484, 1177499, 1177502 },
 				conditions =
 				{
-					{ permissionType = "missionState", mission = "theme_park_jabba", missionState = 8 }
+					{ permissionType = "missionState", mission = "theme_park_jabba", missionState = 4 }
 				}
 			},
 			{
