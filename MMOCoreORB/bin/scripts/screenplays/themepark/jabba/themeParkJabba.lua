@@ -182,7 +182,7 @@ ephant_mon_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_jabba_sirad_far", planetName = "tatooine", npcName = "Sirad Far" }
+				{ npcTemplate = "theme_park_jabba_sirad_far", planetName = "chandrila", npcName = "a Corporate Goon" }
 			},
 			secondarySpawns = {},
 			itemSpawns =
@@ -193,7 +193,7 @@ ephant_mon_missions =
 			{
 				{ rewardType = "loot", lootGroup = "jabba_theme_park_ephant_mon"},
 				{ rewardType = "permission", permissionGroup = "jabba_palace2" },
-				{ rewardType = "faction", faction = "jabba", amount = 75 }
+				{ rewardType = "faction", faction = "jabba", amount = 75000 }
 			}
 		}
 	}
@@ -557,7 +557,7 @@ npcMapJabba =
 		},--]]
 		{
 			spawnData = { planetName = "chandrila", npcTemplate = "ephant_mon", x = -27.3, z = -0.5, y = 8.9, direction = 0, cellID = 35791454, position = STAND },
-			worldPosition = { x = -5924.4, y = -6242.4 },
+			worldPosition = { x = 364, y = -2800},
 			npcNumber = 2,
 			stfFile = "@theme_park_jabba/ephant_mon",
 			missions = ephant_mon_missions
