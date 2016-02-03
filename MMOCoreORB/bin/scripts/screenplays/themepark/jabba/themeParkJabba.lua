@@ -141,19 +141,19 @@ ephant_mon_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "valarian_assassin", planetName = "tatooine", npcName = "Valarian Assassin" }
+				{ npcTemplate = "black_sun_guard", planetName = "chandrila", npcName = "Black Sun Captain" }
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
+				{ npcTemplate = "black_sun_henchman", planetName = "chandrila", npcName = "Black Sun Henchman" },
+				{ npcTemplate = "black_sun_henchman", planetName = "chandrila", npcName = "Black Sun Henchman" },
+				{ npcTemplate = "black_sun_henchman", planetName = "chandrila", npcName = "Black Sun Henchman" },
+				{ npcTemplate = "black_sun_henchman", planetName = "chandrila", npcName = "Black Sun Henchman" },
 			},
 			itemSpawns = {},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 450 }
+				{ rewardType = "credits", amount = 50000 }
 			}
 		},
 		{
