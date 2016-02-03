@@ -160,14 +160,14 @@ ephant_mon_missions =
 			missionType = "confiscate",
 			primarySpawns =
 			{
-				{ npcTemplate = "death_watch_bloodguard", planetName = "chandrila", npcName = "Mandalorian Courier" }
+				{ npcTemplate = "valarian_courier", planetName = "chandrila", npcName = "Mandalorian Courier" }
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "death_watch_battle_droid", planetName = "chandrila", npcName = "Battle Droid" },
-				{ npcTemplate = "death_watch_battle_droid", planetName = "chandrila", npcName = "Battle Droid" },
-				{ npcTemplate = "death_watch_battle_droid", planetName = "chandrila", npcName = "Battle Droid" },
-				{ npcTemplate = "death_watch_battle_droid", planetName = "chandrila", npcName = "Battle Droid" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Hired Thug" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Hired Thug" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Hired Thug" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Hired Thug" },
 			},
 			itemSpawns =
 			{
@@ -175,7 +175,7 @@ ephant_mon_missions =
 			},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 25550 },
+				{ rewardType = "credits", amount = 15550 },
 			}
 		},
 		{
