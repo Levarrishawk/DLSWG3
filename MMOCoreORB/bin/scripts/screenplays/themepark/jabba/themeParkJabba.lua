@@ -208,8 +208,8 @@ porcellus_missions =
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "leviasquall", planetName = "chandrila", npcName = "a Mercenary" },
-				{ npcTemplate = "leviasquall", planetName = "chandrila", npcName = "a Mercenary" },
+				{ npcTemplate = "leviasquall", planetName = "chandrila", npcName = "a Plump Squall" },
+				{ npcTemplate = "leviasquall", planetName = "chandrila", npcName = "a Plump Squall" },
 			},
 			itemSpawns = {
 				{}
@@ -564,7 +564,7 @@ npcMapJabba =
 		},
 		{
 			spawnData = { planetName = "chandrila", npcTemplate = "porcellus", x = -25.1, z = -0.9, y = 0.3, direction = 306.623, cellID = 35791452, position = STAND },
-			worldPosition = { x = -5963.5, y = -6226.9 },
+			worldPosition = { x = 368, y = -2810 },
 			npcNumber = 4,
 			stfFile = "@theme_park_jabba/porcellus",
 			missions = porcellus_missions

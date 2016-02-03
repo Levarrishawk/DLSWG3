@@ -33,6 +33,7 @@ function HannaCityScreenPlay:spawnSceneObjects()
   spawnSceneObject("chandrila", "object/static/particle/pt_sparking_blast_md.iff", 24.5, 3, 9.5, 35791444, math.rad(0) )
   spawnSceneObject("chandrila", "object/static/particle/pt_flocking_glowzees.iff", 24.5, 0, 9.5, 35791444, math.rad(0) )
   spawnSceneObject("chandrila", "object/tangible/painting/painting_rodian_m.iff", 27.5, 0.6, -5.8, 35791444, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/item/item_scrolling_screen.iff", 10.8, 3.6, 0.6, 35791444, math.rad(0) )
   
   -- Military base Static Objects
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_red_style_01_on.iff", -10.8, 7.0, 9.3, 35791638, math.rad(0) )
