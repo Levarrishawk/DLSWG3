@@ -223,19 +223,19 @@ porcellus_missions =
 			missionType = "confiscate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_jabba_veterinarian", planetName = "tatooine", npcName = "Veterinarian" }
+				{ npcTemplate = "theme_park_jabba_veterinarian", planetName = "chandrila", npcName = "Veterinarian" }
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "alkhara_bandit", planetName = "tatooine", npcName = "Alkhara Bandit" },
-				{ npcTemplate = "alkhara_bandit", planetName = "tatooine", npcName = "Alkhara Bandit" },
+				{ npcTemplate = "alkhara_bandit", planetName = "chandrila", npcName = "Alkhara Bandit" },
+				{ npcTemplate = "alkhara_bandit", planetName = "chandrila", npcName = "Alkhara Bandit" },
 			},
 			itemSpawns = {
 				{ itemTemplate = "object/tangible/loot/misc/damaged_datapad.iff", itemName = "A Datapad" }
 			},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 750 }
+				{ rewardType = "credits", amount = 17750 }
 			}
 		},
 		{
