@@ -535,7 +535,7 @@ g5po_missions =
 				{ rewardType = "badge", badge = THEME_PARK_JABBA_BADGE },
 				{ rewardType = "faction", faction = "jabba", amount = 200 },
 				{ rewardType = "permission", permissionGroup = "jabba_palace5" },
-				{ rewardType = "credits", amount = 2000 }
+				{ rewardType = "credits", amount = 32000 }
 			}
 		},
 	}
