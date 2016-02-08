@@ -484,17 +484,17 @@ g5po_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "valarian_assassin", planetName = "tatooine", npcName = "Punk" }
+				{ npcTemplate = "black_sun_assassin", planetName = "chandrila", npcName = "a Black Sun Bounty Hunter" }
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
+				{ npcTemplate = "black_sun_assassin", planetName = "chandrila", npcName = "a Black Sun Bounty Hunter" },
+				{ npcTemplate = "black_sun_assassin", planetName = "chandrila", npcName = "a Black Sun Bounty Hunter" },
 			},
 			itemSpawns = {},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 1850 }
+				{ rewardType = "credits", amount = 21850 }
 			}
 		},
 		{
