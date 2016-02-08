@@ -443,25 +443,25 @@ g5po_missions =
 			},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 1550 }
+				{ rewardType = "credits", amount = 15550 }
 			}
 		},
 		{
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "valarian_assassin", planetName = "tatooine", npcName = "Valarian Strike Team Leader" }
+				{ npcTemplate = "death_watch_ghost", planetName = "chandrila", npcName = "Death Watch Mercenary Leader" }
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
+				{ npcTemplate = "death_watch_bloodguard", planetName = "chandrila", npcName = "Death Watch Mercenary" },
+				{ npcTemplate = "death_watch_bloodguard", planetName = "chandrila", npcName = "Death Watch Mercenary" },
+				{ npcTemplate = "death_watch_bloodguard", planetName = "chandrila", npcName = "Death Watch Mercenary" },
 			},
 			itemSpawns = {},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 1650 }
+				{ rewardType = "credits", amount = 16650 }
 			}
 		},
 		{
