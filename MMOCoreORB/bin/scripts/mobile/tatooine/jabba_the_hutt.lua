@@ -25,9 +25,10 @@ jabba_the_hutt = Creature:new {
 	creatureBitmask = PACK,
 	optionsBitmask = 128,
 	diet = HERBIVORE,
-	scale = 0.9,
+	
 
 	templates = {"object/mobile/jabba_the_hutt.iff"},
+	scale = 1.2,
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
