@@ -253,7 +253,8 @@ porcellus_missions =
 			{
 				{ rewardType = "loot", lootGroup = "jabba_theme_park_porcellus"},
 				{ rewardType = "permission", permissionGroup = "jabba_palace3" },
-				{ rewardType = "faction", faction = "jabba", amount = 100 }
+				{ rewardType = "faction", faction = "jabba", amount = 100 },
+				{ rewardType = "credits", amount = 18000 }
 			}
 		}
 	}
@@ -584,7 +585,7 @@ npcMapJabba =
 			missions = bib_missions
 		},--]]
 		{
-			spawnData = { planetName = "tatooine", npcTemplate = "g_5po", x = -15.07, z = 2, y = 45.9, direction = 119.771, cellID = 1177487, position = STAND },
+			spawnData = { planetName = "chandrila", npcTemplate = "g_5po", x = 7.8, z = -0.9, y = -10.9, direction = 0, cellID = 35791444, position = STAND },
 			worldPosition = { x = -5959.4, y = -6259.9 },
 			npcNumber = 8,
 			stfFile = "@theme_park_jabba/g5po",
