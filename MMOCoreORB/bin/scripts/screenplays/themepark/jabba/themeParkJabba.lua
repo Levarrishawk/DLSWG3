@@ -396,17 +396,17 @@ g5po_missions =
 			missionType = "escort",
 			primarySpawns =
 			{
-				{ npcTemplate = "scrib_leras", planetName = "tatooine", npcName = "Scrib Leras" }
+				{ npcTemplate = "scrib_leras", planetName = "chandrila", npcName = "Schmed Lhee" }
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Valarian Thug" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Valarian Thug" },
 			},
 			itemSpawns = {},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 1350 }
+				{ rewardType = "credits", amount = 21350 }
 			}
 		},
 		{
