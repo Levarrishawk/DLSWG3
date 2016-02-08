@@ -3,7 +3,7 @@ THEME_PARK_JABBA_BADGE = 105
 buildingBarada =
 	{
 		type = "destructible",
-		building = { template = "object/building/military/pirate_warehouse.iff", planet = "tatooine" },
+		building = { template = "object/building/military/pirate_warehouse.iff", planet = "chandrila" },
 		terminal = { template = "object/tangible/terminal/terminal_destructible_building.iff", vectorCellID = 3, x = 0, z = 0.3, y = -6.0 },
 		childNpcs = {}
 	}
@@ -501,29 +501,29 @@ g5po_missions =
 			missionType = "retrieve",
 			primarySpawns =
 			{
-				{ npcTemplate = "sliv_jurek", planetName = "tatooine", npcName = "Sliv Jurek" }
+				{ npcTemplate = "sliv_jurek", planetName = "chandrila", npcName = "Kilv Grenki" }
 			},
 			secondarySpawns = {},
 			itemSpawns =
 			{
-				{ itemTemplate = "object/tangible/loot/misc/key_electronic_s01.iff", itemName = "Jabba's Key" }
+				{ itemTemplate = "object/tangible/loot/misc/key_electronic_s01.iff", itemName = "Rotta's Key" }
 			},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 1950 }
+				{ rewardType = "credits", amount = 19950 }
 			}
 		},
 		{
-			missionType = "confiscate",
+			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_jabba_valarian_thug_02", planetName = "tatooine", npcName = "Valarian Thug" }
+				{ npcTemplate = "theme_park_jabba_valarian_thug_02", planetName = "chandrila", npcName = "Valarian Thug" }
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Valarian Thug" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Valarian Thug" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Valarian Thug" },
 			},
 			itemSpawns =
 			{
