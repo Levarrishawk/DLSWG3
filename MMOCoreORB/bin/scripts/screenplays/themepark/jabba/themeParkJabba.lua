@@ -220,7 +220,7 @@ porcellus_missions =
 			}
 		},
 		{
-			missionType = "confiscate",
+			missionType = "assassinate",
 			primarySpawns =
 			{
 				{ npcTemplate = "theme_park_jabba_veterinarian", planetName = "chandrila", npcName = "Riken Taalo (a Sous Chef)" }
@@ -231,7 +231,7 @@ porcellus_missions =
 				{ npcTemplate = "alkhara_bandit", planetName = "chandrila", npcName = "a Thug" },
 			},
 			itemSpawns = {
-				{ itemTemplate = "object/tangible/loot/misc/damaged_datapad.iff", itemName = "The Joy of Cooking by Porcellus" }
+				{ itemTemplate = "object/tangible/loot/misc/damaged_datapad.iff", itemName = "a Datapad" }
 			},
 			rewards =
 			{
