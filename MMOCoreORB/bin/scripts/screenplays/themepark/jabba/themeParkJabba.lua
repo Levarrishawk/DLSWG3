@@ -468,7 +468,7 @@ g5po_missions =
 			missionType = "retrieve",
 			primarySpawns =
 			{
-				{ npcTemplate = "belshu_dadar", planetName = "tatooine", npcName = "Belshu Dadar" }
+				{ npcTemplate = "belshu_dadar", planetName = "chandrila", npcName = "Geren Talvad" }
 			},
 			secondarySpawns = {},
 			itemSpawns =
@@ -477,7 +477,7 @@ g5po_missions =
 			},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 1750 }
+				{ rewardType = "credits", amount = 17550 }
 			}
 		},
 		{
