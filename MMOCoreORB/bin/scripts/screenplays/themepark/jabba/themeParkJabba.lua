@@ -239,15 +239,15 @@ porcellus_missions =
 			}
 		},
 		{
-			missionType = "confiscate",
+			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_jabba_meatbeast", planetName = "tatooine", npcName = "Meatbeast" }
+				{ npcTemplate = "theme_park_jabba_meatbeast", planetName = "chandrila", npcName = "a Giant Blackback" }
 			},
 			secondarySpawns =
 			{},
 			itemSpawns = {
-				{ itemTemplate = "object/tangible/food/meat_object.iff", itemName = "Chicken Leg" }
+				{ itemTemplate = "object/tangible/food/meat_object.iff", itemName = "Blackback Leg" }
 			},
 			rewards =
 			{
@@ -258,7 +258,7 @@ porcellus_missions =
 		}
 	}
 
-barada_missions =
+--[[barada_missions =
 	{
 		{
 			missionType = "confiscate",
@@ -388,7 +388,7 @@ bib_missions =
 			}
 		}
 	}
-
+--]]
 g5po_missions =
 	{
 		{
@@ -582,14 +582,14 @@ npcMapJabba =
 			npcNumber = 32,
 			stfFile = "@theme_park_jabba/bib_fortuna",
 			missions = bib_missions
-		},
+		},--]]
 		{
 			spawnData = { planetName = "tatooine", npcTemplate = "g_5po", x = -15.07, z = 2, y = 45.9, direction = 119.771, cellID = 1177487, position = STAND },
 			worldPosition = { x = -5959.4, y = -6259.9 },
-			npcNumber = 64,
+			npcNumber = 8,
 			stfFile = "@theme_park_jabba/g5po",
 			missions = g5po_missions
-		},--]]
+		},
 		{
 			spawnData = { planetName = "chandrila", npcTemplate = "record_keeper_jabba", x =27.0, z =-0.9, y = -3.1, direction = -90, cellID = 35791444, position = STAND },
 			npcNumber = -1,

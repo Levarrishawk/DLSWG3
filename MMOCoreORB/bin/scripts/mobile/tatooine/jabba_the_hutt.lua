@@ -1,5 +1,6 @@
 jabba_the_hutt = Creature:new {
 	objectName = "@mob/creature_names:jabba_the_hutt",
+	customName = "Rotta the Hutt",
 	socialGroup = "jabba",
 	faction = "jabba",
 	level = 100,
@@ -24,6 +25,7 @@ jabba_the_hutt = Creature:new {
 	creatureBitmask = PACK,
 	optionsBitmask = 128,
 	diet = HERBIVORE,
+	scale = 0.7,
 
 	templates = {"object/mobile/jabba_the_hutt.iff"},
 	lootGroups = {},
