@@ -428,15 +428,15 @@ g5po_missions =
 			}
 		},
 		{
-			missionType = "confiscate",
+			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "valarian_courier", planetName = "tatooine", npcName = "Valarian Courier" }
+				{ npcTemplate = "valarian_courier", planetName = "chandrila", npcName = "Valarian Courier" }
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Valarian Thug" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Valarian Thug" },
 			},
 			itemSpawns = {
 				{ itemTemplate = "object/tangible/loot/misc/ledger_s01.iff", itemName = "Ledger" }
