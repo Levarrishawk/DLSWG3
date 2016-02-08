@@ -413,18 +413,18 @@ g5po_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Interrogator" }
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Valarian Agent" }
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-				{ npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Valarian Agent" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Valarian Agent" },
+				{ npcTemplate = "valarian_thug", planetName = "chandrila", npcName = "Valarian Agent" },
 			},
 			itemSpawns = {},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 1450 }
+				{ rewardType = "credits", amount = 42450 }
 			}
 		},
 		{
@@ -586,7 +586,7 @@ npcMapJabba =
 		},--]]
 		{
 			spawnData = { planetName = "chandrila", npcTemplate = "g_5po", x = 7.8, z = -0.9, y = -10.9, direction = 0, cellID = 35791444, position = STAND },
-			worldPosition = { x = -5959.4, y = -6259.9 },
+			worldPosition = { x = 399, y = -2821 },
 			npcNumber = 8,
 			stfFile = "@theme_park_jabba/g5po",
 			missions = g5po_missions
