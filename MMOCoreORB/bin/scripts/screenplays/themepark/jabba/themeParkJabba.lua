@@ -223,15 +223,15 @@ porcellus_missions =
 			missionType = "confiscate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_jabba_veterinarian", planetName = "chandrila", npcName = "Veterinarian" }
+				{ npcTemplate = "theme_park_jabba_veterinarian", planetName = "chandrila", npcName = "Riken Taalo (a Sous Chef)" }
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "alkhara_bandit", planetName = "chandrila", npcName = "Alkhara Bandit" },
-				{ npcTemplate = "alkhara_bandit", planetName = "chandrila", npcName = "Alkhara Bandit" },
+				{ npcTemplate = "alkhara_bandit", planetName = "chandrila", npcName = "a Thug" },
+				{ npcTemplate = "alkhara_bandit", planetName = "chandrila", npcName = "a Thug" },
 			},
 			itemSpawns = {
-				{ itemTemplate = "object/tangible/loot/misc/damaged_datapad.iff", itemName = "A Datapad" }
+				{ itemTemplate = "object/tangible/loot/misc/damaged_datapad.iff", itemName = "The Joy of Cooking by Porcellus" }
 			},
 			rewards =
 			{
