@@ -45,7 +45,7 @@ function ChandrilaHannaCityPatrol2ScreenPlay:spawnMobiles()
 
 end
 
-function ChandrilaHannaCityPatrol2ScreenPlay:HannaPatrol1(pMobile)
+function ChandrilaHannaCityPatrol2ScreenPlay:HannaPatrol2(pMobile)
 	if (pMobile == nil) then
 		return
 	end
@@ -68,7 +68,7 @@ function ChandrilaHannaCityPatrol2ScreenPlay:HannaPatrol1(pMobile)
 	AiAgent(pMobile):executeBehavior()
 end
 
-function ChandrilaHannaCityPatrol2ScreenPlay:hannaPatrolDestReached1(pMobile)
+function ChandrilaHannaCityPatrol2ScreenPlay:hannaPatrolDestReached2(pMobile)
 	if (pMobile == nil) then
 		return 0
 	end
