@@ -61,6 +61,12 @@ function HannaCityScreenPlay:spawnSceneObjects()
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 36.1, -24.0, 76.2, 35791745, math.rad(0) )
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 36.1, -24.0, 62.4, 35791745, math.rad(0) )
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 7.5, -24.0, 62.4, 35791745, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 9.4, -24.0, 57.9, 35791745, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 12.9, -24.0, 54.4, 35791745, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 17.5, -24.0, 52.5, 35791745, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 26.2, -24.0, 52.5, 35791745, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 30.7, -24.0, 54.4, 35791745, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 34.2, -24.0, 57.8, 35791745, math.rad(0) )
 
 
     
