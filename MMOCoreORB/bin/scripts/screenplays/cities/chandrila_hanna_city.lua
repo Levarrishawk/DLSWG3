@@ -51,7 +51,11 @@ function HannaCityScreenPlay:spawnSceneObjects()
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 25.9, -15.1, 8.3, 35791722, math.rad(0) )
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 16.0, -15.1, 21.9, 35791722, math.rad(0) )
     
-
+-- Starport Static Objects
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 12.2, 0.6, 50.2, 35791476, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", -0.2, 0.6, 48.1, 35791476, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", -13.5, 0.6, 50.9, 35791476, math.rad(0) )
+ 
 
 	--Hotel
 --	spawnSceneObject("corellia", "object/static/structure/general/droid_r4_powerdown.iff", 6.0, 1.0, 20.2, 2365805, math.rad(143) )
@@ -194,6 +198,48 @@ function HannaCityScreenPlay:spawnMobiles()
   spawnMobile("chandrila", "squall",60,534.3,7.0,-2970.2,-84,0)
   spawnMobile("chandrila", "squall",60,531.4,7.0,-2897.7,166,0)
   
+  
+  -- Starport
+  pNpc = spawnMobile("chandrila", "bartender",60,-33.0,1.6,49.9,25,35791481)
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile("chandrila", "patron",60,-27.4,1.6,49.5,0,35791481)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  pNpc = spawnMobile("chandrila", "patron",60,-25.8,1.6,50.9,-87,35791481)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  pNpc = spawnMobile("chandrila", "patron",60,-27.2,1.6,52.4,-179,35791481)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
+  pNpc = spawnMobile("chandrila", "patron",60,-34.5,1.6,64.2,-52,35791481)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  pNpc = spawnMobile("chandrila", "patron",60,-34.8,1.6,66.2,-139,35791481)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  pNpc = spawnMobile("chandrila", "patron",60,-36.6,1.6,63.8,37,35791481)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  pNpc = spawnMobile("chandrila", "patron",60,-29.2,1.6,66.2,-118,35791481)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  pNpc = spawnMobile("chandrila", "patron",60,-27.1,1.6,65.4,-116,35791481)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  pNpc = spawnMobile("chandrila", "patron",60,-29.7,1.6,64.2,62,35791481)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
+  pNpc = spawnMobile("chandrila", "patron",60,-43.5,1.6,50.1,36,35791482)
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile("chandrila", "patron",60,-41.0,1.6,52.2,-129,35791482)
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile("chandrila", "rebel_trooper",60,-56.9,1.0,8.7,-6,35791486)
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile("chandrila", "patron",60,-56.9,1.0,10.9,179,35791486)
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile("chandrila", "patron",60,47.8,0.6,46.0,4,35791479)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  pNpc = spawnMobile("chandrila", "patron",60,48.1,0.6,48.9,-175,35791479)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  pNpc = spawnMobile("chandrila", "patron",60,43.4,0.6,47.4,-67,35791479)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  pNpc = spawnMobile("chandrila", "patron",60,36.0,0.6,35.5,73,35791479)
+  self:setMoodString(pNpc, "npc_sitting_chair")
   
   -- Senate Building
         -- Exterior
