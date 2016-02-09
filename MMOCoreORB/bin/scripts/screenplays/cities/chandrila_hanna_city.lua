@@ -69,6 +69,31 @@ function HannaCityScreenPlay:spawnMobiles()
 	pNpc = spawnMobile("chandrila", "commoner",60,248.5,6.0,-2896.1,-150,0)
 	self:setMoodString(pNpc, "conversation")
 	
+	pNpc = spawnMobile("chandrila", "commoner",60,335.6,6.0,-2955.2,44,0)
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile("chandrila", "commoner",60,338.9,6.0,-2952.5,-133,0)
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile("chandrila", "noble",60,291.7,6.0,-2936.9,-90,0)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
+  pNpc = spawnMobile("chandrila", "commoner",60,288.8,6.0,-2935.4,114,0)
+  self:setMoodString(pNpc, "conversation")
+  
+	
+	pNpc = spawnMobile("chandrila", "entertainer",60,347,6.0,-2977.9,-96,0)
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile("chandrila", "commoner",60,339.2,6.0,-2982.2,80,0)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  pNpc = spawnMobile("chandrila", "commoner",60,339.2,6.0,-2980.1,83,0)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  pNpc = spawnMobile("chandrila", "commoner",60,339.1,6.0,-2976.2,91,0)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  pNpc = spawnMobile("chandrila", "commoner",60,339.2,6.0,-2974.3,94,0)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
+  
+	
 	pNpc = spawnMobile("chandrila", "rebel_trooper",60,249.9,6.0,-2942.1,84,0)
   self:setMoodString(pNpc, "angry")
 	pNpc = spawnMobile("chandrila", "rebel_trooper",60,249.9,6.0,-2931.5,84,0)
@@ -128,8 +153,8 @@ function HannaCityScreenPlay:spawnMobiles()
   pNpc = spawnMobile("chandrila", "rebel_trooper",60,-0.1,3.1,22.8,177,35791551)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "at_xt",60,711.7,6.0,-2934.5,-90,0)
-  self:setMoodString(pNpc, "angry")
+  spawnMobile("chandrila", "at_xt",60,711.7,6.0,-2934.5,-90,0)
+  
   
   pNpc = spawnMobile("chandrila", "rebel_trooper",60,668.0,6.6,-3074.0,-2,0)
   self:setMoodString(pNpc, "neutral")
@@ -528,7 +553,9 @@ function HannaCityScreenPlay:spawnMobiles()
   pNpc = spawnMobile("chandrila", "patron_quarren",60,17.1,-0.9,7.8,226,35791444)
   self:setMoodString(pNpc, "npc_sitting_chair")
   
-  spawnMobile("chandrila", "malakili", 60, -28.5, -0.9, 22.5, 46  , 35791453)
+  pNpc = spawnMobile("chandrila", "malakili", 60, -28.5, -0.9, 22.5, 46  , 35791453)
+  self:setMoodString(pNpc, "happy")
+  
   spawnMobile("chandrila", "jabba_rancor", 60, -26.8, -0.9, 24.2, -160, 35791453)
   --
   
