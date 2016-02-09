@@ -50,6 +50,19 @@ function HannaCityScreenPlay:spawnSceneObjects()
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 25.8, -15.1, -8.4, 35791722, math.rad(0) )
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 25.9, -15.1, 8.3, 35791722, math.rad(0) )
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 16.0, -15.1, 21.9, 35791722, math.rad(0) )
+  
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 26.1, -24.0, 86.1, 35791745, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 17.5, -24.0, 86.1, 35791745, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 12.9, -24.0, 84.2, 35791745, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 9.4, -24.0, 80.7, 35791745, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 7.5, -24.0, 76.2, 35791745, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 30.7, -24.0, 84.2, 35791745, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 34.2, -24.0, 80.7, 35791745, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 36.1, -24.0, 76.2, 35791745, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 36.1, -24.0, 62.4, 35791745, math.rad(0) )
+  spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 7.5, -24.0, 62.4, 35791745, math.rad(0) )
+
+
     
 -- Starport Static Objects
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 12.2, 0.6, 50.2, 35791476, math.rad(0) )
@@ -168,6 +181,9 @@ function HannaCityScreenPlay:spawnMobiles()
   pNpc = spawnMobile("chandrila", "rebel_trooper",60,721,6,-3013.6,-178,0)
   self:setMoodString(pNpc, "neutral")
   
+  pNpc = spawnMobile("chandrila", "rebel_trooper",60,546.4,6,-3199.7,-90,0)
+  self:setMoodString(pNpc, "neutral")
+  
   -- Theater
   pNpc = spawnMobile("chandrila", "noble",60,0.5,2.1,50.2,-3,35791775)
   self:setMoodString(pNpc, "conversation")
@@ -198,6 +214,9 @@ function HannaCityScreenPlay:spawnMobiles()
   spawnMobile("chandrila", "squall",60,534.3,7.0,-2970.2,-84,0)
   spawnMobile("chandrila", "squall",60,531.4,7.0,-2897.7,166,0)
   
+  -- Trainers
+  spawnMobile("chandrila", "trainer_entertainer",60,-8.3,0.6,-6.7,29,35791665)
+  spawnMobile("chandrila", "trainer_entertainer",60,20.8,-0.9,-18.2,-8,35791445)
   
   -- Starport
   pNpc = spawnMobile("chandrila", "bartender",60,-33.0,1.6,49.9,25,35791481)
@@ -264,7 +283,10 @@ function HannaCityScreenPlay:spawnMobiles()
   pNpc = spawnMobile("chandrila", "royal_imperial_guard",60,-1.7,-18.9,-28.7,0,35791740)
   self:setMoodString(pNpc, "neutral")
   
-      -- Senate Chamber
+  -- New Jedi Order Enclave
+  spawnMobile("chandrila", "trainer_1hsword",60,21.9,-24.0,84.1,-179,35791745)
+  
+  -- Senate Chamber
   pNpc = spawnMobile("chandrila", "mon_mothma",60,-0.0,-26.6,0.8,0,35791722)
   self:setMoodString(pNpc, "conversation")
   pNpc = spawnMobile("chandrila", "senator",60,7.9,-26.1,2.0,-103,35791722)
