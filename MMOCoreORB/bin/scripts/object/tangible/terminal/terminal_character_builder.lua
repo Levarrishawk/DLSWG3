@@ -519,8 +519,7 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 				},
 				"Ranger",
 				{
-					"Novice", "outdoors_scout_novice",
-					"Ranger",
+					"Novice", "outdoors_scout_novice",					
 					{
 						"Ranger I", "outdoors_scout_movement_01",
 						"Ranger II", "outdoors_scout_movement_02",
@@ -529,6 +528,11 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 					},				
 					"Master", "outdoors_scout_master"
 				},
+				"Trader: Pharmacist",
+        {
+          "Novice", "science_combatmedic_novice",  
+          "Master", "science_combatmedic_master"
+        },
 				--[["Shipwright",
 				{
 					"Novice", "crafting_shipwright_novice",
