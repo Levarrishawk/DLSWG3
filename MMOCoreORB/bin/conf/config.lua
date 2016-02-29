@@ -69,7 +69,7 @@ MantisUser = "swgemu"
 MantisPass = "0nc3up0n@t!m3"
 MantisPrfx = "mantis_" -- The prefix for your mantis tables.
 
-AutoReg = 1
+AutoReg = 0
 
 ProgressMonitors = "true"
 
